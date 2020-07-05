@@ -1,0 +1,2927 @@
+<!--Creator: Patrick Garbely-->
+<!--Created at: 26/06/2020-->
+<!--Last Update: 04/07/2020-->
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="bootstrap-4.5.0-dist/css/bootstrap.css">
+
+    <!-- Vega Links -->
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.12.1"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@4.13.1"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.8.0"></script>
+    <title>Analyse - Walliser Verfassung</title>
+</head>
+
+<!--
+Bootstrap 4 Helping Source:
+W3 Schools: https://www.w3schools.com/bootstrap4/default.asp
+-->
+
+<body>
+
+    <!-- Create Jumbotron (header in bootstrap) with Valais flag in background-->
+
+    <!-- CSS style exceptionally in <div> tag -->
+
+    <div class="jumbotron text-center mb-0"
+        title="Picture from RTS - https://www.rts.ch/2018/09/04/12/55/9820284.image?w=1100&h=620"
+        style="height: 100vh; background: url(img/valais-flag.jpg) no-repeat center; background-size: cover;">
+        <h1 class="display-1 font-weight-bolder" id="start">Visuelle Analyse</h1>
+        <h1 class="display-4 font-weight-bold">Online Befragung zur neuen Walliser Verfassung</h1>
+    </div>
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+
+        <!-- Navigation bar Links with icons (Source indicated: flaticon) -->
+
+        <ul class="navbar-nav mx-auto">
+            <li class="nav-item mx-4">
+                <a class="nav-link" href="#project"><img src="img/project-nav.png" title="Kurzübersicht Projekt"></a>
+            </li>
+            <li class="nav-item mx-4">
+                <a class="nav-link" href="#language-analysis"><img src="img/languages-nav.png"
+                        title="Canton billingue"></a>
+            </li>
+            <li class="nav-item mx-4">
+                <a class="nav-link" href="#topic-analysis"><img src="img/constitution-nav.png"
+                        title="Verfassungsthemen"></a>
+            </li>
+            <li class="nav-item mx-4">
+                <a class="nav-link" href="#text-analysis"><img src="img/keywords-nav.png" title="Schlüsselwörter"></a>
+            </li>
+            <li class="nav-item mx-4">
+                <a class="nav-link" href="#user-analysis"><img src="img/users-nav.png"
+                        title="Teilnehmer: Quantität & Qualität"></a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- First section: Overview to project -->
+
+    <section class="bg-light mt-5 mx-5" id="project">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+
+                    <h1 class="my-5 pt-5"><img src="img/project.png"> Kurzübersicht Projekt</h1>
+
+                    <p class="lead text-dark mb-5">Im Rahmen meiner Bachelorarbeit im Studiengang Wirtschaftsinformatik
+                        an der HES-SO
+                        Valais habe ich einige Daten für die neue Walliser Verfassung zusammengetragen und
+                        analysiert.<br><br>Alle Daten beruhen auf der Volksbefragung "Welche Verfassung für das Wallis
+                        von morgen?". Diese Befragung wurde von der HES-SO Valais, im Auftrag des Verfassungsrats,
+                        online durchgeführt. Vom 7. November 2019 bis zum 5. Januar 2020 war die gesamte Walliser
+                        Bevölkerung zur Teilnahme eingeladen. Zu den verschiedenen politischen Themen konnten Vorschläge
+                        für die neue Verfassung beigetragen werden.<br><br>Folgende Funktionen zur aktiven Teilnahme
+                        wurden auf der Plattform ermöglicht:
+                    </p>
+
+                    <ul>
+                        <li>Schriftlicher Vorschlag zu einem bestimmten politischen Thema</li>
+                        <li>Schriftliches Argument zu einem bestimmten Vorschlag (Pro oder Contra)</li>
+                        <li>Bewertung eines Vorschlags oder Arguments (Pro, Contra oder Gemischt)</li>
+                    </ul>
+
+                    <img title="Picture by Canton du Valais - https://www.vs.ch/web/constituante"
+                        src="img/consultation_pic.jpeg" class="img-fluid my-3">
+
+                    <!-- URL links to the survey -->
+
+                    <p class="lead mb-5">
+                        Link zur Umfrage:
+                        <a href="https://mitsprache.hevs.ch/project/welche-verfassung-fur-das-wallis-von-morgen/consultation/befragung"
+                            target="_blank">Deutsch</a> -
+                        <a href="https://consultation.hevs.ch/project/revision-de-la-constitution-valaisanne/consultation/consultation"
+                            target="_blank">Französisch</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Second section: Language analysis -->
+
+    <section class="bg-light mt-5 mx-5" id="language-analysis">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+
+
+                    <h1 class="my-5 pt-5"><img src="img/languages.png"> Canton billingue</h1>
+
+                    <p class="lead mb-5">Wie es sich für unseren zweisprachigen Kanton gehört, war die Umfrage in den
+                        beiden
+                        Amtssprachen Französisch und Deutsch aufgeschaltet. So gesehen fanden zwei separate Umfragen
+                        statt. Bei der Teilnahme an den beiden Umfragen konnte man beträchtliche Unterschiede
+                        feststellen. Am stärksten zeigt dies der folgende Vergleich zwischen den beiden Sprachen.</p>
+
+                    <h5 class="my-3">Beiträge pro Sprache</h5>
+
+                    <p class="lead mb-5">Hier wird die Anzahl der schriftlich verfassten Beiträge (Vorschläge und
+                        Argumente)
+                        zwischen den beiden Sprachen verglichen. Die absolute Beitragszahl offenbart sich bei einer
+                        Mausbewegung über dem jeweiligen Teil des Kreisdiagramms.</p>
+
+                    <!-- Pie Chart visualization 1 - Posts per language -->
+
+                    <div class="text-center mb-5" id="pieChart1"></div>
+
+                    <p class="lead mb-5">In der deutschen Version gab es gerade mal 118 Beiträge (8,8 % aller Beiträge),
+                        während es die französische Gemeinschaft auf 1228 Beiträge gebracht hat.<br><br>Die geringe
+                        Anzahl an Beiträgen aus dem deutschsprachigen Kantonsteil ist einfach zu begründen. Auf der
+                        deutschen Plattform gab es nur zwei Dutzend aktive Benutzer, welche sich an der öffentlichen
+                        Diskussion beteiligten. </p>
+
+                    <h5 class="my-3">Aktive Teilnehmer pro Sprache</h5>
+
+                    <p class="lead mb-5">In dieser Grafik sind die genauen Teilnehmerzahlen pro Sprache zu sehen.
+                        Wichtig ist
+                        dabei, dass es sich nur um Teilnehmer handelt, welche mindestens einen Beitrag oder ein Argument
+                        verfasst haben. Angemeldete Benutzer ohne Beiträge wurden nicht berücksichtigt.</p>
+
+                    <!-- Pie Chart visualization 2 - Active users per language -->
+
+                    <div class="text-center mb-5" id="pieChart2"></div>
+
+                    <p class="lead mb-5">Die 24 Teilnehmer aus dem deutschen Sprachraum bilden etwa 16,4% der gesamten
+                        Teilnehmerzahl. Damit ist der Anteil an deutschsprachigen Teilnehmern bei der Verfassungsumfrage
+                        etwas geringer als der deutschsprachige Bevölkerungsanteil des Kantons Wallis, der laut
+                        Bundesamt für Statistik im Erhebungszeitraum 2016 bis 2018 bei etwa 24,3 % lag.<br><br>Dass die
+                        absoluten Zahlen der französischsprachigen Plattform höher sind, ist natürlich keine
+                        Überraschung. Laut Bundesamt für Statistik sprechen gute zwei Drittel der Walliser Bevölkerung
+                        Französisch in der Hauptsprache.<br><br>Die obenstehenden Visualisierungen zeigen jedoch, dass
+                        die französische Sprache bei der Umfrage klar dominiert hat und in Bezug auf die
+                        Teilnahmestatistiken deutlich mehr als zwei Drittel erreicht hat.</p>
+
+                    <h5 class="my-3">Durchschnittliche Anzahl Beiträge pro Teilnehmer und Sprache</h5>
+
+                    <p class="lead mb-5">Bei der Gegenüberstellung der Anzahl Teilnehmer und Beiträge pro Sprache werden
+                        die
+                        Verhältnisse nochmals klar aufgezeigt. In diesem Kreisdiagramm sieht man die durchschnittliche
+                        Anzahl Beiträge der Teilnehmer mit der jeweiligen Sprache.</p>
+
+                    <!-- Pie Chart visualization 3 - Average amount of contributions per user & language -->
+
+                    <div class="text-center mb-5" id="pieChart3"></div>
+
+                    <p class="lead mb-5">Der französische Durchschnittsteilnehmer hat also doppelt so viele Beiträge
+                        verfasst
+                        wie der deutschsprachige Teilnehmer.<br><br>Diese Statistik ist also unabhängig von der
+                        jeweiligen Anzahl Teilnehmer pro Sprache. Jedoch muss man dazu auch sagen, dass die grössere
+                        Anzahl an Beiträgen und Teilnehmern auch den möglichen Diskussionsstoff erhöht.</p>
+
+                    <h5 class="my-3">Fazit</h5>
+
+                    <p class="lead mb-5">Lange Rede, kurzer Sinn: Die Gegenüberstellung der beiden Sprachen zeigt eine
+                        deutliche Mehrheit an der Teilnehmeraktivität aus dem französischsprachigen Raum auf.<br><br>Der
+                        Hauptgrund dafür ist sicherlich der grössere Bevölkerungsanteil. <br><br>Ein weiterer Grund kann
+                        die geringfügige Werbung für die Umfrage sein. Denn die gesamte Teilnehmerzahl von 146 ist eine
+                        sehr niedrige Zahl, wenn man die Einwohnerzahl von ca. 344'000 bedenkt. Bei der nächsten Umfrage
+                        gilt es also für den Verfassungsrat mehr Werbung zu machen und möglichst viele Menschen an der
+                        Teilnahme zu animieren. Je mehr Teilnehmer an der Umfrage mitmachen, desto mehr Meinungen können
+                        auf diesem Weg eingeholt werden. Davon kann der Verfassungsrat nur profitieren, da dieser
+                        schliesslich vom Volk gewählt wurde und nun auch deren Interessen für die Verfassung vertreten
+                        sollte.<br><br>Abschliessend muss man zur Sprachanalyse sagen, dass die Sprache einen Teilnehmer
+                        nicht zwingend in ein geografisches Gebiet eingrenzen lässt. Diese Gegenüberstellung darf also
+                        nicht als ein Vergleich zwischen Ober- und Unterwallis gewertet werden. Es gibt viele
+                        zweisprachige Walliser/innen, welche sich tendenziell wohl eher auf der französischen Plattform
+                        engagiert haben, da sich auf dieser schlicht mehr Diskussionsstoff angeboten hat. Leider musste
+                        bei der Registrierung der Wohnort nicht angeben werden. Auch dies wäre für die nächste Umfrage
+                        wünschenswert, da man mit dieser zusätzlichen demografischen Information die Bedürfnisse genauer
+                        auf bestimmte Regionen innerhalb des Wallis zuweisen könnte.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Third section -> Topic analysis -->
+
+    <section class="bg-light mt-5 mx-5" id="topic-analysis">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+
+                    <h1 class="my-5 pt-5"><img src="img/constitution.png"> Verfassungsthemen</h1>
+
+                    <p class="lead mb-5">Die wichtigste Auswertung für diese Umfrage bildet die Themenanalyse.
+                        Schliesslich
+                        ist das Ziel der Umfrage, herauszufinden, welche politischen Themen die Bevölkerung am stärksten
+                        beschäftigt und welche Meinungen es dazu gibt.<br><br>Strukturell ist die Verfassungsumfrage in
+                        elf grundlegende Themengebiete unterteilt:</p>
+
+                    <!-- Table to show all survey topic titles-->
+
+                    <table class="table table-bordered table-sm shadow-lg p-4 mb-4 bg-white my-5 ">
+
+                        <thead class="thead-dark">
+                            <tr>
+                                <th>#</th>
+                                <th>Thema</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="font-weight-bold">1</td>
+                                <td>Allgemeine Elemente, Präambel, Sozialer Zusammenhalt, Verhältnis Kirchen/Staat,
+                                    Sprachen</td>
+                            </tr>
+                            <tr>
+                                <td class="font-weight-bold">2</td>
+                                <td>Grundrechte, Sozialrechte und Zivilgesellschaft</td>
+                            </tr>
+                            <tr>
+                                <td class="font-weight-bold">3</td>
+                                <td>Politische Rechte und direkte Demokratie</td>
+                            </tr>
+                            <tr>
+                                <td class="font-weight-bold">4</td>
+                                <td>Allgemeine Aufgaben des Staates, nachhaltige Entwicklung, Wirtschaft, Innovation
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="font-weight-bold">5</td>
+                                <td>Raumentwicklung, natürliche Ressourcen und Klima, Mobilität, Landwirtschaft</td>
+                            </tr>
+                            <tr>
+                                <td class="font-weight-bold">6</td>
+                                <td>Soziale Aufgaben des Staates, Familie, Bildung, Integration, Kultur, Sport, Freizeit
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="font-weight-bold">7</td>
+                                <td>Kantonale Behörden: allgemeine Prinzipien und Grosser Rat</td>
+                            </tr>
+                            <tr>
+                                <td class="font-weight-bold">8</td>
+                                <td>Staatsrat, Verwaltung und Präfekten</td>
+                            </tr>
+                            <tr>
+                                <td class="font-weight-bold">9</td>
+                                <td>Gerichtsbehörden, Gerichte, Schutz der Kinder und Erwachsenen, Gemeinderichter/innen
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="font-weight-bold">10</td>
+                                <td>Gemeinden und territoriale Organisation (Bezirke, etc.)</td>
+                            </tr>
+                            <tr>
+                                <td class="font-weight-bold">11</td>
+                                <td>Weiteres</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h5 class="my-3">Schriftliche Beiträge pro Thema / Subthema (ohne Stimmen)</h5>
+
+                    <p class="lead mb-5">In einem ersten Schritt wollte ich wissen, welche dieser elf Bereiche die
+                        Teilnehmer
+                        am meisten interessiert hat. Dafür habe ich alle Vorschläge und Argumente zusammengezählt und in
+                        einem Kacheldiagramm (Treemap) dargestellt. Die oben aufgelisteten Themen sind auf dieser Karte
+                        in deren Subthemen gegliedert. Je grösser ein Feld dargestellt wird, desto mehr Beiträge gibt es
+                        zu diesem Thema. Systematisch werden die Themen von links nach rechts in absteigender
+                        Beitragszahl dargestellt. Bei einer Mausbewegung über die Felder können die Details zu dem
+                        Subthemen und den Anzahl Beiträgen angeschaut werden.</p>
+
+                    <!-- Treemap visualization 1 - Written contributions of all topics & subtopics -->
+
+                    <div class="text-center mb-5 shadow-lg" id="treemap"></div>
+
+                    <h5 class="my-3">Aktivitäten pro Thema / Subthema (inkl. Stimmen, Beiträge und Argumente)</h5>
+
+                    <p class="lead mb-5">Auch die nächste Grafik zeigt die Relevanz der Themen für die Teilnehmer.
+                        Hierbei
+                        wurden zusätzlich zu den schriftlichen Beiträgen auch die Stimmen dazugezählt. Die Grafik ist in
+                        einer kreisförmigen Treemap dargestellt. Weitere Informationen zu den einzelnen Bereichen können
+                        wiederum mit der Maus erkundet werden.</p>
+
+                    <!-- Treemap visualization 2 - All activities of all topics & subtopics -->
+
+                    <div class="mb-5" id="circle_packing"></div>
+
+                    <p class="lead mb-5">Beide Treemaps zeigen ganz ähnliche Resultate. Somit können beide Grafiken
+                        gemeinsam
+                        interpretiert werden.<br><br>Auffallend ist erstmals sicherlich, dass die Kapitel 1, 2 und 3 an
+                        der Spitze liegen. Die hat zwei naheliegende Gründe. Erstens sind die diese Themen nicht aus
+                        Zufall die ersten drei Punkte in der Verfassung. Es sind politisch sehr relevante Themen. Gerade
+                        die Kapitel 1 und 2 betreffen zudem praktisch jeden einzelnen Bürger, während in anderen
+                        Themenbereichen jeweils nur bestimmte Interessengruppen betroffen sind. Der zweite Grund für die
+                        "Spitzenränge" ist, dass die Themen ganz einfach zuoberst in der Verfassungsumfrage auftauchen.
+                        Sicher gibt es Teilnehmer, welche sich von oben nach unten durch die Umfrage gelesen haben,
+                        jedoch nicht überall mitmachen konnten.<br><br>Durch eine neue Darstellung der Startseite der
+                        Umfrage könnte letzteres Verhaltensmuster vielleicht etwas gebrochen werden und allen Themen die
+                        gleiche Aufmerksamkeit geboten werden. Stand jetzt sieht die Umfrage so aus, dass die sie nach
+                        Themaziffer in aufsteigender Reihenfolge sortiert ist. Ein Lösungsansatz für eine Verbesserung
+                        wäre, nur die elf grossen Themen auf der Startseite anzuzeigen und mit einem Mausklick zu dem
+                        gewählten Thema zu landen.<br><br>Eine positive Erkenntnis ist, dass trotz der geringen
+                        Teilnehmerzahlen zu allen Themen diskutiert wurde. Die meist besprochenen Themen sind die Punkte
+                        "1.1 Präambel" (123 Beiträge) und "11 Weiteres" (108 Beiträge). Dies ist darauf zurückzuführen,
+                        dass diese Themen sehr allgemein gehalten sind und einige inhaltliche verschiedene Inhalte in
+                        diesen Diskussionen zu finden sind. Von den spezifischeren Themen gehören folgende Bereiche zu
+                        den meist bzw. zu den am wenigsten besprochenen:</p>
+
+                    <!-- Table to show a resumee of the most and least discussed subtopics-->
+
+                    <table class="table table-bordered table-sm shadow-lg p-4 mb-4 bg-white my-5 ">
+
+                        <thead class="thead-dark">
+                            <tr>
+                                <th>#</th>
+                                <th>Thema</th>
+                                <th>Beiträge</th>
+                                <th>Stimmen</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="font-weight-bold">3.4</td>
+                                <td>Repräsentativität der Gewählten</td>
+                                <td>66</td>
+                                <td>367</td>
+                            </tr>
+                            <tr>
+                                <td class="font-weight-bold">1.3</td>
+                                <td>Zusammenhalt – Zweisprachigkeit</td>
+                                <td>63</td>
+                                <td>283</td>
+                            </tr>
+                            <tr>
+                                <td class="font-weight-bold">1.2</td>
+                                <td>Verhältnis Kirchen/Staat</td>
+                                <td>50</td>
+                                <td>405</td>
+                            </tr>
+                            <tr>
+                                <td class="font-weight-bold">8.1</td>
+                                <td>Staatsrat</td>
+                                <td>43</td>
+                                <td>182</td>
+                            </tr>
+                            <tr>
+                                <td class="font-weight-bold">2.1</td>
+                                <td>Rechte im Zusammenhang mit der Natur</td>
+                                <td>42</td>
+                                <td>228</td>
+                            </tr>
+                            <tr>
+                                <td class="font-weight-bold">2.3</td>
+                                <td>Rechte von den nicht Stimmberechtigten</td>
+                                <td>40</td>
+                                <td>225</td>
+                            </tr>
+                            <tr>
+                                <td>...</td>
+                                <td>...</td>
+                                <td>...</td>
+                                <td>...</td>
+                            </tr>
+                            <tr>
+                                <td class="font-weight-bold">9.4</td>
+                                <td>KESB</td>
+                                <td>10</td>
+                                <td>28</td>
+                            </tr>
+                            <tr>
+                                <td class="font-weight-bold">10.3</td>
+                                <td>Finanzausgleich</td>
+                                <td>10</td>
+                                <td>26</td>
+                            </tr>
+                            <tr>
+                                <td class="font-weight-bold">10.5</td>
+                                <td>Gemeinderat</td>
+                                <td>10</td>
+                                <td>38</td>
+                            </tr>
+                            <tr>
+                                <td class="font-weight-bold">6.3</td>
+                                <td>Generationen</td>
+                                <td>9</td>
+                                <td>36</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fourth section -> Text Analysis -->
+
+    <section class="bg-light mt-5 mx-5" id="text-analysis">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+
+                    <h1 class="my-5 pt-5"><img src="img/keywords.png"> Schlüsselwörter</h1>
+
+                    <p class="lead mb-5">Im vorherigen Kapitel wurde analysiert, über welche Themen bei der Umfrage
+                        gesprochen wurde. Nun möchte ich noch etwas mehr ins Detail gehen. Mithilfe von Text Mining will
+                        ich herausfinden, was die inhaltlichen Schlüsselwörter in den Diskussionen innerhalb dieser
+                        Themen waren.</p>
+
+                    <!-- First definition degression -> Definition of Text Mining -->
+
+                    <h5 class="my-3 font-italic text-center">Exkurs</h5>
+                    <h5 class="my-3 font-italic text-center">Definition Text Mining</h5>
+
+                    <p class="pre-scrollable mb-5 border p-4 bg-white">
+                        Bei Text Mining handelt es sich um einen generellen Vorgang innerhalb von digitalisierten
+                        Textanalysen.
+                        Mit bestimmten Methoden macht es Text Mining möglich, unstrukturierte Textdaten zu verarbeiten
+                        und in ein strukturiertes, interpretierbares Schema zu transformieren<br><br>In der deutschen
+                        Fachsprache wird ebenfalls die englische Bezeichnung Text Mining gebraucht.
+                        „Mining“ bedeutet in der deutschen Übersetzung so etwas wie „graben“ oder „schürfen“.Der
+                        Ursprung des Wortes befindet sich im Bergbau, wo es darum geht, tief im Ursprung des Berges zu
+                        graben und das Material am Ende des Vorgangs zu einem nützlichen Output zu verwerten. Dies ist
+                        keine zufällige Zweideutigkeit, nämlich wird beim Text Mining im Grunde genommen ein konzeptuell
+                        ähnlicher Prozess durchgeführt. Es wird im unstrukturierten Reintext „gegraben“ und die
+                        gefundenen Daten soll am Ende ein sinnvolles Resultat ergeben.<br><br>Die maschinelle
+                        Textverarbeitung bedient sich dabei an den von Menschen geschaffenen Sprachen. Grob unterteilt
+                        wird von zwei verschiedenen Wissensarchiven Gebrauch gemacht. Einerseits anhand von
+                        lexikalischen Sprachdatenbanken, wie zum Beispiel „WordNet“. Auf der anderen Seite wird das Text
+                        Mining anhand von maschinellem Lernen stets weiterentwickelt. Das bedeutet, je mehr die
+                        Algorithmen dieser Maschinen trainieren bzw. lernen können, desto reicher werden deren Methoden
+                        an Wissen und Präzision.<br><br>Natürlich bringt das Text Mining auch eine vergleichsweise
+                        grosse Zahl an Verfehlungen mit sich. Doch bei uns Menschen ist dies genau dasselbe. Auch wir
+                        verstehen nicht alle Sprachen und oftmals gibt es auch Missverständnisse beim Kommunizieren in
+                        der Erstsprache.<br><br>Es gibt jede Menge verschiedene Algorithmen und Techniken zur
+                        Durchführung von Text Mining.
+                    </p>
+
+                    <h5 class="my-3">Keyword Extraction</h5>
+
+                    <img src="img/wordcloud.PNG" class="img-fluid mx-auto d-block p-5"
+                        title="Picture by Pixers - https://pixers.de/fototapeten/word-cloud-big-data-41468665">
+
+                    <p class="lead mb-5">Zum Herausfinden der wichtigsten Schlüsselwörter wurde die Text Mining Methode
+                        "Keyword Extraction" angewandt. Es geht also darum, Schlüsselwörter aus dem Text
+                        herauszufiltern. Üblicherweise wird Text Mining vor allem für grosse Mengen von Textdaten
+                        benützt. Aus diesem Grund habe das Thema mit den meisten Beiträgen analysiert. Wie in der
+                        Themenanalyse eruiert, wurde "1.1 Präambel" am meisten besprochen. Dieser Punkt eignet sich sehr
+                        gut für die Textanalyse, da es ein sehr allgemeines Thema mit vielfältigem Diskussionsstoff ist.
+                        Zudem gab es auch auf der deutschsprachigen Umfrage einige Beiträge. Deshalb kann sogar ein
+                        Direktvergleich zwischen der französisch- und der deutschsprachigen Plattform vollzogen werden.
+                        Bei den anderen beiden Themen gab es leider zu wenige Kommentare, um eine sinnvolle Textanalyse
+                        der deutschen Version durchzuführen.<br><br>Bei der Analyse kam das Textanalyse Tool <a
+                            href="https://www.ibm.com/demos/live/natural-language-understanding/self-service/home">Watson
+                            Natural Language Understanding</a> des Branchengiganten <a
+                            href="https://www.ibm.com/ch-de">IBM</a> aus den Vereinigten Staaten zum Einsatz. Für
+                        kleinere Datensätze wie in diesem Fall kann das Tool kostenlos benützt werden. Dies und die
+                        Anwendung in mehreren Sprachen (inkl. Deutsch und Französisch) sind die grössten Stärken des IBM
+                        Watson Tools.<br><br>Die wichtigste Kennzahl bei der Keyword Extraction ist die "Relevanz". Bei
+                        einer Mausbewegung über die jeweiligen Schlüsselwörter wird die mathematische Relevanz gemäss
+                        Berechnung des IBM Watson Tools angezeigt.<br><br>Bei der Evaluierung der Relevanz wird
+                        zusätzlich zur Häufigkeit von Wörtern oder Wortkollokationen auch deren Wichtigkeit im Kontext
+                        überprüft. Wörter, welche erfahrungsgemäss in jedem Text oft vorkommen werden dementsprechend
+                        als weniger relevant gewertet als jene, die selten in Texten zu lesen sind.<br><br>Zum Verstehen
+                        der nachfolgenden Schlüsselwörter Analyse werden Grundkenntnisse in Französisch vorausgesetzt.
+                        Aufgrund des Risikos zur Verfälschung der Resultate habe ich auf eine Übersetzung ins Deutsche
+                        verzichtet. Die folgende Auswertung entspricht exakt genau dem Resultat aus der IBM Technologie.
+                        Es wurden keine Verschönerungen oder andere Mutationen an den Daten vorgenommen.</p>
+                </div>
+
+                <!-- Barchart visualizations (Keyword extraction) -->
+
+                <div>
+                    <div class="text-center mb-5 shadow-lg">
+                        <h4 class="pt-5">KEYWORDS</h4>
+                        <div class="row">
+                            <div class="pt-5">
+                                <h5>Französiche Umfrage</h5>
+                                <div class="p-5" id="keywords_bar1">
+                                </div>
+                            </div>
+                            <div class="pt-5">
+                                <h5>Deutsche Umfrage</h5>
+                                <div class="p-5" id="keywords_bar2">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-8 mx-auto">
+                    <p class="lead mb-5">Neben wenigen Ausnahmen hat die Extraktiontechnologie einige sehr relevante
+                        Schlüsselbegriffe hervorgebracht.<br><br>Angenommen, das Hauptthema wäre noch nicht bekannt,
+                        kann man durch diese Schlüsselwörter schon sehr gut erkennen, dass hier über eine Verfassung und
+                        dass in beiden Sprachen über dieselbe Grundproblematik diskutiert wird. Ein grosser Teil der
+                        Begriffe sind ähnlich und kommen bei beiden Diskussionen vor.</p>
+
+                    <h5 class="my-3">Text Classification</h5>
+
+                    <p class="lead mb-5">Um, zumindest beim Beispiel der Präambel, noch tiefer ins Detail zu gehen, habe
+                        ich die obenstehenden Begrifflichkeiten nochmals in eigene "Klassen" zugeordnet und diese mit
+                        sogenannten Wordclouds zusammengefasst. Bei der Analyse der Schlüsselwörter Extraktion sind fünf
+                        grundlegende Themen herausgestochen:</p>
+                </div>
+
+                <!-- Wordcloud clusters of extracted keywords (simple, selfmade visualization) -->
+
+                <img title="Picture by Patrick Garbely" src="img/wordclouds.PNG"
+                    class="img-fluid mx-auto mb-5 border border-dark">
+
+                <div class="col-lg-8 mx-auto">
+
+                    <p class="lead mb-5">Einige extrahierte Schlüsselwörter wurden bei der Klassifizierung bewusst
+                        weggelassen, da sie entweder mehrmals auftauchen, nicht in den Kontext passen oder keinem
+                        entsprechenden Thema zugewiesen werden können.<br><br>Eine kurze Interpretation der fünf
+                        eruierten Themenklassen:</p>
+
+                    <!-- Hoverable table to explain and interpret wordcloud clusters -->
+
+                    <table class="table table-hover table-sm shadow-lg mb-4 bg-light my-5">
+                        <tbody>
+                            <tr>
+                                <td class="p-3 font-weight-bold">Gemeinschaft</td>
+                                <td class="p-3">Diese Thema wurde mehrheitlich von den Meinungen in der deutschen
+                                    Plattform getragen. Es geht darum, dass die gesamte Bevölkerung von einer neuen
+                                    Verfassung profitiert. Dies soll vor allem durch gegenseitiges Verständnis und
+                                    Zusammenhalt geschehen.</td>
+                            </tr>
+                            <tr>
+                                <td class="p-3 font-weight-bold">Religion</td>
+                                <td class="p-3">Die Religion gehört zu den stichhaltigsten Bereichen der Diskussion. Vor
+                                    allem auf der französischen Plattform waren die christlichen Werte ein grosses
+                                    Thema. Der Relevanzberechnung von IBM nach stellte der Begriff "nom de dieu" den
+                                    wichtigsten Inhaltspunkt dar.</td>
+                            </tr>
+                            <tr>
+                                <td class="p-3 font-weight-bold">Sozialpolitik</td>
+                                <td class="p-3">Auch einige Begriffe aus der Sozialpolitik wurden als Schlüsselwörter
+                                    aus der Diskussion extrahiert. Interessant ist der Fakt, dass die dazugehörigen
+                                    Begriffe alle aus der deutschsprachigen Diskussion stammen.</td>
+                            </tr>
+                            <tr>
+                                <td class="p-3 font-weight-bold">Verweise</td>
+                                <td class="p-3">Oft wird auf Verfassungen und Präambeln von anderen Kantonen und vom
+                                    Bund verwiesen. Auf der deutschen Plattform wurden die Kantone Fribourg und
+                                    Graubünden explizit genannt, während auf der französischen Plattform vor allem die
+                                    Schweizerische Verfassung eine Rolle spielte.</td>
+                            </tr>
+                            <tr>
+                                <td class="p-3 font-weight-bold">Werte</td>
+                                <td class="p-3">Ein weiteres Gesprächsthema waren die fundamentalen Werte, welche in der
+                                    neuen Verfassung berücksichtigt werden sollen.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <p class="lead mb-5">Die Klassifizierung in die gerade erklärten Themen wurde wurde manuell
+                        erstellt, da die Datenmengen überschaubar und der Kontext vertraut war. Bei diesem Vorgehen
+                        handelt es sich um eine weitere typische Vorgehensweise beim Text Mining. Diese wird "Topic
+                        Modeling" oder "Topic Classification" genannt.</p>
+
+                    <!-- Second definition digression
+Extraction vs. Classification vs. Modeling -->
+
+                    <h5 class="my-3 font-italic text-center">Exkurs</h5>
+                    <h5 class="my-3 font-italic text-center">Extraction vs. Classification vs. Modeling</h5>
+
+
+                    <p class="pre-scrollable p-4 border bg-white mb-5">
+                        Die Bezeichnung Extraktion kommt aus dem englischen Wort „extract“, was so viel heisst wie
+                        Auszug oder Ausschnitt. Bei diesem Vorgehen werden also Wörter bzw. Wortfrequenzen so
+                        herauskristallisiert, wie sie im Text stehen.<br><br>
+                        Bei der Klassifizierung (engl. „Classification“) kommt ein anderes Konzept zur Anwendung. Hier
+                        werden die Textteile in verschiedene vordefinierte Klassen oder Gruppen zugewiesen, welche nicht
+                        zwingend im Text vorkommen.<br><br>
+                        Das "Topic Modeling" oder "Clustering" ist eine alternative Variante für das Klassifizieren in
+                        Gruppen. Der Unterschied zur gängigen Methode ist, dass die Gruppen nicht im Voraus definiert
+                        werden. Der Algorithmus zielt also darauf ab, die Themen kennen zu lernen.<br><br>Beim
+                        Modellieren steht somit das Bilden von Clustern, also Themen, im Vordergrund. Die
+                        Klassifizierung verfolgt eher das Ziel, die Textteile den definierten Themen zuzuweisen.
+                    </p>
+
+                    <h5 class="my-3">Fazit</h5>
+
+                    <p class="lead mb-5">Aus den Erkenntnissen der bereits gesehenen Analysen kann man sich sehr gut
+                        vorstellen, welche Themen den Umfrageteilnehmern bei der neuen Verfassung wichtig sind. Das
+                        Herausfiltern von gewissen Schlüsselwörtern aus den Diskussionen hat weitere Aufschlüsse über
+                        die Wünsche und Bedürfnisse der Bevölkerung aufgezeigt.<br><br>Die Technologie des Text Minings
+                        ist bereits weit fortgeschritten, ist aber nicht perfekt. Das Resultat aus der Keyword
+                        Extraction wurde bewusst nicht abgeändert, um neben den Vorteilen auch die mit sich bringenden
+                        Nachteile vorzuführen.<br><br>Abschliessend kann man sagen, dass die Technologie vor allem bei
+                        grossen Datenmengen einen wertvollen Nutzen darstellt. Beim Beispiel der Walliser
+                        Verfassungsumfrage konnte eine sinnvolle Analyse durchgeführt werden.</p>
+                </div>
+
+                <!-- Unused keyword extracitons for topics 11 and 3.4
+Not used because of "Quality before Quantity" -->
+
+                <!--
+<div class="text-center mb-5 shadow-lg">
+<div class="row">
+<div class="pt-5">
+<h5 class="my-3">11 Weiteres</h5>
+<div class="p-5" id="keywords_bar3">
+</div>
+</div>
+<div class="pt-5">
+<h5 class="my-3">3.4 Repräsentativität der Gewählten</h5>
+<div class="p-5" id="keywords_bar4">
+</div>
+</div>
+</div>           
+</div>
+-->
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Fifth section -> User analysis -->
+
+    <section class="bg-light mt-5 mx-5" id="user-analysis">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+
+                    <h1 class="my-5 pt-5"><img src="img/users.png"> Teilnehmer: Quantität & Qualität</h1>
+
+                    <p class="lead mb-5">Zum Abschluss zeige ich euch einige Statistiken zu den einzelnen Teilnehmern.
+                        Hierzu
+                        muss gesagt werden, dass bei der Auswertung aus datenschutzrechtlichen Gründen beliebige
+                        Vornamen an die Teilnehmer verteilt wurden. In diesem Kapitel geht es darum, die
+                        Verhaltensmuster von verschiedenen Teilnehmern zu vergleichen.</p>
+
+                    <h5 class="my-3">Anzahl Beiträge pro Teilnehmer</h5>
+
+                    <p class="lead mb-5">Bei der ersten Visualisierung geht es um die Aktivität der Teilnehmer. Dabei
+                        wurden
+                        die Anzahl an schriftlichen Beiträgen, also ohne die Stimmen, zusammengerechnet.</p>
+
+                    <!-- Barchart visualization -> amount of contributions per user -->
+
+                    <div class="text-center mb-5 p-2 shadow-lg" id="barChart1"></div>
+
+                    <p class="lead mb-5">Die skalierbaren blauen Balken unterhalb des Balkendiagramms erlauben es, die
+                        Range
+                        der Anzahl Beiträge zu verändern. Jedoch muss beachtet werden, dass das Balkendiagramm bei
+                        geringer Anzahl von Beiträgen aufgrund der Grösse kaum mehr lesbar ist. Aussagekräftiger wird
+                        das Ganze, wenn man die Range auf eine zweistellige minimale Beitragszahl eingrenzt.<br><br>Die
+                        auffallendste Erkenntnis auf den ersten Blick ist definitiv der deutliche "1. Rang", der vom
+                        Teilnehmer mit dem Zufallsnamen Florian belegt wird. Er bildet somit auch die grosse Ausnahme
+                        bei der Anzahl an Beiträgen. Mit seinen 256 Kommentaren kommt Florian fast auf die gleiche
+                        Anzahl wie die die Teilnehmer der Ränge 2 bis 6 zusammen. Florian hat also gut ein Fünftel aller
+                        Beiträge der gesamten Umfrage verfasst. </p>
+
+                    <h5 class="my-3">Beliebtheit der aktivsten Teilnehmer</h5>
+
+                    <p class="lead mb-5">Die Redewendung "Qualität vor Quantität" hat insbesondere bei politischen
+                        Diskussionen ihre Berechtigung. Deshalb soll die Qualität der Beiträge auch einen wichtigen
+                        Bestandteil dieser Auswertung bilden. Gemessen wurde diese Beliebtheit mit dem Zusammenfassen
+                        aller erhaltenen Feedbacks in Form von Stimmen und Argumenten (Pro oder Contra). Aufgrund der
+                        statistischen Relevanz werden ausschliesslich Teilnehmer mit mehr als 10 Beiträgen und mehr als
+                        20 Feedbacks aufgelistet.<br><br>Die "Donut Charts" sollen aufzeigen, wie gut die Beiträge
+                        dieser Teilnehmer bei den Leuten ankamen. Alle positiven Feedbacks sind in Grün dargestellt, die
+                        negativen Feedbacks in Rot. Bei der grauen Fläche handelt es sich um die Anzahl gemischter
+                        Feedbacks. Die Reihenfolge und die Grösse der Diagramme ist nach der Gesamtzahl der erhaltenen
+                        Feedbacks absteigend sortiert.</p>
+
+                    <!-- Donut charts visualization -> Popularity of the most active users -->
+
+                    <div class="text-center my-5 p-3 shadow-lg">
+                        <div class="row mb-5">
+                            <div class="col">
+                                <p class="text-center">Florian</p>
+                                <div id="donut1"></div>
+                            </div>
+                            <div class="col">
+                                <p class="text-center">Jennifer</p>
+                                <div id="donut2"></div>
+                            </div>
+                            <div class="col">
+                                <p class="text-center">Patricia</p>
+                                <div id="donut3"></div>
+                            </div>
+                        </div>
+
+                        <div class="row mb-5">
+                            <div class="col">
+                                <p class="text-center">Quentin</p>
+                                <div id="donut4"></div>
+                            </div>
+                            <div class="col">
+                                <p class="text-center">Valentine</p>
+                                <div id="donut5"></div>
+                            </div>
+                            <div class="col">
+                                <p class="text-center">Sara</p>
+                                <div id="donut6"></div>
+                            </div>
+                        </div>
+
+                        <div class="row mb-5">
+                            <div class="col">
+                                <p class="text-center">Luc</p>
+                                <div id="donut7"></div>
+                            </div>
+                            <div class="col">
+                                <p class="text-center">Estelle</p>
+                                <div id="donut8"></div>
+                            </div>
+                            <div class="col">
+                                <p class="text-center">Sacha</p>
+                                <div id="donut9"></div>
+                            </div>
+                            <div class="col">
+                                <p class="text-center">Baptiste</p>
+                                <div id="donut10"></div>
+                            </div>
+                        </div>
+
+                        <div class="row mb-5">
+                            <div class="col">
+                                <p class="text-center">Ana</p>
+                                <div id="donut11"></div>
+                            </div>
+                            <div class="col">
+                                <p class="text-center">Paul</p>
+                                <div id="donut12"></div>
+                            </div>
+                            <div class="col">
+                                <p class="text-center">Marion</p>
+                                <div id="donut13"></div>
+                            </div>
+                            <div class="col">
+                                <p class="text-center">Elodie</p>
+                                <div id="donut14"></div>
+                            </div>
+                            <div class="col">
+                                <p class="text-center">Marine</p>
+                                <div id="donut15"></div>
+                            </div>
+                        </div>
+
+                        <div class="row mb-5">
+                            <div class="col">
+                                <p class="text-center">Filipe</p>
+                                <div id="donut16"></div>
+                            </div>
+                            <div class="col">
+                                <p class="text-center">Jimmy</p>
+                                <div id="donut17"></div>
+                            </div>
+                            <div class="col">
+                                <p class="text-center">Maeva</p>
+                                <div id="donut18"></div>
+                            </div>
+                            <div class="col">
+                                <p class="text-center">Nathalie</p>
+                                <div id="donut19"></div>
+                            </div>
+                            <div class="col">
+                                <p class="text-center">Finn</p>
+                                <div id="donut20"></div>
+                            </div>
+                            <div class="col">
+                                <p class="text-center">Romain</p>
+                                <div id="donut21"></div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col">
+                            </div>
+                            <div class="col">
+                            </div>
+                            <div class="col">
+                                <p class="text-center">Fiona</p>
+                                <div id="donut22"></div>
+                            </div>
+                            <div class="col">
+                                <p class="text-center">Alex</p>
+                                <div id="donut23"></div>
+                            </div>
+                            <div class="col">
+                            </div>
+                            <div class="col">
+                            </div>
+                        </div>
+                    </div>
+                    <p class="lead mb-5">Eine Erkenntnis aus der Visualisierung ist zunächst einmal, dass der Grossteil
+                        aller
+                        Teilnehmer mehrheitlich positive Feedbacks erhalten hat. Nur bei den drei Teilnehmern und
+                        Teilnehmerinnen Patricia, Jimmy und Romain überwiegt die positive Einschätzung der Bewertungen
+                        nicht. Bei einigen ist der Unterschied von Negativ und Positiv eher gering (z.B. Jennifer oder
+                        Luc). Gemessen an den positiven Feedbacks in Prozent aller erhaltenen Feedbacks schneiden Fiona,
+                        Nathalie und Florian am besten ab. Die beiden erstgenannten haben jedoch eher weniger
+                        Aussagekraft, da die absoluten Zahlen geringer sind.<br><br></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="text-center m-5 p-5">
+            <h4>Patrick Garbely</h4>
+            <h4 class="mb-4">CH - 3902 Glis</h4>
+            <a href="mailto:patrickgarbely@hotmail.com" target="_blank">
+                <img title="XXX" src="img/mail.png">
+            </a>
+            <a href="https://www.linkedin.com/in/patrick-garbely/" target="_blank">
+                <img title="XXX" src="img/linkedin.png">
+            </a>
+            <a href="https://github.com/garbely" target="_blank">
+                <img title="XXX" src="img/github.png">
+            </a><br><br>
+            <p>Navbar icons by <a href="https://www.flaticon.com/">flaticon</a></p>
+        </div>
+    </footer>
+
+    <script>
+
+        /*
+            All Vega and Vega-lite charts made with the help of the 
+            official documentary and examples pages:
+            - https://vega.github.io/vega/docs/
+            - https://vega.github.io/vega/examples/
+            - https://vega.github.io/vega-lite/docs/
+            - https://vega.github.io/vega-lite/examples/           
+        */
+
+        var pieChart1 = {
+            "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+            "background": "#f8f9fa",
+            "data": {
+                "url": "data/language/postsPerLanguage.csv"
+            },
+            "mark": {
+                "type": "arc"
+            },
+            "encoding": {
+                "theta": { "field": "Beiträge", "type": "quantitative" },
+                "color": { "field": "Sprache", "type": "nominal" },
+                "tooltip": { "field": "Beiträge" }
+            },
+            "view": { "stroke": null }
+        };
+
+        // Embed the visualization in the container with id `vis`
+        vegaEmbed('#pieChart1', pieChart1, { "actions": false });
+
+
+        var pieChart2 = {
+            "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+            "background": "#f8f9fa",
+            "data": {
+                "url": "data/language/userPerLanguage.csv"
+            },
+            "mark": {
+                "type": "arc"
+            },
+            "encoding": {
+                "theta": { "field": "Teilnehmer", "type": "quantitative" },
+                "color": { "field": "Sprache", "type": "nominal" },
+                "tooltip": { "field": "Teilnehmer" }
+            },
+            "view": { "stroke": null }
+        };
+
+        vegaEmbed('#pieChart2', pieChart2, { "actions": false });
+
+
+        var pieChart3 = {
+            "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+            "background": "#f8f9fa",
+            "data": {
+                "url": "data/language/postsPerUserLanguage.csv"
+            },
+            "mark": {
+                "type": "arc"
+            },
+            "encoding": {
+                "theta": { "field": "avg_beiträge", "type": "quantitative" },
+                "color": { "field": "Sprache", "type": "nominal" },
+                "tooltip": { "field": "avg_beiträge" }
+            },
+            "view": { "stroke": null }
+        };
+
+
+        vegaEmbed('#pieChart3', pieChart3, { "actions": false });
+
+
+        var barChart1 = {
+            "$schema": "https://vega.github.io/schema/vega/v5.json",
+            "width": 630,
+            "height": 530,
+
+            "signals": [
+                {
+                    "name": "Minimum_Posts", "value": 20,
+                    "bind": { "input": "range", "min": 1, "max": 65, "step": 1 }
+                },
+                {
+                    "name": "Maximum_Posts", "value": 300,
+                    "bind": { "input": "range", "min": 1, "max": 300, "step": 1 }
+                },
+                {
+                    "name": "tooltip",
+                    "value": {},
+                    "on": [
+                        { "events": "rect:mouseover", "update": "datum" },
+                        { "events": "rect:mouseout", "update": "{}" }
+                    ]
+                }
+            ],
+
+            "data": [
+                {
+                    "name": "table",
+                    "url": "data/user/UserPosts.json",
+                    "transform": [
+                        {
+                            "type": "filter",
+                            "expr": "datum.posts >= Minimum_Posts"
+                        },
+                        {
+                            "type": "filter",
+                            "expr": "datum.posts <= Maximum_Posts"
+                        }
+                    ]
+                }
+            ],
+
+            "marks": [
+                {
+                    "type": "rect",
+                    "from": { "data": "table" },
+                    "encode": {
+                        "update": {
+                            "x": { "scale": "x", "value": 0 },
+                            "x2": { "scale": "x", "field": "posts" },
+                            "y": { "scale": "y", "field": "user" },
+                            "height": { "scale": "y", "band": 1 },
+                            "fill": { "value": "orange" },
+                            "stroke": { "value": "black" }
+                        },
+                        "hover": {
+                            "fill": { "value": "#cc0000" },
+                            "tooltip": { "signal": "datum.posts + ' Beiträge'" }
+                        }
+                    }
+                }
+            ],
+
+            "scales": [
+                {
+                    "name": "x",
+                    "type": "linear",
+                    "domain": { "data": "table", "field": "posts" },
+                    "range": "width",
+                    "nice": true
+                },
+                {
+                    "name": "y",
+                    "type": "band",
+                    "domain": {
+                        "data": "table", "field": "user",
+                        "sort": { "op": "max", "field": "posts", "order": "descending" }
+                    },
+                    "range": "height",
+                    "padding": 0.5
+                }
+            ],
+
+            "axes": [
+                {
+                    "scale": "y",
+                    "orient": "left",
+                    "labelFontSize": 20
+                }
+            ]
+        };
+
+
+        vegaEmbed('#barChart1', barChart1, { "actions": false });
+
+
+        // Create sentiment color scheme
+        vega.scheme('sentimentColors', ['#ff726f', '#D3D3D3', '#0f0']);
+
+        var barchart2 = {
+            "$schema": "https://vega.github.io/schema/vega/v5.json",
+            "width": 1000,
+            "height": 2000,
+
+            "data": [
+                {
+                    "name": "table",
+                    "url": "data/user/MostPopular.json"
+                }
+            ],
+
+            "scales": [
+                {
+                    "name": "yscale",
+                    "type": "band",
+                    "domain": { "data": "table", "field": "user" },
+                    "range": "height",
+                    "padding": 0.39
+                },
+                {
+                    "name": "xscale",
+                    "type": "linear",
+                    "domain": { "data": "table", "field": "value" }, "range": "width",
+                    "round": true,
+                    "zero": true,
+                    "nice": true
+                },
+                {
+                    "name": "color",
+                    "type": "ordinal",
+                    "domain": { "data": "table", "field": "sentiment" },
+                    "range": { "scheme": "sentimentColors" }
+                }
+            ],
+
+            "axes": [
+                { "orient": "left", "scale": "yscale", "tickSize": 0, "labelPadding": 60, "zindex": 1, "labelFontSize": 25 }
+            ],
+
+            "marks": [
+                {
+                    "type": "group",
+
+                    "from": {
+                        "facet": {
+                            "data": "table",
+                            "name": "facet",
+                            "groupby": "user"
+                        }
+                    },
+
+                    "encode": {
+                        "enter": {
+                            "y": { "scale": "yscale", "field": "user" }
+                        }
+                    },
+
+                    "signals": [
+                        { "name": "height", "update": "bandwidth('yscale')" }
+                    ],
+
+                    "scales": [
+                        {
+                            "name": "pos",
+                            "type": "band",
+                            "range": "height",
+                            "domain": { "data": "facet", "field": "sentiment" }
+                        }
+                    ],
+
+                    "marks": [
+                        {
+                            "name": "bars",
+                            "from": { "data": "facet" },
+                            "type": "rect",
+                            "encode": {
+                                "enter": {
+                                    "y": { "scale": "pos", "field": "sentiment" },
+                                    "height": { "scale": "pos", "band": 1 },
+                                    "x": { "scale": "xscale", "field": "value" },
+                                    "x2": { "scale": "xscale", "value": 0 },
+                                    "fill": { "scale": "color", "field": "sentiment" },
+                                    "stroke": { "value": "black" },
+                                    "strokeWidth": { "value": 0.5 },
+
+                                }
+                            }
+                        },
+                        {
+                            "type": "text",
+                            "from": { "data": "bars" },
+                            "encode": {
+                                "enter": {
+                                    "x": { "field": "x", "offset": -5 },
+                                    "y": { "field": "y", "offset": { "field": "height", "mult": 0.5 } },
+                                    "fill": [
+                                        { "value": "black" }
+                                    ],
+                                    "align": { "value": "right" },
+                                    "baseline": { "value": "middle" },
+                                    "text": { "field": "datum.value" }
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        };
+
+
+        vegaEmbed('#barchart2', barchart2, { "actions": false });
+
+
+        var donut_1_florian = {
+            "$schema": "https://vega.github.io/schema/vega/v5.json",
+            "width": 163.5,
+            "height": 163.5,
+            "autosize": "none", "padding": 10,
+
+            "data": [
+                {
+                    "name": "table",
+                    "url": "data/user/donutCharts/1_florian.json",
+                    "transform": [
+                        {
+                            "type": "pie",
+                            "field": "value",
+                            "startAngle": 0,
+                            "endAngle": 6.29
+                        }
+                    ]
+                }
+            ],
+
+            "scales": [
+                {
+                    "name": "color",
+                    "type": "ordinal",
+                    "domain": { "data": "table", "field": "sentiment" },
+                    "range": { "scheme": "sentimentColors" }
+                }
+            ],
+
+            "marks": [
+                {
+                    "type": "arc",
+                    "from": { "data": "table" },
+                    "encode": {
+                        "enter": {
+                            "fill": { "scale": "color", "field": "sentiment" },
+                            "x": { "signal": "width / 2" },
+                            "y": { "signal": "height / 2" }
+                        },
+                        "update": {
+                            "startAngle": { "field": "startAngle" },
+                            "endAngle": { "field": "endAngle" },
+                            "innerRadius": { "signal": "width / 4" },
+                            "cornerRadius": { "value": 10 },
+                            "outerRadius": { "signal": "width / 2" }
+                        },
+                        "hover": {
+                            "tooltip": { "signal": "datum.sentiment + 'e Feedbacks: ' + datum.value" }
+                        }
+                    }
+                }
+            ]
+        };
+
+
+        vegaEmbed('#donut1', donut_1_florian, { "actions": false });
+
+
+        var donut_2_jennifer = {
+            "$schema": "https://vega.github.io/schema/vega/v5.json",
+            "width": 158.5,
+            "height": 158.5,
+            "autosize": "none", "padding": 10,
+
+            "data": [
+                {
+                    "name": "table",
+                    "url": "data/user/donutCharts/2_jennifer.json",
+                    "transform": [
+                        {
+                            "type": "pie",
+                            "field": "value",
+                            "startAngle": 0,
+                            "endAngle": 6.29
+                        }
+                    ]
+                }
+            ],
+
+            "scales": [
+                {
+                    "name": "color",
+                    "type": "ordinal",
+                    "domain": { "data": "table", "field": "sentiment" },
+                    "range": { "scheme": "sentimentColors" }
+                }
+            ],
+
+            "marks": [
+                {
+                    "type": "arc",
+                    "from": { "data": "table" },
+                    "encode": {
+                        "enter": {
+                            "fill": { "scale": "color", "field": "sentiment" },
+                            "x": { "signal": "width / 2" },
+                            "y": { "signal": "height / 2" }
+                        },
+                        "update": {
+                            "startAngle": { "field": "startAngle" },
+                            "endAngle": { "field": "endAngle" },
+                            "innerRadius": { "signal": "width / 4" },
+                            "cornerRadius": { "value": 10 },
+                            "outerRadius": { "signal": "width / 2" }
+                        },
+                        "hover": {
+                            "tooltip": { "signal": "datum.sentiment + 'e Feedbacks: ' + datum.value" }
+                        }
+                    }
+                }
+            ]
+        };
+
+
+        vegaEmbed('#donut2', donut_2_jennifer, { "actions": false });
+
+
+        var donut_3_patricia = {
+            "$schema": "https://vega.github.io/schema/vega/v5.json",
+            "width": 155,
+            "height": 155,
+            "autosize": "none", "padding": 10,
+
+            "data": [
+                {
+                    "name": "table",
+                    "url": "data/user/donutCharts/3_patricia.json",
+                    "transform": [
+                        {
+                            "type": "pie",
+                            "field": "value",
+                            "startAngle": 0,
+                            "endAngle": 6.29
+                        }
+                    ]
+                }
+            ],
+
+            "scales": [
+                {
+                    "name": "color",
+                    "type": "ordinal",
+                    "domain": { "data": "table", "field": "sentiment" },
+                    "range": { "scheme": "sentimentColors" }
+                }
+            ],
+
+            "marks": [
+                {
+                    "type": "arc",
+                    "from": { "data": "table" },
+                    "encode": {
+                        "enter": {
+                            "fill": { "scale": "color", "field": "sentiment" },
+                            "x": { "signal": "width / 2" },
+                            "y": { "signal": "height / 2" }
+                        },
+                        "update": {
+                            "startAngle": { "field": "startAngle" },
+                            "endAngle": { "field": "endAngle" },
+                            "innerRadius": { "signal": "width / 4" },
+                            "cornerRadius": { "value": 10 },
+                            "outerRadius": { "signal": "width / 2" }
+                        },
+                        "hover": {
+                            "tooltip": { "signal": "datum.sentiment + 'e Feedbacks: ' + datum.value" }
+                        }
+                    }
+                }
+            ]
+        };
+
+
+        vegaEmbed('#donut3', donut_3_patricia, { "actions": false });
+
+
+        var donut_4_quentin = {
+            "$schema": "https://vega.github.io/schema/vega/v5.json",
+            "width": 139,
+            "height": 139,
+            "autosize": "none", "padding": 10,
+
+            "data": [
+                {
+                    "name": "table",
+                    "url": "data/user/donutCharts/4_quentin.json",
+                    "transform": [
+                        {
+                            "type": "pie",
+                            "field": "value",
+                            "startAngle": 0,
+                            "endAngle": 6.29
+                        }
+                    ]
+                }
+            ],
+
+            "scales": [
+                {
+                    "name": "color",
+                    "type": "ordinal",
+                    "domain": { "data": "table", "field": "sentiment" },
+                    "range": { "scheme": "sentimentColors" }
+                }
+            ],
+
+            "marks": [
+                {
+                    "type": "arc",
+                    "from": { "data": "table" },
+                    "encode": {
+                        "enter": {
+                            "fill": { "scale": "color", "field": "sentiment" },
+                            "x": { "signal": "width / 2" },
+                            "y": { "signal": "height / 2" }
+                        },
+                        "update": {
+                            "startAngle": { "field": "startAngle" },
+                            "endAngle": { "field": "endAngle" },
+                            "innerRadius": { "signal": "width / 4" },
+                            "cornerRadius": { "value": 10 },
+                            "outerRadius": { "signal": "width / 2" }
+                        },
+                        "hover": {
+                            "tooltip": { "signal": "datum.sentiment + 'e Feedbacks: ' + datum.value" }
+                        }
+                    }
+                }
+            ]
+        };
+
+
+        vegaEmbed('#donut4', donut_4_quentin, { "actions": false });
+
+
+        var donut_5_valentine = {
+            "$schema": "https://vega.github.io/schema/vega/v5.json",
+            "width": 130,
+            "height": 130,
+            "autosize": "none", "padding": 10,
+
+            "data": [
+                {
+                    "name": "table",
+                    "url": "data/user/donutCharts/5_valentine.json",
+                    "transform": [
+                        {
+                            "type": "pie",
+                            "field": "value",
+                            "startAngle": 0,
+                            "endAngle": 6.29
+                        }
+                    ]
+                }
+            ],
+
+            "scales": [
+                {
+                    "name": "color",
+                    "type": "ordinal",
+                    "domain": { "data": "table", "field": "sentiment" },
+                    "range": { "scheme": "sentimentColors" }
+                }
+            ],
+
+            "marks": [
+                {
+                    "type": "arc",
+                    "from": { "data": "table" },
+                    "encode": {
+                        "enter": {
+                            "fill": { "scale": "color", "field": "sentiment" },
+                            "x": { "signal": "width / 2" },
+                            "y": { "signal": "height / 2" }
+                        },
+                        "update": {
+                            "startAngle": { "field": "startAngle" },
+                            "endAngle": { "field": "endAngle" },
+                            "innerRadius": { "signal": "width / 4" },
+                            "cornerRadius": { "value": 10 },
+                            "outerRadius": { "signal": "width / 2" }
+                        },
+                        "hover": {
+                            "tooltip": { "signal": "datum.sentiment + 'e Feedbacks: ' + datum.value" }
+                        }
+                    }
+                }
+            ]
+        };
+
+
+        vegaEmbed('#donut5', donut_5_valentine, { "actions": false });
+
+
+        var donut_6_sara = {
+            "$schema": "https://vega.github.io/schema/vega/v5.json",
+            "width": 103,
+            "height": 103,
+            "autosize": "none", "padding": 10,
+
+            "data": [
+                {
+                    "name": "table",
+                    "url": "data/user/donutCharts/6_sara.json",
+                    "transform": [
+                        {
+                            "type": "pie",
+                            "field": "value",
+                            "startAngle": 0,
+                            "endAngle": 6.29
+                        }
+                    ]
+                }
+            ],
+
+            "scales": [
+                {
+                    "name": "color",
+                    "type": "ordinal",
+                    "domain": { "data": "table", "field": "sentiment" },
+                    "range": { "scheme": "sentimentColors" }
+                }
+            ],
+
+            "marks": [
+                {
+                    "type": "arc",
+                    "from": { "data": "table" },
+                    "encode": {
+                        "enter": {
+                            "fill": { "scale": "color", "field": "sentiment" },
+                            "x": { "signal": "width / 2" },
+                            "y": { "signal": "height / 2" }
+                        },
+                        "update": {
+                            "startAngle": { "field": "startAngle" },
+                            "endAngle": { "field": "endAngle" },
+                            "innerRadius": { "signal": "width / 4" },
+                            "cornerRadius": { "value": 10 },
+                            "outerRadius": { "signal": "width / 2" }
+                        },
+                        "hover": {
+                            "tooltip": { "signal": "datum.sentiment + 'e Feedbacks: ' + datum.value" }
+                        }
+                    }
+                }
+            ]
+        };
+
+
+        vegaEmbed('#donut6', donut_6_sara, { "actions": false });
+
+
+        var donut_7_luc = {
+            "$schema": "https://vega.github.io/schema/vega/v5.json",
+            "width": 97.5,
+            "height": 97.5,
+            "autosize": "none", "padding": 10,
+
+            "data": [
+                {
+                    "name": "table",
+                    "url": "data/user/donutCharts/7_luc.json",
+                    "transform": [
+                        {
+                            "type": "pie",
+                            "field": "value",
+                            "startAngle": 0,
+                            "endAngle": 6.29
+                        }
+                    ]
+                }
+            ],
+
+            "scales": [
+                {
+                    "name": "color",
+                    "type": "ordinal",
+                    "domain": { "data": "table", "field": "sentiment" },
+                    "range": { "scheme": "sentimentColors" }
+                }
+            ],
+
+            "marks": [
+                {
+                    "type": "arc",
+                    "from": { "data": "table" },
+                    "encode": {
+                        "enter": {
+                            "fill": { "scale": "color", "field": "sentiment" },
+                            "x": { "signal": "width / 2" },
+                            "y": { "signal": "height / 2" }
+                        },
+                        "update": {
+                            "startAngle": { "field": "startAngle" },
+                            "endAngle": { "field": "endAngle" },
+                            "innerRadius": { "signal": "width / 4" },
+                            "cornerRadius": { "value": 10 },
+                            "outerRadius": { "signal": "width / 2" }
+                        },
+                        "hover": {
+                            "tooltip": { "signal": "datum.sentiment + 'e Feedbacks: ' + datum.value" }
+                        }
+                    }
+                }
+            ]
+        };
+
+
+        vegaEmbed('#donut7', donut_7_luc, { "actions": false });
+
+
+        var donut_8_estelle = {
+            "$schema": "https://vega.github.io/schema/vega/v5.json",
+            "width": 95,
+            "height": 95,
+            "autosize": "none", "padding": 10,
+
+            "data": [
+                {
+                    "name": "table",
+                    "url": "data/user/donutCharts/8_estelle.json",
+                    "transform": [
+                        {
+                            "type": "pie",
+                            "field": "value",
+                            "startAngle": 0,
+                            "endAngle": 6.29
+                        }
+                    ]
+                }
+            ],
+
+            "scales": [
+                {
+                    "name": "color",
+                    "type": "ordinal",
+                    "domain": { "data": "table", "field": "sentiment" },
+                    "range": { "scheme": "sentimentColors" }
+                }
+            ],
+
+            "marks": [
+                {
+                    "type": "arc",
+                    "from": { "data": "table" },
+                    "encode": {
+                        "enter": {
+                            "fill": { "scale": "color", "field": "sentiment" },
+                            "x": { "signal": "width / 2" },
+                            "y": { "signal": "height / 2" }
+                        },
+                        "update": {
+                            "startAngle": { "field": "startAngle" },
+                            "endAngle": { "field": "endAngle" },
+                            "innerRadius": { "signal": "width / 4" },
+                            "cornerRadius": { "value": 10 },
+                            "outerRadius": { "signal": "width / 2" }
+                        },
+                        "hover": {
+                            "tooltip": { "signal": "datum.sentiment + 'e Feedbacks: ' + datum.value" }
+                        }
+                    }
+                }
+            ]
+        };
+
+
+        vegaEmbed('#donut8', donut_8_estelle, { "actions": false });
+
+
+        var donut_9_sacha = {
+            "$schema": "https://vega.github.io/schema/vega/v5.json",
+            "width": 91.5,
+            "height": 91.5,
+            "autosize": "none", "padding": 10,
+
+            "data": [
+                {
+                    "name": "table",
+                    "url": "data/user/donutCharts/9_sacha.json",
+                    "transform": [
+                        {
+                            "type": "pie",
+                            "field": "value",
+                            "startAngle": 0,
+                            "endAngle": 6.29
+                        }
+                    ]
+                }
+            ],
+
+            "scales": [
+                {
+                    "name": "color",
+                    "type": "ordinal",
+                    "domain": { "data": "table", "field": "sentiment" },
+                    "range": { "scheme": "sentimentColors" }
+                }
+            ],
+
+            "marks": [
+                {
+                    "type": "arc",
+                    "from": { "data": "table" },
+                    "encode": {
+                        "enter": {
+                            "fill": { "scale": "color", "field": "sentiment" },
+                            "x": { "signal": "width / 2" },
+                            "y": { "signal": "height / 2" }
+                        },
+                        "update": {
+                            "startAngle": { "field": "startAngle" },
+                            "endAngle": { "field": "endAngle" },
+                            "innerRadius": { "signal": "width / 4" },
+                            "cornerRadius": { "value": 10 },
+                            "outerRadius": { "signal": "width / 2" }
+                        },
+                        "hover": {
+                            "tooltip": { "signal": "datum.sentiment + 'e Feedbacks: ' + datum.value" }
+                        }
+                    }
+                }
+            ]
+        };
+
+
+        vegaEmbed('#donut9', donut_9_sacha, { "actions": false });
+
+
+        var donut_10_baptiste = {
+            "$schema": "https://vega.github.io/schema/vega/v5.json",
+            "width": 89.5,
+            "height": 89.5,
+            "autosize": "none", "padding": 10,
+
+            "data": [
+                {
+                    "name": "table",
+                    "url": "data/user/donutCharts/10_baptiste.json",
+                    "transform": [
+                        {
+                            "type": "pie",
+                            "field": "value",
+                            "startAngle": 0,
+                            "endAngle": 6.29
+                        }
+                    ]
+                }
+            ],
+
+            "scales": [
+                {
+                    "name": "color",
+                    "type": "ordinal",
+                    "domain": { "data": "table", "field": "sentiment" },
+                    "range": { "scheme": "sentimentColors" }
+                }
+            ],
+
+            "marks": [
+                {
+                    "type": "arc",
+                    "from": { "data": "table" },
+                    "encode": {
+                        "enter": {
+                            "fill": { "scale": "color", "field": "sentiment" },
+                            "x": { "signal": "width / 2" },
+                            "y": { "signal": "height / 2" }
+                        },
+                        "update": {
+                            "startAngle": { "field": "startAngle" },
+                            "endAngle": { "field": "endAngle" },
+                            "innerRadius": { "signal": "width / 4" },
+                            "cornerRadius": { "value": 10 },
+                            "outerRadius": { "signal": "width / 2" }
+                        },
+                        "hover": {
+                            "tooltip": { "signal": "datum.sentiment + 'e Feedbacks: ' + datum.value" }
+                        }
+                    }
+                }
+            ]
+        };
+
+
+        vegaEmbed('#donut10', donut_10_baptiste, { "actions": false });
+
+
+        var donut_11_ana = {
+            "$schema": "https://vega.github.io/schema/vega/v5.json",
+            "width": 89.5,
+            "height": 89.5,
+            "autosize": "none", "padding": 10,
+
+            "data": [
+                {
+                    "name": "table",
+                    "url": "data/user/donutCharts/11_ana.json",
+                    "transform": [
+                        {
+                            "type": "pie",
+                            "field": "value",
+                            "startAngle": 0,
+                            "endAngle": 6.29
+                        }
+                    ]
+                }
+            ],
+
+            "scales": [
+                {
+                    "name": "color",
+                    "type": "ordinal",
+                    "domain": { "data": "table", "field": "sentiment" },
+                    "range": { "scheme": "sentimentColors" }
+                }
+            ],
+
+            "marks": [
+                {
+                    "type": "arc",
+                    "from": { "data": "table" },
+                    "encode": {
+                        "enter": {
+                            "fill": { "scale": "color", "field": "sentiment" },
+                            "x": { "signal": "width / 2" },
+                            "y": { "signal": "height / 2" }
+                        },
+                        "update": {
+                            "startAngle": { "field": "startAngle" },
+                            "endAngle": { "field": "endAngle" },
+                            "innerRadius": { "signal": "width / 4" },
+                            "cornerRadius": { "value": 10 },
+                            "outerRadius": { "signal": "width / 2" }
+                        },
+                        "hover": {
+                            "tooltip": { "signal": "datum.sentiment + 'e Feedbacks: ' + datum.value" }
+                        }
+                    }
+                }
+            ]
+        };
+
+
+        vegaEmbed('#donut11', donut_11_ana, { "actions": false });
+
+
+        var donut_12_paul = {
+            "$schema": "https://vega.github.io/schema/vega/v5.json",
+            "width": 82,
+            "height": 82,
+            "autosize": "none", "padding": 10,
+
+            "data": [
+                {
+                    "name": "table",
+                    "url": "data/user/donutCharts/12_paul.json",
+                    "transform": [
+                        {
+                            "type": "pie",
+                            "field": "value",
+                            "startAngle": 0,
+                            "endAngle": 6.29
+                        }
+                    ]
+                }
+            ],
+
+            "scales": [
+                {
+                    "name": "color",
+                    "type": "ordinal",
+                    "domain": { "data": "table", "field": "sentiment" },
+                    "range": { "scheme": "sentimentColors" }
+                }
+            ],
+
+            "marks": [
+                {
+                    "type": "arc",
+                    "from": { "data": "table" },
+                    "encode": {
+                        "enter": {
+                            "fill": { "scale": "color", "field": "sentiment" },
+                            "x": { "signal": "width / 2" },
+                            "y": { "signal": "height / 2" }
+                        },
+                        "update": {
+                            "startAngle": { "field": "startAngle" },
+                            "endAngle": { "field": "endAngle" },
+                            "innerRadius": { "signal": "width / 4" },
+                            "cornerRadius": { "value": 10 },
+                            "outerRadius": { "signal": "width / 2" }
+                        },
+                        "hover": {
+                            "tooltip": { "signal": "datum.sentiment + 'e Feedbacks: ' + datum.value" }
+                        }
+                    }
+                }
+            ]
+        };
+
+
+        vegaEmbed('#donut12', donut_12_paul, { "actions": false });
+
+
+        var donut_13_marion = {
+            "$schema": "https://vega.github.io/schema/vega/v5.json",
+            "width": 82,
+            "height": 82,
+            "autosize": "none", "padding": 10,
+
+            "data": [
+                {
+                    "name": "table",
+                    "url": "data/user/donutCharts/13_marion.json",
+                    "transform": [
+                        {
+                            "type": "pie",
+                            "field": "value",
+                            "startAngle": 0,
+                            "endAngle": 6.29
+                        }
+                    ]
+                }
+            ],
+
+            "scales": [
+                {
+                    "name": "color",
+                    "type": "ordinal",
+                    "domain": { "data": "table", "field": "sentiment" },
+                    "range": { "scheme": "sentimentColors" }
+                }
+            ],
+
+            "marks": [
+                {
+                    "type": "arc",
+                    "from": { "data": "table" },
+                    "encode": {
+                        "enter": {
+                            "fill": { "scale": "color", "field": "sentiment" },
+                            "x": { "signal": "width / 2" },
+                            "y": { "signal": "height / 2" }
+                        },
+                        "update": {
+                            "startAngle": { "field": "startAngle" },
+                            "endAngle": { "field": "endAngle" },
+                            "innerRadius": { "signal": "width / 4" },
+                            "cornerRadius": { "value": 10 },
+                            "outerRadius": { "signal": "width / 2" }
+                        },
+                        "hover": {
+                            "tooltip": { "signal": "datum.sentiment + 'e Feedbacks: ' + datum.value" }
+                        }
+                    }
+                }
+            ]
+        };
+
+
+        vegaEmbed('#donut13', donut_13_marion, { "actions": false });
+
+
+        var donut_14_elodie = {
+            "$schema": "https://vega.github.io/schema/vega/v5.json",
+            "width": 79.5,
+            "height": 79.5,
+            "autosize": "none", "padding": 10,
+
+            "data": [
+                {
+                    "name": "table",
+                    "url": "data/user/donutCharts/14_elodie.json",
+                    "transform": [
+                        {
+                            "type": "pie",
+                            "field": "value",
+                            "startAngle": 0,
+                            "endAngle": 6.29
+                        }
+                    ]
+                }
+            ],
+
+            "scales": [
+                {
+                    "name": "color",
+                    "type": "ordinal",
+                    "domain": { "data": "table", "field": "sentiment" },
+                    "range": { "scheme": "sentimentColors" }
+                }
+            ],
+
+            "marks": [
+                {
+                    "type": "arc",
+                    "from": { "data": "table" },
+                    "encode": {
+                        "enter": {
+                            "fill": { "scale": "color", "field": "sentiment" },
+                            "x": { "signal": "width / 2" },
+                            "y": { "signal": "height / 2" }
+                        },
+                        "update": {
+                            "startAngle": { "field": "startAngle" },
+                            "endAngle": { "field": "endAngle" },
+                            "innerRadius": { "signal": "width / 4" },
+                            "cornerRadius": { "value": 10 },
+                            "outerRadius": { "signal": "width / 2" }
+                        },
+                        "hover": {
+                            "tooltip": { "signal": "datum.sentiment + 'e Feedbacks: ' + datum.value" }
+                        }
+                    }
+                }
+            ]
+        };
+
+
+        vegaEmbed('#donut14', donut_14_elodie, { "actions": false });
+
+
+        var donut_15_marine = {
+            "$schema": "https://vega.github.io/schema/vega/v5.json",
+            "width": 75.5,
+            "height": 75.5,
+            "autosize": "none", "padding": 10,
+
+            "data": [
+                {
+                    "name": "table",
+                    "url": "data/user/donutCharts/15_marine.json",
+                    "transform": [
+                        {
+                            "type": "pie",
+                            "field": "value",
+                            "startAngle": 0,
+                            "endAngle": 6.29
+                        }
+                    ]
+                }
+            ],
+
+            "scales": [
+                {
+                    "name": "color",
+                    "type": "ordinal",
+                    "domain": { "data": "table", "field": "sentiment" },
+                    "range": { "scheme": "sentimentColors" }
+                }
+            ],
+
+            "marks": [
+                {
+                    "type": "arc",
+                    "from": { "data": "table" },
+                    "encode": {
+                        "enter": {
+                            "fill": { "scale": "color", "field": "sentiment" },
+                            "x": { "signal": "width / 2" },
+                            "y": { "signal": "height / 2" }
+                        },
+                        "update": {
+                            "startAngle": { "field": "startAngle" },
+                            "endAngle": { "field": "endAngle" },
+                            "innerRadius": { "signal": "width / 4" },
+                            "cornerRadius": { "value": 10 },
+                            "outerRadius": { "signal": "width / 2" }
+                        },
+                        "hover": {
+                            "tooltip": { "signal": "datum.sentiment + 'e Feedbacks: ' + datum.value" }
+                        }
+                    }
+                }
+            ]
+        };
+
+
+        vegaEmbed('#donut15', donut_15_marine, { "actions": false });
+
+
+        var donut_16_filipe = {
+            "$schema": "https://vega.github.io/schema/vega/v5.json",
+            "width": 75,
+            "height": 75,
+            "autosize": "none", "padding": 10,
+
+            "data": [
+                {
+                    "name": "table",
+                    "url": "data/user/donutCharts/16_filipe.json",
+                    "transform": [
+                        {
+                            "type": "pie",
+                            "field": "value",
+                            "startAngle": 0,
+                            "endAngle": 6.29
+                        }
+                    ]
+                }
+            ],
+
+            "scales": [
+                {
+                    "name": "color",
+                    "type": "ordinal",
+                    "domain": { "data": "table", "field": "sentiment" },
+                    "range": { "scheme": "sentimentColors" }
+                }
+            ],
+
+            "marks": [
+                {
+                    "type": "arc",
+                    "from": { "data": "table" },
+                    "encode": {
+                        "enter": {
+                            "fill": { "scale": "color", "field": "sentiment" },
+                            "x": { "signal": "width / 2" },
+                            "y": { "signal": "height / 2" }
+                        },
+                        "update": {
+                            "startAngle": { "field": "startAngle" },
+                            "endAngle": { "field": "endAngle" },
+                            "innerRadius": { "signal": "width / 4" },
+                            "cornerRadius": { "value": 10 },
+                            "outerRadius": { "signal": "width / 2" }
+                        },
+                        "hover": {
+                            "tooltip": { "signal": "datum.sentiment + 'e Feedbacks: ' + datum.value" }
+                        }
+                    }
+                }
+            ]
+        };
+
+
+        vegaEmbed('#donut16', donut_16_filipe, { "actions": false });
+
+
+        var donut_17_jimmy = {
+            "$schema": "https://vega.github.io/schema/vega/v5.json",
+            "width": 74.5,
+            "height": 74.5,
+            "autosize": "none", "padding": 10,
+
+            "data": [
+                {
+                    "name": "table",
+                    "url": "data/user/donutCharts/17_jimmy.json",
+                    "transform": [
+                        {
+                            "type": "pie",
+                            "field": "value",
+                            "startAngle": 0,
+                            "endAngle": 6.29
+                        }
+                    ]
+                }
+            ],
+
+            "scales": [
+                {
+                    "name": "color",
+                    "type": "ordinal",
+                    "domain": { "data": "table", "field": "sentiment" },
+                    "range": { "scheme": "sentimentColors" }
+                }
+            ],
+
+            "marks": [
+                {
+                    "type": "arc",
+                    "from": { "data": "table" },
+                    "encode": {
+                        "enter": {
+                            "fill": { "scale": "color", "field": "sentiment" },
+                            "x": { "signal": "width / 2" },
+                            "y": { "signal": "height / 2" }
+                        },
+                        "update": {
+                            "startAngle": { "field": "startAngle" },
+                            "endAngle": { "field": "endAngle" },
+                            "innerRadius": { "signal": "width / 4" },
+                            "cornerRadius": { "value": 10 },
+                            "outerRadius": { "signal": "width / 2" }
+                        },
+                        "hover": {
+                            "tooltip": { "signal": "datum.sentiment + 'e Feedbacks: ' + datum.value" }
+                        }
+                    }
+                }
+            ]
+        };
+
+
+        vegaEmbed('#donut17', donut_17_jimmy, { "actions": false });
+
+
+        var donut_18_maeva = {
+            "$schema": "https://vega.github.io/schema/vega/v5.json",
+            "width": 67,
+            "height": 67,
+            "autosize": "none", "padding": 10,
+
+            "data": [
+                {
+                    "name": "table",
+                    "url": "data/user/donutCharts/18_maeva.json",
+                    "transform": [
+                        {
+                            "type": "pie",
+                            "field": "value",
+                            "startAngle": 0,
+                            "endAngle": 6.29
+                        }
+                    ]
+                }
+            ],
+
+            "scales": [
+                {
+                    "name": "color",
+                    "type": "ordinal",
+                    "domain": { "data": "table", "field": "sentiment" },
+                    "range": { "scheme": "sentimentColors" }
+                }
+            ],
+
+            "marks": [
+                {
+                    "type": "arc",
+                    "from": { "data": "table" },
+                    "encode": {
+                        "enter": {
+                            "fill": { "scale": "color", "field": "sentiment" },
+                            "x": { "signal": "width / 2" },
+                            "y": { "signal": "height / 2" }
+                        },
+                        "update": {
+                            "startAngle": { "field": "startAngle" },
+                            "endAngle": { "field": "endAngle" },
+                            "innerRadius": { "signal": "width / 4" },
+                            "cornerRadius": { "value": 10 },
+                            "outerRadius": { "signal": "width / 2" }
+                        },
+                        "hover": {
+                            "tooltip": { "signal": "datum.sentiment + 'e Feedbacks: ' + datum.value" }
+                        }
+                    }
+                }
+            ]
+        };
+
+
+        vegaEmbed('#donut18', donut_18_maeva, { "actions": false });
+
+
+        var donut_19_nathalie = {
+            "$schema": "https://vega.github.io/schema/vega/v5.json",
+            "width": 65.5,
+            "height": 65.5,
+            "autosize": "none", "padding": 10,
+
+            "data": [
+                {
+                    "name": "table",
+                    "url": "data/user/donutCharts/19_nathalie.json",
+                    "transform": [
+                        {
+                            "type": "pie",
+                            "field": "value",
+                            "startAngle": 0,
+                            "endAngle": 6.29
+                        }
+                    ]
+                }
+            ],
+
+            "scales": [
+                {
+                    "name": "color",
+                    "type": "ordinal",
+                    "domain": { "data": "table", "field": "sentiment" },
+                    "range": { "scheme": "sentimentColors" }
+                }
+            ],
+
+            "marks": [
+                {
+                    "type": "arc",
+                    "from": { "data": "table" },
+                    "encode": {
+                        "enter": {
+                            "fill": { "scale": "color", "field": "sentiment" },
+                            "x": { "signal": "width / 2" },
+                            "y": { "signal": "height / 2" }
+                        },
+                        "update": {
+                            "startAngle": { "field": "startAngle" },
+                            "endAngle": { "field": "endAngle" },
+                            "innerRadius": { "signal": "width / 4" },
+                            "cornerRadius": { "value": 10 },
+                            "outerRadius": { "signal": "width / 2" }
+                        },
+                        "hover": {
+                            "tooltip": { "signal": "datum.sentiment + 'e Feedbacks: ' + datum.value" }
+                        }
+                    }
+                }
+            ]
+        };
+
+
+        vegaEmbed('#donut19', donut_19_nathalie, { "actions": false });
+
+
+        var donut_20_finn = {
+            "$schema": "https://vega.github.io/schema/vega/v5.json",
+            "width": 65,
+            "height": 65,
+            "autosize": "none", "padding": 10,
+
+            "data": [
+                {
+                    "name": "table",
+                    "url": "data/user/donutCharts/20_finn.json",
+                    "transform": [
+                        {
+                            "type": "pie",
+                            "field": "value",
+                            "startAngle": 0,
+                            "endAngle": 6.29
+                        }
+                    ]
+                }
+            ],
+
+            "scales": [
+                {
+                    "name": "color",
+                    "type": "ordinal",
+                    "domain": { "data": "table", "field": "sentiment" },
+                    "range": { "scheme": "sentimentColors" }
+                }
+            ],
+
+            "marks": [
+                {
+                    "type": "arc",
+                    "from": { "data": "table" },
+                    "encode": {
+                        "enter": {
+                            "fill": { "scale": "color", "field": "sentiment" },
+                            "x": { "signal": "width / 2" },
+                            "y": { "signal": "height / 2" }
+                        },
+                        "update": {
+                            "startAngle": { "field": "startAngle" },
+                            "endAngle": { "field": "endAngle" },
+                            "innerRadius": { "signal": "width / 4" },
+                            "cornerRadius": { "value": 10 },
+                            "outerRadius": { "signal": "width / 2" }
+                        },
+                        "hover": {
+                            "tooltip": { "signal": "datum.sentiment + 'e Feedbacks: ' + datum.value" }
+                        }
+                    }
+                }
+            ]
+        };
+
+
+        vegaEmbed('#donut20', donut_20_finn, { "actions": false });
+
+
+        var donut_21_romain = {
+            "$schema": "https://vega.github.io/schema/vega/v5.json",
+            "width": 64.5,
+            "height": 64.5,
+            "autosize": "none", "padding": 10,
+
+            "data": [
+                {
+                    "name": "table",
+                    "url": "data/user/donutCharts/21_romain.json",
+                    "transform": [
+                        {
+                            "type": "pie",
+                            "field": "value",
+                            "startAngle": 0,
+                            "endAngle": 6.29
+                        }
+                    ]
+                }
+            ],
+
+            "scales": [
+                {
+                    "name": "color",
+                    "type": "ordinal",
+                    "domain": { "data": "table", "field": "sentiment" },
+                    "range": { "scheme": "sentimentColors" }
+                }
+            ],
+
+            "marks": [
+                {
+                    "type": "arc",
+                    "from": { "data": "table" },
+                    "encode": {
+                        "enter": {
+                            "fill": { "scale": "color", "field": "sentiment" },
+                            "x": { "signal": "width / 2" },
+                            "y": { "signal": "height / 2" }
+                        },
+                        "update": {
+                            "startAngle": { "field": "startAngle" },
+                            "endAngle": { "field": "endAngle" },
+                            "innerRadius": { "signal": "width / 4" },
+                            "cornerRadius": { "value": 10 },
+                            "outerRadius": { "signal": "width / 2" }
+                        },
+                        "hover": {
+                            "tooltip": { "signal": "datum.sentiment + 'e Feedbacks: ' + datum.value" }
+                        }
+                    }
+                }
+            ]
+        };
+
+
+        vegaEmbed('#donut21', donut_21_romain, { "actions": false });
+
+
+        var donut_22_fiona = {
+            "$schema": "https://vega.github.io/schema/vega/v5.json",
+            "width": 63.5,
+            "height": 63.5,
+            "autosize": "none", "padding": 10,
+
+            "data": [
+                {
+                    "name": "table",
+                    "url": "data/user/donutCharts/22_fiona.json",
+                    "transform": [
+                        {
+                            "type": "pie",
+                            "field": "value",
+                            "startAngle": 0,
+                            "endAngle": 6.29
+                        }
+                    ]
+                }
+            ],
+
+            "scales": [
+                {
+                    "name": "color",
+                    "type": "ordinal",
+                    "domain": { "data": "table", "field": "sentiment" },
+                    "range": { "scheme": "sentimentColors" }
+                }
+            ],
+
+            "marks": [
+                {
+                    "type": "arc",
+                    "from": { "data": "table" },
+                    "encode": {
+                        "enter": {
+                            "fill": { "scale": "color", "field": "sentiment" },
+                            "x": { "signal": "width / 2" },
+                            "y": { "signal": "height / 2" }
+                        },
+                        "update": {
+                            "startAngle": { "field": "startAngle" },
+                            "endAngle": { "field": "endAngle" },
+                            "innerRadius": { "signal": "width / 4" },
+                            "cornerRadius": { "value": 10 },
+                            "outerRadius": { "signal": "width / 2" }
+                        },
+                        "hover": {
+                            "tooltip": { "signal": "datum.sentiment + 'e Feedbacks: ' + datum.value" }
+                        }
+                    }
+                }
+            ]
+        };
+
+
+        vegaEmbed('#donut22', donut_22_fiona, { "actions": false });
+
+
+        var donut_23_alex = {
+            "$schema": "https://vega.github.io/schema/vega/v5.json",
+            "width": 61,
+            "height": 61,
+            "autosize": "none", "padding": 10,
+
+            "data": [
+                {
+                    "name": "table",
+                    "url": "data/user/donutCharts/23_alex.json",
+                    "transform": [
+                        {
+                            "type": "pie",
+                            "field": "value",
+                            "startAngle": 0,
+                            "endAngle": 6.29
+                        }
+                    ]
+                }
+            ],
+
+            "scales": [
+                {
+                    "name": "color",
+                    "type": "ordinal",
+                    "domain": { "data": "table", "field": "sentiment" },
+                    "range": { "scheme": "sentimentColors" }
+                }
+            ],
+
+            "marks": [
+                {
+                    "type": "arc",
+                    "from": { "data": "table" },
+                    "encode": {
+                        "enter": {
+                            "fill": { "scale": "color", "field": "sentiment" },
+                            "x": { "signal": "width / 2" },
+                            "y": { "signal": "height / 2" }
+                        },
+                        "update": {
+                            "startAngle": { "field": "startAngle" },
+                            "endAngle": { "field": "endAngle" },
+                            "innerRadius": { "signal": "width / 4" },
+                            "cornerRadius": { "value": 10 },
+                            "outerRadius": { "signal": "width / 2" }
+                        },
+                        "hover": {
+                            "tooltip": { "signal": "datum.sentiment + 'e Feedbacks: ' + datum.value" }
+                        }
+                    }
+                }
+            ]
+        };
+
+
+        vegaEmbed('#donut23', donut_23_alex, { "actions": false });
+
+
+        var treemap = {
+            "$schema": "https://vega.github.io/schema/vega/v5.json",
+            "width": 700,
+            "height": 500,
+            "padding": 2.5,
+            "autosize": "none",
+
+            "data": [
+                {
+                    "name": "tree",
+                    "url": "data/topic/postsPerTopic.json",
+                    "transform": [
+                        {
+                            "type": "stratify",
+                            "key": "id",
+                            "parentKey": "parent"
+                        },
+                        {
+                            "type": "treemap",
+                            "field": "size",
+                            "sort": { "field": "value", "order": "descending" },
+                            "round": true,
+                            "method": "binary",
+                            "size": [{ "signal": "width" }, { "signal": "height" }]
+                        }
+                    ]
+                },
+                {
+                    "name": "nodes",
+                    "source": "tree",
+                    "transform": [{ "type": "filter", "expr": "datum.children&&datum.parent!=null" }]
+                },
+                {
+                    "name": "leaves",
+                    "source": "tree",
+                    "transform": [{ "type": "filter", "expr": "!datum.children" }]
+                }
+            ],
+
+            "scales": [
+                {
+                    "name": "color",
+                    "type": "ordinal",
+                    "domain": { "data": "nodes", "field": "name" },
+                    "range": [
+                        "#3182bd", "#6baed6", "#9ecae1", "#c6dbef", "#e6550d",
+                        "#fd8d3c", "#fdae6b", "#fdd0a2", "#31a354", "#74c476",
+                        "#a1d99b", "#c7e9c0", "#756bb1", "#9e9ac8", "#bcbddc",
+                        "#dadaeb", "#636363", "#969696", "#bdbdbd", "#d9d9d9"
+                    ]
+                },
+                {
+                    "name": "size",
+                    "type": "ordinal",
+                    "domain": [0, 1, 2, 3],
+                    "range": [256, 28, 20, 14]
+                },
+                {
+                    "name": "opacity",
+                    "type": "ordinal",
+                    "domain": [0, 1, 2, 3],
+                    "range": [0.15, 0.5, 0.8, 1.0]
+                }
+            ],
+
+            "marks": [
+                {
+                    "type": "rect",
+                    "from": { "data": "nodes" },
+                    "interactive": false,
+                    "encode": {
+                        "enter": {
+                            "fill": { "scale": "color", "field": "name" }
+                        },
+                        "update": {
+                            "x": { "field": "x0" },
+                            "y": { "field": "y0" },
+                            "x2": { "field": "x1" },
+                            "y2": { "field": "y1" }
+                        }
+                    }
+                },
+                {
+                    "type": "rect",
+                    "from": { "data": "leaves" },
+                    "encode": {
+                        "enter": {
+                            "stroke": { "value": "#fff" }
+                        },
+                        "update": {
+                            "x": { "field": "x0" },
+                            "y": { "field": "y0" },
+                            "x2": { "field": "x1" },
+                            "y2": { "field": "y1" },
+                            "fill": { "value": "transparent" }
+                        },
+                        "hover": {
+                            "fill": { "value": "red" },
+                            "tooltip": { "signal": "datum.name+ ': ' + datum.size + ' Beiträge'" }
+                        }
+                    }
+                },
+                {
+                    "type": "text",
+                    "from": { "data": "nodes" },
+                    "interactive": false,
+                    "encode": {
+                        "enter": {
+                            "font": { "value": "Helvetica Neue, Arial" },
+                            "align": { "value": "center" },
+                            "baseline": { "value": "middle" },
+                            "fill": { "value": "#000" },
+                            "text": { "field": "id" },
+                            "fontSize": { "value": 50 },
+                            "fillOpacity": { "scale": "opacity", "field": "depth" }
+                        },
+                        "update": {
+                            "x": { "signal": "0.5 * (datum.x0 + datum.x1)" },
+                            "y": { "signal": "0.5 * (datum.y0 + datum.y1)" }
+                        }
+                    }
+                }
+            ]
+        }
+            ;
+
+
+        vegaEmbed('#treemap', treemap, { "actions": false });
+
+
+        var circle_packing = {
+            "$schema": "https://vega.github.io/schema/vega/v5.json",
+            "width": 600,
+            "height": 600,
+            "autosize": "none",
+
+            "data": [
+                {
+                    "name": "tree",
+                    "url": "data/topic/postsAndVotes.json", "transform": [
+                        {
+                            "type": "stratify",
+                            "key": "id",
+                            "parentKey": "parent"
+                        },
+                        {
+                            "type": "pack",
+                            "field": "size",
+                            "sort": { "field": "size", "order": "descending" },
+                            "size": [{ "signal": "width" }, { "signal": "height" }]
+                        }
+                    ]
+                }
+            ],
+
+            "scales": [
+                {
+                    "name": "color",
+                    "type": "ordinal",
+                    "domain": { "data": "tree", "field": "depth" },
+                    "range": { "scheme": "category20" }
+                }
+            ],
+
+            "marks": [
+                {
+                    "type": "symbol",
+                    "name": "circles",
+                    "from": { "data": "tree" },
+                    "encode": {
+                        "enter": {
+                            "shape": { "value": "circle" },
+                            "fill": { "scale": "color", "field": "depth" }
+                        },
+                        "update": {
+                            "x": { "field": "x" },
+                            "y": { "field": "y" },
+                            "size": { "signal": "4 * datum.r * datum.r" },
+                            "stroke": { "value": "white" },
+                            "strokeWidth": { "value": 0.5 }
+                        },
+                        "hover": {
+                            "stroke": { "value": "red" },
+                            "strokeWidth": { "value": 2 },
+                            "tooltip": { "signal": "datum.name + (datum.size ? ', ' + datum.size + ' Beiträge & Stimmen' : '')" }
+                        }
+                    }
+                }
+            ]
+        }
+            ;
+
+        vegaEmbed('#circle_packing', circle_packing, { "actions": false });
+
+
+        var keywords_bar1 = {
+            "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+            "height": { "step": 30 },
+            "width": 440,
+            "data": {
+                "url": "data/text/keywords/1.1_fr.json"
+            },
+            "transform": [
+                { "calculate": "datum.relevance*100", "as": "x2" }
+            ],
+            "encoding": {
+                "y": {
+                    "field": "text",
+                    "type": "nominal",
+                    "axis": null,
+                    "sort": { "field": "relevance", "order": "descending" }
+                }
+            },
+            "layer": [
+                {
+                    "mark": {
+                        "type": "bar",
+                        "color": "#ffb3b3"
+                    },
+                    "encoding": {
+                        "x": {
+                            "field": "relevance",
+                            "type": "quantitative",
+                            "scale": {
+                                "domain": [
+                                    0,
+                                    0.75
+                                ]
+                            },
+                            "axis": null
+                        },
+                        "tooltip": { "field": "x2", "type": "quantitative" }
+                    }
+                },
+                {
+                    "mark": {
+                        "type": "text",
+                        "align": "left",
+                        "x": 5,
+                        "fontSize": 17
+                    },
+                    "encoding": {
+                        "text": {
+                            "field": "text",
+                            "type": "nominal"
+                        }
+                    }
+                }
+            ]
+        }
+            ;
+
+
+        vegaEmbed('#keywords_bar1', keywords_bar1, { "actions": false });
+
+
+        var keywords_bar2 = {
+            "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+            "height": { "step": 30 },
+            "width": 440,
+            "data": {
+                "url": "data/text/keywords/1.1_de.json"
+            },
+            "transform": [
+                { "calculate": "datum.relevance*100", "as": "x2" }
+            ],
+            "encoding": {
+                "y": {
+                    "field": "text",
+                    "type": "nominal",
+                    "axis": null,
+                    "sort": { "field": "relevance", "order": "descending" }
+                }
+            },
+            "layer": [
+                {
+                    "mark": {
+                        "type": "bar",
+                        "color": "#ffb3b3"
+                    },
+                    "encoding": {
+                        "x": {
+                            "field": "relevance",
+                            "type": "quantitative",
+                            "scale": {
+                                "domain": [
+                                    0,
+                                    0.75
+                                ]
+                            },
+                            "axis": null
+                        },
+                        "tooltip": { "field": "x2", "type": "quantitative" }
+
+                    }
+                },
+                {
+                    "mark": {
+                        "type": "text",
+                        "align": "left",
+                        "x": 5,
+                        "fontSize": 17
+                    },
+                    "encoding": {
+                        "text": {
+                            "field": "text",
+                            "type": "nominal"
+                        }
+                    }
+                }
+            ]
+        };
+
+
+        vegaEmbed('#keywords_bar2', keywords_bar2, { "actions": false });
+
+        /*
+            Unused Keyword extraction barcharts for suptoics 3.4 & 11
+        */
+
+        /*
+        var keywords_bar3 ={
+            "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+            "height": {"step": 30},
+            "width": 440,
+            "data": {
+                "url": "data/text/keywords/11.json"
+            },
+            "transform": [
+                {"calculate": "datum.relevance*100", "as": "x2"}
+            ],
+            "encoding": {
+                "y": {
+                    "field": "text",
+                    "type": "nominal",
+                    "axis": null,
+                    "sort": {"field": "relevance", "order":"descending"}
+                }
+            },
+            "layer": [
+                {
+                    "mark": {
+                        "type": "bar",
+                        "color": "#ffb3b3"
+                    },
+                    "encoding": {
+                        "x": {
+                            "field": "relevance",
+                            "type": "quantitative",
+                            "scale": {
+                                "domain": [
+                                    0,
+                                    0.75
+                                ]
+                            },
+                            "axis":null
+                        },
+                        "tooltip": {"field": "x2", "type": "quantitative"}
+                    }
+                },
+                {
+                    "mark": {
+                        "type": "text",
+                        "align": "left",
+                        "x": 5,
+                        "fontSize": 17
+                    },
+                    "encoding": {
+                        "text": {
+                            "field": "text",
+                            "type": "nominal"
+                        }
+                    }
+                }
+            ]
+        };
+
+
+        vegaEmbed('#keywords_bar3', keywords_bar3, { "actions": false });
+
+
+        var keywords_bar4 ={
+            "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+            "height": {"step": 30},
+            "width": 440,
+            "data": {
+                "url": "data/text/keywords/3.4.json"
+            },
+            "transform": [
+                {"calculate": "datum.relevance*100", "as": "x2"}
+            ],
+            "encoding": {
+                "y": {
+                    "field": "text",
+                    "type": "nominal",
+                    "axis": null,
+                    "sort": {"field": "relevance", "order":"descending"}
+                }
+            },
+            "layer": [
+                {
+                    "mark": {
+                        "type": "bar",
+                        "color": "#ffb3b3"
+                    },
+                    "encoding": {
+                        "x": {
+                            "field": "relevance",
+                            "type": "quantitative",
+                            "scale": {
+                                "domain": [
+                                    0,
+                                    0.75
+                                ]
+                            },
+                            "axis":null
+                        },
+                        "tooltip": {"field": "x2", "type": "quantitative"}
+                    }
+                },
+                {
+                    "mark": {
+                        "type": "text",
+                        "align": "left",
+                        "x": 5,
+                        "fontSize": 17
+                    },
+                    "encoding": {
+                        "text": {
+                            "field": "text",
+                            "type": "nominal"
+                        }
+                    }
+                }
+            ]
+        };
+
+
+        vegaEmbed('#keywords_bar4', keywords_bar4, { "actions": false });
+
+        */
+    </script>
+</body>
+
+</html>

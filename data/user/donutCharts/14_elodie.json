@@ -1,0 +1,26 @@
+[
+{
+        "user": "Elodie",
+        "sentiment": "Negativ",
+        "value": 28,
+        "rate": 0.569892473,
+        "posts": 37,
+        "feedbacks": 93
+    },
+    {
+        "user": "Elodie",
+        "sentiment": "Neutral",
+        "value": 12,
+        "rate": 0.569892473,
+        "posts": 37,
+        "feedbacks": 93
+    },
+    {
+        "user": "Elodie",
+        "sentiment": "Positiv",
+        "value": 53,
+        "rate": 0.569892473,
+        "posts": 37,
+        "feedbacks": 93
+    }
+]

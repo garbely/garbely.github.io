@@ -1,0 +1,26 @@
+[
+    {
+        "user": "Florian",
+        "sentiment": "Negativ",
+        "value": 59,
+        "rate": 0.804195804,
+        "posts": 256,
+        "feedbacks": 429
+    },
+    {
+        "user": "Florian",
+        "sentiment": "Neutral",
+        "value": 25,
+        "rate": 0.804195804,
+        "posts": 256,
+        "feedbacks": 429
+    },
+    {
+        "user": "Florian",
+        "sentiment": "Positiv",
+        "value": 345,
+        "rate": 0.804195804,
+        "posts": 256,
+        "feedbacks": 429
+    }
+]

@@ -1,0 +1,182 @@
+[
+    {
+      "text": "élection du grand conseil",
+      "sentiment": {
+        "score": 0,
+        "label": "neutral"
+      },
+      "relevance": 0.646104,
+      "count": 1
+    },
+    {
+      "text": "règle d'un élu",
+      "sentiment": {
+        "score": 0,
+        "label": "neutral"
+      },
+      "relevance": 0.581155,
+      "count": 1
+    },
+    {
+      "text": "encadrement de notre démocratie de milice",
+      "sentiment": {
+        "score": 0,
+        "label": "neutral"
+      },
+      "relevance": 0.55932,
+      "count": 3
+    },
+    {
+      "text": "élection de femmes",
+      "sentiment": {
+        "score": 0,
+        "label": "neutral"
+      },
+      "relevance": 0.55561,
+      "count": 1
+    },
+    {
+      "text": "système de collecte",
+      "sentiment": {
+        "score": 0,
+        "label": "neutral"
+      },
+      "relevance": 0.552212,
+      "count": 1
+    },
+    {
+      "text": "2e conseil",
+      "sentiment": {
+        "score": 0,
+        "label": "neutral"
+      },
+      "relevance": 0.543124,
+      "count": 1
+    },
+    {
+      "text": "huis clos",
+      "sentiment": {
+        "score": 0,
+        "label": "neutral"
+      },
+      "relevance": 0.543037,
+      "count": 3
+    },
+    {
+      "text": "nombre de mandant",
+      "sentiment": {
+        "score": -0.610807,
+        "label": "negative"
+      },
+      "relevance": 0.538264,
+      "count": 2
+    },
+    {
+      "text": "révocation possible des élus",
+      "sentiment": {
+        "score": -0.622508,
+        "label": "negative"
+      },
+      "relevance": 0.537712,
+      "count": 1
+    },
+    {
+      "text": "personnes prêtes",
+      "sentiment": {
+        "score": -0.781378,
+        "label": "negative"
+      },
+      "relevance": 0.536963,
+      "count": 2
+    },
+    {
+      "text": "séances du conseil d'etat",
+      "sentiment": {
+        "score": 0,
+        "label": "neutral"
+      },
+      "relevance": 0.535724,
+      "count": 1
+    },
+    {
+      "text": "cumul des mandats",
+      "sentiment": {
+        "score": 0,
+        "label": "neutral"
+      },
+      "relevance": 0.534843,
+      "count": 1
+    },
+    {
+      "text": "pouvoir absolu",
+      "sentiment": {
+        "score": -0.910382,
+        "label": "negative"
+      },
+      "relevance": 0.533697,
+      "count": 1
+    },
+    {
+      "text": "droit de vote",
+      "sentiment": {
+        "score": 0,
+        "label": "neutral"
+      },
+      "relevance": 0.53364,
+      "count": 1
+    },
+    {
+      "text": "argument de contrôle",
+      "sentiment": {
+        "score": 0,
+        "label": "neutral"
+      },
+      "relevance": 0.532541,
+      "count": 1
+    },
+    {
+      "text": "haut-centre-bas",
+      "sentiment": {
+        "score": 0,
+        "label": "neutral"
+      },
+      "relevance": 0.531182,
+      "count": 1
+    },
+    {
+      "text": "liste de personnes éligibles",
+      "sentiment": {
+        "score": 0.729005,
+        "label": "positive"
+      },
+      "relevance": 0.530452,
+      "count": 1
+    },
+    {
+      "text": "suppression du système majoritaire",
+      "sentiment": {
+        "score": 0,
+        "label": "neutral"
+      },
+      "relevance": 0.530419,
+      "count": 1
+    },
+    {
+      "text": "arrondissement électoral de plaine",
+      "sentiment": {
+        "score": 0,
+        "label": "neutral"
+      },
+      "relevance": 0.529441,
+      "count": 1
+    },
+    {
+      "text": "grand conseil",
+      "sentiment": {
+        "score": 0,
+        "label": "neutral"
+      },
+      "relevance": 0.528707,
+      "count": 3
+    }
+  ]

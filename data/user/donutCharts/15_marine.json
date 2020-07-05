@@ -1,0 +1,26 @@
+[
+ {
+        "user": "Marine",
+        "sentiment": "Negativ",
+        "value": 27,
+        "rate": 0.571428571,
+        "posts": 16,
+        "feedbacks": 77
+    },
+    {
+        "user": "Marine",
+        "sentiment": "Neutral",
+        "value": 6,
+        "rate": 0.571428571,
+        "posts": 16,
+        "feedbacks": 77
+    },
+    {
+        "user": "Marine",
+        "sentiment": "Positiv",
+        "value": 44,
+        "rate": 0.571428571,
+        "posts": 16,
+        "feedbacks": 77
+    }
+]

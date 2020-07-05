@@ -1,0 +1,26 @@
+[
+{
+        "user": "Fiona",
+        "sentiment": "Negativ",
+        "value": 0,
+        "rate": 1,
+        "posts": 21,
+        "feedbacks": 32
+    },
+    {
+        "user": "Fiona",
+        "sentiment": "Neutral",
+        "value": 0,
+        "rate": 1,
+        "posts": 21,
+        "feedbacks": 32
+    },
+    {
+        "user": "Fiona",
+        "sentiment": "Positiv",
+        "value": 32,
+        "rate": 1,
+        "posts": 21,
+        "feedbacks": 32
+    }
+]

@@ -1,0 +1,26 @@
+[
+{
+        "user": "Marion",
+        "sentiment": "Negativ",
+        "value": 34,
+        "rate": 0.539215686,
+        "posts": 14,
+        "feedbacks": 102
+    },
+    {
+        "user": "Marion",
+        "sentiment": "Neutral",
+        "value": 13,
+        "rate": 0.539215686,
+        "posts": 14,
+        "feedbacks": 102
+    },
+    {
+        "user": "Marion",
+        "sentiment": "Positiv",
+        "value": 55,
+        "rate": 0.539215686,
+        "posts": 14,
+        "feedbacks": 102
+    }
+]

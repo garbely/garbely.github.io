@@ -1,0 +1,26 @@
+[
+ {
+        "user": "Jimmy",
+        "sentiment": "Negativ",
+        "value": 33,
+        "rate": 0.452054795,
+        "posts": 20,
+        "feedbacks": 73
+    },
+    {
+        "user": "Jimmy",
+        "sentiment": "Neutral",
+        "value": 7,
+        "rate": 0.452054795,
+        "posts": 20,
+        "feedbacks": 73
+    },
+    {
+        "user": "Jimmy",
+        "sentiment": "Positiv",
+        "value": 33,
+        "rate": 0.452054795,
+        "posts": 20,
+        "feedbacks": 73
+    }
+]

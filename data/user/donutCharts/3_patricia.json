@@ -1,0 +1,26 @@
+[
+     {
+        "user": "Patricia",
+        "sentiment": "Negativ",
+        "value": 189,
+        "rate": 0.415189873,
+        "posts": 48,
+        "feedbacks": 395
+    },
+    {
+        "user": "Patricia",
+        "sentiment": "Neutral",
+        "value": 42,
+        "rate": 0.415189873,
+        "posts": 48,
+        "feedbacks": 395
+    },
+    {
+        "user": "Patricia",
+        "sentiment": "Positiv",
+        "value": 164,
+        "rate": 0.415189873,
+        "posts": 48,
+        "feedbacks": 395
+    }
+]

@@ -1,0 +1,26 @@
+[
+ {
+        "user": "Valentine",
+        "sentiment": "Negativ",
+        "value": 64,
+        "rate": 0.723549488,
+        "posts": 21,
+        "feedbacks": 293
+    },
+    {
+        "user": "Valentine",
+        "sentiment": "Neutral",
+        "value": 17,
+        "rate": 0.723549488,
+        "posts": 21,
+        "feedbacks": 293
+    },
+    {
+        "user": "Valentine",
+        "sentiment": "Positiv",
+        "value": 212,
+        "rate": 0.723549488,
+        "posts": 21,
+        "feedbacks": 293
+    }
+]

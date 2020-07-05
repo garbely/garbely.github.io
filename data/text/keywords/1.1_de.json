@@ -1,0 +1,182 @@
+[
+    {
+        "text": "analog kanton freiburg",
+        "sentiment": {
+            "score": 0.934531,
+            "label": "positive"
+        },
+        "relevance": 0.730823,
+        "count": 1
+    },
+    {
+        "text": "kantons wallis",
+        "sentiment": {
+            "score": 0.801864,
+            "label": "positive"
+        },
+        "relevance": 0.654019,
+        "count": 2
+    },
+    {
+        "text": "kulturelle vielfalt",
+        "sentiment": {
+            "score": 0.801864,
+            "label": "positive"
+        },
+        "relevance": 0.637791,
+        "count": 2
+    },
+    {
+        "text": "freiburger präambel",
+        "sentiment": {
+            "score": 0,
+            "label": "neutral"
+        },
+        "relevance": 0.619987,
+        "count": 1
+    },
+    {
+        "text": "allgemeinen erklärung der menschenrechte",
+        "sentiment": {
+            "score": -0.615989,
+            "label": "negative"
+        },
+        "relevance": 0.584405,
+        "count": 1
+    },
+    {
+        "text": "zukünftigen generationen",
+        "sentiment": {
+            "score": 0.934531,
+            "label": "positive"
+        },
+        "relevance": 0.574955,
+        "count": 1
+    },
+    {
+        "text": "soziale gerechtigkeit",
+        "sentiment": {
+            "score": 0.633067,
+            "label": "positive"
+        },
+        "relevance": 0.574031,
+        "count": 1
+    },
+    {
+        "text": "walliser bürgerinnen",
+        "sentiment": {
+            "score": -0.615989,
+            "label": "negative"
+        },
+        "relevance": 0.56071,
+        "count": 1
+    },
+    {
+        "text": "uno menschenrechtsarbeit",
+        "sentiment": {
+            "score": 0,
+            "label": "neutral"
+        },
+        "relevance": 0.554366,
+        "count": 1
+    },
+    {
+        "text": "gegenseitigen verständnis",
+        "sentiment": {
+            "score": 0.934531,
+            "label": "positive"
+        },
+        "relevance": 0.549422,
+        "count": 1
+    },
+    {
+        "text": "namen gottes",
+        "sentiment": {
+            "score": 0,
+            "label": "neutral"
+        },
+        "relevance": 0.543976,
+        "count": 1
+    },
+    {
+        "text": "verbundenen werten",
+        "sentiment": {
+            "score": 0,
+            "label": "neutral"
+        },
+        "relevance": 0.543452,
+        "count": 1
+    },
+    {
+        "text": "christliche grundwerte",
+        "sentiment": {
+            "score": 0.724138,
+            "label": "positive"
+        },
+        "relevance": 0.54155,
+        "count": 1
+    },
+    {
+        "text": "schutz der menschenrechte",
+        "sentiment": {
+            "score": 0,
+            "label": "neutral"
+        },
+        "relevance": 0.537984,
+        "count": 1
+    },
+    {
+        "text": "schweizer verfassung",
+        "sentiment": {
+            "score": -0.835413,
+            "label": "negative"
+        },
+        "relevance": 0.53734,
+        "count": 1
+    },
+    {
+        "text": "verfassung graubünden",
+        "sentiment": {
+            "score": 0.633067,
+            "label": "positive"
+        },
+        "relevance": 0.53382,
+        "count": 1
+    },
+    {
+        "text": "künftigen generationen",
+        "sentiment": {
+            "score": 0.633067,
+            "label": "positive"
+        },
+        "relevance": 0.530621,
+        "count": 1
+    },
+    {
+        "text": "solidarität verpflichteten gesellschaft",
+        "sentiment": {
+            "score": 0.934531,
+            "label": "positive"
+        },
+        "relevance": 0.527057,
+        "count": 1
+    },
+    {
+        "text": "territorium der republik wallis",
+        "sentiment": {
+            "score": 0,
+            "label": "neutral"
+        },
+        "relevance": 0.521796,
+        "count": 1
+    },
+    {
+        "text": "gemeinschaftlicher wille",
+        "sentiment": {
+            "score": 0,
+            "label": "neutral"
+        },
+        "relevance": 0.519896,
+        "count": 1
+    }
+]

@@ -1,0 +1,26 @@
+[
+{
+        "user": "Finn",
+        "sentiment": "Negativ",
+        "value": 3,
+        "rate": 0.72972973,
+        "posts": 18,
+        "feedbacks": 37
+    },
+    {
+        "user": "Finn",
+        "sentiment": "Neutral",
+        "value": 7,
+        "rate": 0.72972973,
+        "posts": 18,
+        "feedbacks": 37
+    },
+    {
+        "user": "Finn",
+        "sentiment": "Positiv",
+        "value": 27,
+        "rate": 0.72972973,
+        "posts": 18,
+        "feedbacks": 37
+    }
+]

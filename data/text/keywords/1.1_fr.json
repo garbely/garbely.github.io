@@ -1,0 +1,184 @@
+[
+    {
+      "text": "nom de dieu",
+      "sentiment": {
+        "score": 0,
+        "label": "neutral"
+      },
+      "relevance": 0.623278,
+      "count": 4
+    },
+    {
+      "text": "constitution suisse",
+      "sentiment": {
+        "score": 0,
+        "label": "neutral"
+      },
+      "relevance": 0.586084,
+      "count": 1
+    },
+    {
+      "text": "formule similaire",
+      "sentiment": {
+        "score": 0,
+        "label": "neutral"
+      },
+      "relevance": 0.585224,
+      "count": 1
+    },
+    {
+      "text": "préambule de la constitution fédérale",
+      "sentiment": {
+        "score": 0,
+        "label": "neutral"
+      },
+      "relevance": 0.573944,
+      "count": 2
+    },
+    {
+      "text": "constitutions cantonales",
+      "sentiment": {
+        "score": 0,
+        "label": "neutral"
+      },
+      "relevance": 0.548633,
+      "count": 2
+    },
+    {
+      "text": "fausse bonne idée",
+      "sentiment": {
+        "score": 0,
+        "label": "neutral"
+      },
+      "relevance": 0.546571,
+      "count": 2
+    },
+    {
+      "text": "principe supérieur",
+      "sentiment": {
+        "score": 0,
+        "label": "neutral"
+      },
+      "relevance": 0.536326,
+      "count": 3
+    },
+    {
+      "text": "besoin d’un préambule rassembleur",
+      "sentiment": {
+        "score": 0,
+        "label": "neutral"
+      },
+      "relevance": 0.534419,
+      "count": 1
+    },
+    {
+      "text": "grande partie",
+      "sentiment": {
+        "score": 0.324774,
+        "label": "positive"
+      },
+      "relevance": 0.534029,
+      "count": 1
+    },
+    {
+      "text": "constitution fédérale",
+      "sentiment": {
+        "score": 0,
+        "label": "neutral"
+      },
+      "relevance": 0.533762,
+      "count": 5
+    },
+    {
+      "text": "religion chrétienne",
+      "sentiment": {
+        "score": -0.599843,
+        "label": "negative"
+      },
+      "relevance": 0.53362,
+      "count": 1
+    },
+    {
+      "text": "notion du dieu",
+      "sentiment": {
+        "score": 0,
+        "label": "neutral"
+      },
+      "relevance": 0.532363,
+      "count": 1
+    },
+    {
+      "text": "taux de personne",
+      "sentiment": {
+        "score": 0,
+        "label": "neutral"
+      },
+      "relevance": 0.530676,
+      "count": 1
+    },
+    {
+      "text": "constitution valaisanne",
+      "sentiment": {
+        "score": 0,
+        "label": "neutral"
+      },
+      "relevance": 0.529622,
+      "count": 1
+    },
+    {
+      "text": "termes valeurs intimes",
+      "sentiment": {
+        "score": -0.303703,
+        "mixed": "1",
+        "label": "negative"
+      },
+      "relevance": 0.529123,
+      "count": 1
+    },
+    {
+      "text": "population entière",
+      "sentiment": {
+        "score": 0,
+        "label": "neutral"
+      },
+      "relevance": 0.528992,
+      "count": 1
+    },
+    {
+      "text": "légitimité de la république",
+      "sentiment": {
+        "score": 0,
+        "label": "neutral"
+      },
+      "relevance": 0.528196,
+      "count": 2
+    },
+    {
+      "text": "vie commune",
+      "sentiment": {
+        "score": 0,
+        "label": "neutral"
+      },
+      "relevance": 0.525953,
+      "count": 1
+    },
+    {
+      "text": "valeurs fondamentales",
+      "sentiment": {
+        "score": 0,
+        "label": "neutral"
+      },
+      "relevance": 0.525357,
+      "count": 1
+    },
+    {
+      "text": "constitution",
+      "sentiment": {
+        "score": 0,
+        "mixed": "1",
+        "label": "neutral"
+      },
+      "relevance": 0.524384,
+      "count": 18
+    }
+  ]

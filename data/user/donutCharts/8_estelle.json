@@ -1,0 +1,26 @@
+[
+  {
+        "user": "Estelle",
+        "sentiment": "Negativ",
+        "value": 52,
+        "rate": 0.546052632,
+        "posts": 20,
+        "feedbacks": 152
+    },
+    {
+        "user": "Estelle",
+        "sentiment": "Neutral",
+        "value": 17,
+        "rate": 0.546052632,
+        "posts": 20,
+        "feedbacks": 152
+    },
+    {
+        "user": "Estelle",
+        "sentiment": "Positiv",
+        "value": 83,
+        "rate": 0.546052632,
+        "posts": 20,
+        "feedbacks": 152
+    }
+]

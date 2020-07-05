@@ -1,0 +1,554 @@
+[
+    {
+        "user": "Florian",
+        "sentiment": "Negativ",
+        "value": 59,
+        "rate": 0.804195804,
+        "posts": 256,
+        "feedbacks": 429
+    },
+    {
+        "user": "Florian",
+        "sentiment": "Neutral",
+        "value": 25,
+        "rate": 0.804195804,
+        "posts": 256,
+        "feedbacks": 429
+    },
+    {
+        "user": "Florian",
+        "sentiment": "Positiv",
+        "value": 345,
+        "rate": 0.804195804,
+        "posts": 256,
+        "feedbacks": 429
+    },
+    {
+        "user": "Jennifer",
+        "sentiment": "Negativ",
+        "value": 163,
+        "rate": 0.474327628,
+        "posts": 29,
+        "feedbacks": 409
+    },
+    {
+        "user": "Jennifer",
+        "sentiment": "Neutral",
+        "value": 52,
+        "rate": 0.474327628,
+        "posts": 29,
+        "feedbacks": 409
+    },
+    {
+        "user": "Jennifer",
+        "sentiment": "Positiv",
+        "value": 194,
+        "rate": 0.474327628,
+        "posts": 29,
+        "feedbacks": 409
+    },
+    {
+        "user": "Patricia",
+        "sentiment": "Negativ",
+        "value": 189,
+        "rate": 0.415189873,
+        "posts": 48,
+        "feedbacks": 395
+    },
+    {
+        "user": "Patricia",
+        "sentiment": "Neutral",
+        "value": 42,
+        "rate": 0.415189873,
+        "posts": 48,
+        "feedbacks": 395
+    },
+    {
+        "user": "Patricia",
+        "sentiment": "Positiv",
+        "value": 164,
+        "rate": 0.415189873,
+        "posts": 48,
+        "feedbacks": 395
+    },
+    {
+        "user": "Quentin",
+        "sentiment": "Negativ",
+        "value": 103,
+        "rate": 0.633333333,
+        "posts": 38,
+        "feedbacks": 330
+    },
+    {
+        "user": "Quentin",
+        "sentiment": "Neutral",
+        "value": 18,
+        "rate": 0.633333333,
+        "posts": 38,
+        "feedbacks": 330
+    },
+    {
+        "user": "Quentin",
+        "sentiment": "Positiv",
+        "value": 209,
+        "rate": 0.633333333,
+        "posts": 38,
+        "feedbacks": 330
+    },
+    {
+        "user": "Valentine",
+        "sentiment": "Negativ",
+        "value": 64,
+        "rate": 0.723549488,
+        "posts": 21,
+        "feedbacks": 293
+    },
+    {
+        "user": "Valentine",
+        "sentiment": "Neutral",
+        "value": 17,
+        "rate": 0.723549488,
+        "posts": 21,
+        "feedbacks": 293
+    },
+    {
+        "user": "Valentine",
+        "sentiment": "Positiv",
+        "value": 212,
+        "rate": 0.723549488,
+        "posts": 21,
+        "feedbacks": 293
+    },
+    {
+        "user": "Sara",
+        "sentiment": "Negativ",
+        "value": 77,
+        "rate": 0.475675676,
+        "posts": 50,
+        "feedbacks": 185
+    },
+    {
+        "user": "Sara",
+        "sentiment": "Neutral",
+        "value": 20,
+        "rate": 0.475675676,
+        "posts": 50,
+        "feedbacks": 185
+    },
+    {
+        "user": "Sara",
+        "sentiment": "Positiv",
+        "value": 88,
+        "rate": 0.475675676,
+        "posts": 50,
+        "feedbacks": 185
+    },
+    {
+        "user": "Luc",
+        "sentiment": "Negativ",
+        "value": 57,
+        "rate": 0.490797546,
+        "posts": 38,
+        "feedbacks": 163
+    },
+    {
+        "user": "Luc",
+        "sentiment": "Neutral",
+        "value": 26,
+        "rate": 0.490797546,
+        "posts": 38,
+        "feedbacks": 163
+    },
+    {
+        "user": "Luc",
+        "sentiment": "Positiv",
+        "value": 80,
+        "rate": 0.490797546,
+        "posts": 38,
+        "feedbacks": 163
+    },
+    {
+        "user": "Estelle",
+        "sentiment": "Negativ",
+        "value": 52,
+        "rate": 0.546052632,
+        "posts": 20,
+        "feedbacks": 152
+    },
+    {
+        "user": "Estelle",
+        "sentiment": "Neutral",
+        "value": 17,
+        "rate": 0.546052632,
+        "posts": 20,
+        "feedbacks": 152
+    },
+    {
+        "user": "Estelle",
+        "sentiment": "Positiv",
+        "value": 83,
+        "rate": 0.546052632,
+        "posts": 20,
+        "feedbacks": 152
+    },
+    {
+        "user": "Sacha",
+        "sentiment": "Negativ",
+        "value": 36,
+        "rate": 0.604316547,
+        "posts": 54,
+        "feedbacks": 139
+    },
+    {
+        "user": "Sacha",
+        "sentiment": "Neutral",
+        "value": 19,
+        "rate": 0.604316547,
+        "posts": 54,
+        "feedbacks": 139
+    },
+    {
+        "user": "Sacha",
+        "sentiment": "Positiv",
+        "value": 84,
+        "rate": 0.604316547,
+        "posts": 54,
+        "feedbacks": 139
+    },
+    {
+        "user": "Baptiste",
+        "sentiment": "Negativ",
+        "value": 37,
+        "rate": 0.648854962,
+        "posts": 45,
+        "feedbacks": 131
+    },
+    {
+        "user": "Baptiste",
+        "sentiment": "Neutral",
+        "value": 9,
+        "rate": 0.648854962,
+        "posts": 45,
+        "feedbacks": 131
+    },
+    {
+        "user": "Baptiste",
+        "sentiment": "Positiv",
+        "value": 85,
+        "rate": 0.648854962,
+        "posts": 45,
+        "feedbacks": 131
+    },
+    {
+        "user": "Ana",
+        "sentiment": "Negativ",
+        "value": 33,
+        "rate": 0.625954198,
+        "posts": 23,
+        "feedbacks": 131
+    },
+    {
+        "user": "Ana",
+        "sentiment": "Neutral",
+        "value": 16,
+        "rate": 0.625954198,
+        "posts": 23,
+        "feedbacks": 131
+    },
+    {
+        "user": "Ana",
+        "sentiment": "Positiv",
+        "value": 82,
+        "rate": 0.625954198,
+        "posts": 23,
+        "feedbacks": 131
+    },
+    {
+        "user": "Paul",
+        "sentiment": "Negativ",
+        "value": 34,
+        "rate": 0.62745098,
+        "posts": 42,
+        "feedbacks": 102
+    },
+    {
+        "user": "Paul",
+        "sentiment": "Neutral",
+        "value": 4,
+        "rate": 0.62745098,
+        "posts": 42,
+        "feedbacks": 102
+    },
+    {
+        "user": "Paul",
+        "sentiment": "Positiv",
+        "value": 64,
+        "rate": 0.62745098,
+        "posts": 42,
+        "feedbacks": 102
+    },
+    {
+        "user": "Marion",
+        "sentiment": "Negativ",
+        "value": 34,
+        "rate": 0.539215686,
+        "posts": 14,
+        "feedbacks": 102
+    },
+    {
+        "user": "Marion",
+        "sentiment": "Neutral",
+        "value": 13,
+        "rate": 0.539215686,
+        "posts": 14,
+        "feedbacks": 102
+    },
+    {
+        "user": "Marion",
+        "sentiment": "Positiv",
+        "value": 55,
+        "rate": 0.539215686,
+        "posts": 14,
+        "feedbacks": 102
+    },
+    {
+        "user": "Elodie",
+        "sentiment": "Negativ",
+        "value": 28,
+        "rate": 0.569892473,
+        "posts": 37,
+        "feedbacks": 93
+    },
+    {
+        "user": "Elodie",
+        "sentiment": "Neutral",
+        "value": 12,
+        "rate": 0.569892473,
+        "posts": 37,
+        "feedbacks": 93
+    },
+    {
+        "user": "Elodie",
+        "sentiment": "Positiv",
+        "value": 53,
+        "rate": 0.569892473,
+        "posts": 37,
+        "feedbacks": 93
+    },
+    {
+        "user": "Marine",
+        "sentiment": "Negativ",
+        "value": 27,
+        "rate": 0.571428571,
+        "posts": 16,
+        "feedbacks": 77
+    },
+    {
+        "user": "Marine",
+        "sentiment": "Neutral",
+        "value": 6,
+        "rate": 0.571428571,
+        "posts": 16,
+        "feedbacks": 77
+    },
+    {
+        "user": "Marine",
+        "sentiment": "Positiv",
+        "value": 44,
+        "rate": 0.571428571,
+        "posts": 16,
+        "feedbacks": 77
+    },
+    {
+        "user": "Filipe",
+        "sentiment": "Negativ",
+        "value": 22,
+        "rate": 0.586666667,
+        "posts": 11,
+        "feedbacks": 75
+    },
+    {
+        "user": "Filipe",
+        "sentiment": "Neutral",
+        "value": 9,
+        "rate": 0.586666667,
+        "posts": 11,
+        "feedbacks": 75
+    },
+    {
+        "user": "Filipe",
+        "sentiment": "Positiv",
+        "value": 44,
+        "rate": 0.586666667,
+        "posts": 11,
+        "feedbacks": 75
+    },
+    {
+        "user": "Jimmy",
+        "sentiment": "Negativ",
+        "value": 33,
+        "rate": 0.452054795,
+        "posts": 20,
+        "feedbacks": 73
+    },
+    {
+        "user": "Jimmy",
+        "sentiment": "Neutral",
+        "value": 7,
+        "rate": 0.452054795,
+        "posts": 20,
+        "feedbacks": 73
+    },
+    {
+        "user": "Jimmy",
+        "sentiment": "Positiv",
+        "value": 33,
+        "rate": 0.452054795,
+        "posts": 20,
+        "feedbacks": 73
+    },
+    {
+        "user": "Maeva",
+        "sentiment": "Negativ",
+        "value": 12,
+        "rate": 0.704545455,
+        "posts": 13,
+        "feedbacks": 44
+    },
+    {
+        "user": "Maeva",
+        "sentiment": "Neutral",
+        "value": 1,
+        "rate": 0.704545455,
+        "posts": 13,
+        "feedbacks": 44
+    },
+    {
+        "user": "Maeva",
+        "sentiment": "Positiv",
+        "value": 31,
+        "rate": 0.704545455,
+        "posts": 13,
+        "feedbacks": 44
+    },
+    {
+        "user": "Nathalie",
+        "sentiment": "Negativ",
+        "value": 5,
+        "rate": 0.820512821,
+        "posts": 39,
+        "feedbacks": 39
+    },
+    {
+        "user": "Nathalie",
+        "sentiment": "Neutral",
+        "value": 2,
+        "rate": 0.820512821,
+        "posts": 39,
+        "feedbacks": 39
+    },
+    {
+        "user": "Nathalie",
+        "sentiment": "Positiv",
+        "value": 32,
+        "rate": 0.820512821,
+        "posts": 39,
+        "feedbacks": 39
+    },
+    {
+        "user": "Finn",
+        "sentiment": "Negativ",
+        "value": 3,
+        "rate": 0.72972973,
+        "posts": 18,
+        "feedbacks": 37
+    },
+    {
+        "user": "Finn",
+        "sentiment": "Neutral",
+        "value": 7,
+        "rate": 0.72972973,
+        "posts": 18,
+        "feedbacks": 37
+    },
+    {
+        "user": "Finn",
+        "sentiment": "Positiv",
+        "value": 27,
+        "rate": 0.72972973,
+        "posts": 18,
+        "feedbacks": 37
+    },
+    {
+        "user": "Romain",
+        "sentiment": "Negativ",
+        "value": 28,
+        "rate": 0.194444444,
+        "posts": 28,
+        "feedbacks": 36
+    },
+    {
+        "user": "Romain",
+        "sentiment": "Neutral",
+        "value": 1,
+        "rate": 0.194444444,
+        "posts": 28,
+        "feedbacks": 36
+    },
+    {
+        "user": "Romain",
+        "sentiment": "Positiv",
+        "value": 7,
+        "rate": 0.194444444,
+        "posts": 28,
+        "feedbacks": 36
+    },
+    {
+        "user": "Fiona",
+        "sentiment": "Negativ",
+        "value": 0,
+        "rate": 1,
+        "posts": 21,
+        "feedbacks": 32
+    },
+    {
+        "user": "Fiona",
+        "sentiment": "Neutral",
+        "value": 0,
+        "rate": 1,
+        "posts": 21,
+        "feedbacks": 32
+    },
+    {
+        "user": "Fiona",
+        "sentiment": "Positiv",
+        "value": 32,
+        "rate": 1,
+        "posts": 21,
+        "feedbacks": 32
+    },
+    {
+        "user": "Alex",
+        "sentiment": "Negativ",
+        "value": 3,
+        "rate": 0.636363636,
+        "posts": 16,
+        "feedbacks": 22
+    },
+    {
+        "user": "Alex",
+        "sentiment": "Neutral",
+        "value": 5,
+        "rate": 0.636363636,
+        "posts": 16,
+        "feedbacks": 22
+    },
+    {
+        "user": "Alex",
+        "sentiment": "Positiv",
+        "value": 14,
+        "rate": 0.636363636,
+        "posts": 16,
+        "feedbacks": 22
+    }
+]

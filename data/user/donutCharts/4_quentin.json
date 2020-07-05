@@ -1,0 +1,26 @@
+[
+ {
+        "user": "Quentin",
+        "sentiment": "Negativ",
+        "value": 103,
+        "rate": 0.633333333,
+        "posts": 38,
+        "feedbacks": 330
+    },
+    {
+        "user": "Quentin",
+        "sentiment": "Neutral",
+        "value": 18,
+        "rate": 0.633333333,
+        "posts": 38,
+        "feedbacks": 330
+    },
+    {
+        "user": "Quentin",
+        "sentiment": "Positiv",
+        "value": 209,
+        "rate": 0.633333333,
+        "posts": 38,
+        "feedbacks": 330
+    }
+]

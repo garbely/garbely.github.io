@@ -1,0 +1,26 @@
+[
+ {
+        "user": "Jennifer",
+        "sentiment": "Negativ",
+        "value": 163,
+        "rate": 0.474327628,
+        "posts": 29,
+        "feedbacks": 409
+    },
+    {
+        "user": "Jennifer",
+        "sentiment": "Neutral",
+        "value": 52,
+        "rate": 0.474327628,
+        "posts": 29,
+        "feedbacks": 409
+    },
+    {
+        "user": "Jennifer",
+        "sentiment": "Positiv",
+        "value": 194,
+        "rate": 0.474327628,
+        "posts": 29,
+        "feedbacks": 409
+    }
+]

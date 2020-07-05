@@ -1,0 +1,26 @@
+[
+{
+        "user": "Baptiste",
+        "sentiment": "Negativ",
+        "value": 37,
+        "rate": 0.648854962,
+        "posts": 45,
+        "feedbacks": 131
+    },
+    {
+        "user": "Baptiste",
+        "sentiment": "Neutral",
+        "value": 9,
+        "rate": 0.648854962,
+        "posts": 45,
+        "feedbacks": 131
+    },
+    {
+        "user": "Baptiste",
+        "sentiment": "Positiv",
+        "value": 85,
+        "rate": 0.648854962,
+        "posts": 45,
+        "feedbacks": 131
+    }
+]

@@ -1,0 +1,26 @@
+[
+ {
+        "user": "Ana",
+        "sentiment": "Negativ",
+        "value": 33,
+        "rate": 0.625954198,
+        "posts": 23,
+        "feedbacks": 131
+    },
+    {
+        "user": "Ana",
+        "sentiment": "Neutral",
+        "value": 16,
+        "rate": 0.625954198,
+        "posts": 23,
+        "feedbacks": 131
+    },
+    {
+        "user": "Ana",
+        "sentiment": "Positiv",
+        "value": 82,
+        "rate": 0.625954198,
+        "posts": 23,
+        "feedbacks": 131
+    }
+]

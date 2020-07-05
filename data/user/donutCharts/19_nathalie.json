@@ -1,0 +1,26 @@
+[
+  {
+        "user": "Nathalie",
+        "sentiment": "Negativ",
+        "value": 5,
+        "rate": 0.820512821,
+        "posts": 39,
+        "feedbacks": 39
+    },
+    {
+        "user": "Nathalie",
+        "sentiment": "Neutral",
+        "value": 2,
+        "rate": 0.820512821,
+        "posts": 39,
+        "feedbacks": 39
+    },
+    {
+        "user": "Nathalie",
+        "sentiment": "Positiv",
+        "value": 32,
+        "rate": 0.820512821,
+        "posts": 39,
+        "feedbacks": 39
+    }
+]

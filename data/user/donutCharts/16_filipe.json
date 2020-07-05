@@ -1,0 +1,26 @@
+[
+ {
+        "user": "Filipe",
+        "sentiment": "Negativ",
+        "value": 22,
+        "rate": 0.586666667,
+        "posts": 11,
+        "feedbacks": 75
+    },
+    {
+        "user": "Filipe",
+        "sentiment": "Neutral",
+        "value": 9,
+        "rate": 0.586666667,
+        "posts": 11,
+        "feedbacks": 75
+    },
+    {
+        "user": "Filipe",
+        "sentiment": "Positiv",
+        "value": 44,
+        "rate": 0.586666667,
+        "posts": 11,
+        "feedbacks": 75
+    }
+]

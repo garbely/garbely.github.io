@@ -1,0 +1,26 @@
+[
+    {
+        "user": "Alex",
+        "sentiment": "Negativ",
+        "value": 3,
+        "rate": 0.636363636,
+        "posts": 16,
+        "feedbacks": 22
+    },
+    {
+        "user": "Alex",
+        "sentiment": "Neutral",
+        "value": 5,
+        "rate": 0.636363636,
+        "posts": 16,
+        "feedbacks": 22
+    },
+    {
+        "user": "Alex",
+        "sentiment": "Positiv",
+        "value": 14,
+        "rate": 0.636363636,
+        "posts": 16,
+        "feedbacks": 22
+    }
+]

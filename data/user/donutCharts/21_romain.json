@@ -1,0 +1,26 @@
+[
+{
+        "user": "Romain",
+        "sentiment": "Negativ",
+        "value": 28,
+        "rate": 0.194444444,
+        "posts": 28,
+        "feedbacks": 36
+    },
+    {
+        "user": "Romain",
+        "sentiment": "Neutral",
+        "value": 1,
+        "rate": 0.194444444,
+        "posts": 28,
+        "feedbacks": 36
+    },
+    {
+        "user": "Romain",
+        "sentiment": "Positiv",
+        "value": 7,
+        "rate": 0.194444444,
+        "posts": 28,
+        "feedbacks": 36
+    }
+]

@@ -1,0 +1,26 @@
+[
+ {
+        "user": "Sacha",
+        "sentiment": "Negativ",
+        "value": 36,
+        "rate": 0.604316547,
+        "posts": 54,
+        "feedbacks": 139
+    },
+    {
+        "user": "Sacha",
+        "sentiment": "Neutral",
+        "value": 19,
+        "rate": 0.604316547,
+        "posts": 54,
+        "feedbacks": 139
+    },
+    {
+        "user": "Sacha",
+        "sentiment": "Positiv",
+        "value": 84,
+        "rate": 0.604316547,
+        "posts": 54,
+        "feedbacks": 139
+    }
+]

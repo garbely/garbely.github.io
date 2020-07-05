@@ -1,0 +1,26 @@
+[
+ {
+        "user": "Sara",
+        "sentiment": "Negativ",
+        "value": 77,
+        "rate": 0.475675676,
+        "posts": 50,
+        "feedbacks": 185
+    },
+    {
+        "user": "Sara",
+        "sentiment": "Neutral",
+        "value": 20,
+        "rate": 0.475675676,
+        "posts": 50,
+        "feedbacks": 185
+    },
+    {
+        "user": "Sara",
+        "sentiment": "Positiv",
+        "value": 88,
+        "rate": 0.475675676,
+        "posts": 50,
+        "feedbacks": 185
+    }
+]

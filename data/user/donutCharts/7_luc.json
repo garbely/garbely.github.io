@@ -1,0 +1,26 @@
+[
+   {
+        "user": "Luc",
+        "sentiment": "Negativ",
+        "value": 57,
+        "rate": 0.490797546,
+        "posts": 38,
+        "feedbacks": 163
+    },
+    {
+        "user": "Luc",
+        "sentiment": "Neutral",
+        "value": 26,
+        "rate": 0.490797546,
+        "posts": 38,
+        "feedbacks": 163
+    },
+    {
+        "user": "Luc",
+        "sentiment": "Positiv",
+        "value": 80,
+        "rate": 0.490797546,
+        "posts": 38,
+        "feedbacks": 163
+    }
+]

@@ -1,0 +1,182 @@
+[
+    {
+        "text": "partie des devoirs de l'état",
+        "sentiment": {
+            "score": 0,
+            "label": "neutral"
+        },
+        "relevance": 0.584537,
+        "count": 1
+    },
+    {
+        "text": "renforcement des droits",
+        "sentiment": {
+            "score": 0,
+            "label": "neutral"
+        },
+        "relevance": 0.565603,
+        "count": 1
+    },
+    {
+        "text": "démographie du canton",
+        "sentiment": {
+            "score": 0,
+            "label": "neutral"
+        },
+        "relevance": 0.550687,
+        "count": 2
+    },
+    {
+        "text": "intérêt public",
+        "sentiment": {
+            "score": 0,
+            "label": "neutral"
+        },
+        "relevance": 0.543102,
+        "count": 1
+    },
+    {
+        "text": "etat de droit",
+        "sentiment": {
+            "score": 0,
+            "label": "neutral"
+        },
+        "relevance": 0.535118,
+        "count": 1
+    },
+    {
+        "text": "nombre de signatures nécessaires",
+        "sentiment": {
+            "score": 0,
+            "label": "neutral"
+        },
+        "relevance": 0.532347,
+        "count": 2
+    },
+    {
+        "text": "place d’une telle disposition",
+        "sentiment": {
+            "score": 0,
+            "label": "neutral"
+        },
+        "relevance": 0.531609,
+        "count": 1
+    },
+    {
+        "text": "droit de vote",
+        "sentiment": {
+            "score": 0,
+            "label": "neutral"
+        },
+        "relevance": 0.529492,
+        "count": 1
+    },
+    {
+        "text": "principe de légalité",
+        "sentiment": {
+            "score": 0,
+            "label": "neutral"
+        },
+        "relevance": 0.528666,
+        "count": 1
+    },
+    {
+        "text": "principe de la séparation des pouvoirs",
+        "sentiment": {
+            "score": 0,
+            "label": "neutral"
+        },
+        "relevance": 0.52716,
+        "count": 1
+    },
+    {
+        "text": "simple fait de devoir",
+        "sentiment": {
+            "score": 0,
+            "label": "neutral"
+        },
+        "relevance": 0.526079,
+        "count": 1
+    },
+    {
+        "text": "droit d",
+        "sentiment": {
+            "score": 0,
+            "label": "neutral"
+        },
+        "relevance": 0.524545,
+        "count": 5
+    },
+    {
+        "text": "nouvelle constitution",
+        "sentiment": {
+            "score": 0,
+            "label": "neutral"
+        },
+        "relevance": 0.524411,
+        "count": 2
+    },
+    {
+        "text": "nombre de spécialistes",
+        "sentiment": {
+            "score": 0,
+            "label": "neutral"
+        },
+        "relevance": 0.523958,
+        "count": 1
+    },
+    {
+        "text": "tâches de l’erat",
+        "sentiment": {
+            "score": 0,
+            "label": "neutral"
+        },
+        "relevance": 0.523622,
+        "count": 1
+    },
+    {
+        "text": "matière de déclarations d'impôts",
+        "sentiment": {
+            "score": 0,
+            "label": "neutral"
+        },
+        "relevance": 0.522673,
+        "count": 1
+    },
+    {
+        "text": "niveau cantonal",
+        "sentiment": {
+            "score": 0,
+            "label": "neutral"
+        },
+        "relevance": 0.521949,
+        "count": 2
+    },
+    {
+        "text": "initiative cantonale",
+        "sentiment": {
+            "score": 0,
+            "label": "neutral"
+        },
+        "relevance": 0.51933,
+        "count": 2
+    },
+    {
+        "text": "principe de vote",
+        "sentiment": {
+            "score": 0,
+            "label": "neutral"
+        },
+        "relevance": 0.518192,
+        "count": 1
+    },
+    {
+        "text": "grande économies",
+        "sentiment": {
+            "score": 0,
+            "label": "neutral"
+        },
+        "relevance": 0.517674,
+        "count": 1
+    }
+]

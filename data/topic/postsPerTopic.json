@@ -1,0 +1,344 @@
+[
+ {
+   "id": 0,
+   "name": "Verfassungsumfrage",
+   "parent": null,
+   "size": null
+ },
+ {
+   "id": 1,
+   "name": "1 Allgemeine Elemente, Präambel, Sozialer Zusammenhalt, Verhältnis Kirchen/Staat, Sprachen",
+   "parent": 0,
+   "size": null
+ },
+ {
+   "id": 2,
+   "name": "2 Grundrechte, Sozialrechte und Zivilgesellschaft",
+   "parent": 0,
+   "size": null
+ },
+ {
+   "id": 3,
+   "name": "3 Politische Rechte und direkte Demokratie",
+   "parent": 0,
+   "size": null
+ },
+ {
+   "id": 4,
+   "name": "4 Allgemeine Aufgaben des Staates, nachhaltige Entwicklung, Wirtschaft, Innovation",
+   "parent": 0,
+   "size": null
+ },
+ {
+   "id": 5,
+   "name": "5 Raumentwicklung, natürliche Ressourcen und Klima, Mobilität, Landwirtschaft",
+   "parent": 0,
+   "size": null
+ },
+ {
+   "id": 6,
+   "name": "6 Soziale Aufgaben des Staates, Familie, Bildung, Integration, Kultur, Sport, Freizeit",
+   "parent": 0,
+   "size": null
+ },
+ {
+   "id": 7,
+   "name": "7 Kantonale Behörden: allgemeine Prinzipien und Grosser Rat",
+   "parent": 0,
+   "size": null
+ },
+ {
+   "id": 8,
+   "name": "8 Staatsrat, Verwaltung und Präfekten",
+   "parent": 0,
+   "size": null
+ },
+ {
+   "id": 9,
+   "name": "9 Gerichtsbehörden, Gerichte, Schutz der Kinder und Erwachsenen, Gemeinderichter/innen",
+   "parent": 0,
+   "size": null
+ },
+ {
+   "id": 10,
+   "name": "10 Gemeinden und territoriale Organisation (Bezirke, etc.)",
+   "parent": 0,
+   "size": null
+ },
+ {
+   "id": 11,
+   "name": "11 Weiteres",
+   "parent": 0,
+   "size": null
+ },
+ {
+   "id": 12,
+   "name": "1.1 Präambel",
+   "parent": 1,
+   "size": 123
+ },
+ {
+   "id": 13,
+   "name": "1.2 Verhältnis Kirchen/Staat",
+   "parent": 1,
+   "size": 50
+ },
+ {
+   "id": 14,
+   "name": "1.3 Zusammenhalt – Zweisprachigkeit",
+   "parent": 1,
+   "size": 63
+ },
+ {
+   "id": 15,
+   "name": "1.4 Verhältnis Berg - Tal",
+   "parent": 1,
+   "size": 38
+ },
+ {
+   "id": 16,
+   "name": "1.5 Wappen (Walliser Fahne)",
+   "parent": 1,
+   "size": 26
+ },
+ {
+   "id": 17,
+   "name": "2.1 Rechte im Zusammenhang mit der Natur",
+   "parent": 2,
+   "size": 42
+ },
+ {
+   "id": 18,
+   "name": "2.2 Digitale Rechte",
+   "parent": 2,
+   "size": 35
+ },
+ {
+   "id": 19,
+   "name": "2.3 Rechte von nicht Stimmberechtigten",
+   "parent": 2,
+   "size": 40
+ },
+ {
+   "id": 20,
+   "name": "2.4 Familienmodelle",
+   "parent": 2,
+   "size": 32
+ },
+ {
+   "id": 21,
+   "name": "3.1 Die im Wallis lebenden Ausländer und Ausländerinnen",
+   "parent": 3,
+   "size": 30
+ },
+ {
+   "id": 22,
+   "name": "3.2 Die Verjüngung der Wählerschaft (politische Rechte vor 18 Jahren)",
+   "parent": 3,
+   "size": 32
+ },
+ {
+   "id": 23,
+   "name": "3.3 Menschen mit Behinderungen",
+   "parent": 3,
+   "size": 16
+ },
+ {
+   "id": 24,
+   "name": "3.4 Die Repräsentativität der Gewählten",
+   "parent": 3,
+   "size": 66
+ },
+ {
+   "id": 25,
+   "name": "4 Allgemeine Aufgaben des Staates, nachhaltige Entwicklung, Wirtschaft, Innovation",
+   "parent": 4,
+   "size": 4
+ },
+ {
+   "id": 26,
+   "name": "4.1 Nachhaltige Entwicklung",
+   "parent": 4,
+   "size": 32
+ },
+ {
+   "id": 27,
+   "name": "4.2 Dezentralisierung",
+   "parent": 4,
+   "size": 15
+ },
+ {
+   "id": 28,
+   "name": "4.3 Wallis, ein Land der Innovation!",
+   "parent": 4,
+   "size": 23
+ },
+ {
+   "id": 29,
+   "name": "4.4 Förderung des Wallis",
+   "parent": 4,
+   "size": 16
+ },
+ {
+   "id": 30,
+   "name": "5.1 Landwirtschaft",
+   "parent": 5,
+   "size": 30
+ },
+ {
+   "id": 31,
+   "name": "5.2 Natur, Biodiversität, Klima",
+   "parent": 5,
+   "size": 37
+ },
+ {
+   "id": 32,
+   "name": "5.3 Natürliche Ressourcen",
+   "parent": 5,
+   "size": 21
+ },
+ {
+   "id": 33,
+   "name": "5.4 Mobilität",
+   "parent": 5,
+   "size": 37
+ },
+ {
+   "id": 34,
+   "name": "6.1 Integration",
+   "parent": 6,
+   "size": 34
+ },
+ {
+   "id": 35,
+   "name": "6.2  Soziale Sicherheit",
+   "parent": 6,
+   "size": 29
+ },
+ {
+   "id": 36,
+   "name": "6.3 Generationen",
+   "parent": 6,
+   "size": 9
+ },
+ {
+   "id": 37,
+   "name": "6.4 Erbe",
+   "parent": 6,
+   "size": 21
+ },
+ {
+   "id": 38,
+   "name": "7.1 Deputation/Stellvertretung",
+   "parent": 7,
+   "size": 32
+ },
+ {
+   "id": 39,
+   "name": "7.2 Wahlkreise für die Wahl in den Grossen Rat",
+   "parent": 7,
+   "size": 34
+ },
+ {
+   "id": 40,
+   "name": "7.3 Begrenzung der Mandate",
+   "parent": 7,
+   "size": 13
+ },
+ {
+   "id": 41,
+   "name": "7.4 Organisation des Grossen Rates",
+   "parent": 7,
+   "size": 11
+ },
+ {
+   "id": 42,
+   "name": "8.1 Staatsrat",
+   "parent": 8,
+   "size": 43
+ },
+ {
+   "id": 43,
+   "name": "8.2 Präfekten",
+   "parent": 8,
+   "size": 23
+ },
+ {
+   "id": 44,
+   "name": "8.3 Staatshaushalt",
+   "parent": 8,
+   "size": 19
+ },
+ {
+   "id": 45,
+   "name": "9.1 Verwaltung der Justiz",
+   "parent": 9,
+   "size": 18
+ },
+ {
+   "id": 46,
+   "name": "9.2 Unabhängigkeit der Justiz",
+   "parent": 9,
+   "size": 17
+ },
+ {
+   "id": 47,
+   "name": "9.3 Gerichtsbarkeit auf Gemeindeebene",
+   "parent": 9,
+   "size": 11
+ },
+ {
+   "id": 48,
+   "name": "9.4 KESB",
+   "parent": 9,
+   "size": 10
+ },
+ {
+   "id": 49,
+   "name": "9.5 Rechnungshof",
+   "parent": 9,
+   "size": 13
+ },
+ {
+   "id": 50,
+   "name": "10.1 Gemeinden",
+   "parent": 10,
+   "size": 27
+ },
+ {
+   "id": 51,
+   "name": "10.2 Bezirke",
+   "parent": 10,
+   "size": 23
+ },
+ {
+   "id": 52,
+   "name": "10.3 Finanzausgleich",
+   "parent": 10,
+   "size": 10
+ },
+ {
+   "id": 53,
+   "name": "10.4 Burgergemeinden",
+   "parent": 10,
+   "size": 12
+ },
+ {
+   "id": 54,
+   "name": "10.5 Gemeinderat",
+   "parent": 10,
+   "size": 10
+ },
+ {
+   "id": 55,
+   "name": "10.6 Gemeindeparlament",
+   "parent": 10,
+   "size": 11
+ },
+ {
+   "id": 56,
+   "name": "11 Weiteres",
+   "parent": 11,
+   "size": 108
+ }
+]
