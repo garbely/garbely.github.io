@@ -1,47 +1,47 @@
 [
     {
-      "text": "partie des devoirs de l'état",
+      "text": "citoyens d’une commune",
       "sentiment": {
         "score": 0,
         "label": "neutral"
       },
-      "relevance": 0.584537,
+      "relevance": 0.779066,
       "count": 1
     },
     {
-      "text": "renforcement des droits",
+      "text": "conseil communal",
       "sentiment": {
         "score": 0,
         "label": "neutral"
       },
-      "relevance": 0.565603,
-      "count": 1
+      "relevance": 0.623786,
+      "count": 5
     },
     {
-      "text": "démographie du canton",
+      "text": "fusions de communes",
       "sentiment": {
         "score": 0,
         "label": "neutral"
       },
-      "relevance": 0.550687,
+      "relevance": 0.608505,
+      "count": 3
+    },
+    {
+      "text": "communes municipales",
+      "sentiment": {
+        "score": 0,
+        "label": "neutral"
+      },
+      "relevance": 0.560848,
       "count": 2
     },
     {
-      "text": "intérêt public",
+      "text": "districts existants",
       "sentiment": {
         "score": 0,
         "label": "neutral"
       },
-      "relevance": 0.543102,
-      "count": 1
-    },
-    {
-      "text": "etat de droit",
-      "sentiment": {
-        "score": 0,
-        "label": "neutral"
-      },
-      "relevance": 0.535118,
-      "count": 1
+      "relevance": 0.560458,
+      "count": 2
     }
 ]

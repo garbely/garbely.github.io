@@ -1,47 +1,48 @@
 [
     {
-      "text": "partie des devoirs de l'état",
+      "text": "arrondissements électoraux",
       "sentiment": {
         "score": 0,
         "label": "neutral"
       },
-      "relevance": 0.584537,
+      "relevance": 0.621949,
+      "count": 6
+    },
+    {
+      "text": "bi-proportionnelle",
+      "sentiment": {
+        "score": 0,
+        "mixed": "1",
+        "label": "neutral"
+      },
+      "relevance": 0.58789,
+      "count": 9
+    },
+    {
+      "text": "seul cercle électoral",
+      "sentiment": {
+        "score": 0,
+        "label": "neutral"
+      },
+      "relevance": 0.577719,
       "count": 1
     },
     {
-      "text": "renforcement des droits",
+      "text": "nombre de suppléant",
       "sentiment": {
         "score": 0,
         "label": "neutral"
       },
-      "relevance": 0.565603,
+      "relevance": 0.563915,
       "count": 1
     },
     {
-      "text": "démographie du canton",
+      "text": "jeu des sommes de différents arrondissements",
       "sentiment": {
         "score": 0,
         "label": "neutral"
       },
-      "relevance": 0.550687,
-      "count": 2
-    },
-    {
-      "text": "intérêt public",
-      "sentiment": {
-        "score": 0,
-        "label": "neutral"
-      },
-      "relevance": 0.543102,
-      "count": 1
-    },
-    {
-      "text": "etat de droit",
-      "sentiment": {
-        "score": 0,
-        "label": "neutral"
-      },
-      "relevance": 0.535118,
+      "relevance": 0.555602,
       "count": 1
     }
 ]

@@ -1,47 +1,48 @@
 [
     {
-      "text": "partie des devoirs de l'état",
+      "text": "droit de vote",
+      "sentiment": {
+        "score": 0,
+        "mixed": "1",
+        "label": "neutral"
+      },
+      "relevance": 0.653467,
+      "count": 16
+    },
+    {
+      "text": "élection du grand conseil",
       "sentiment": {
         "score": 0,
         "label": "neutral"
       },
-      "relevance": 0.584537,
+      "relevance": 0.595012,
       "count": 1
     },
     {
-      "text": "renforcement des droits",
+      "text": "personnes prêtes",
       "sentiment": {
-        "score": 0,
-        "label": "neutral"
+        "score": -0.672618,
+        "label": "negative"
       },
-      "relevance": 0.565603,
-      "count": 1
-    },
-    {
-      "text": "démographie du canton",
-      "sentiment": {
-        "score": 0,
-        "label": "neutral"
-      },
-      "relevance": 0.550687,
+      "relevance": 0.584229,
       "count": 2
     },
     {
-      "text": "intérêt public",
+      "text": "droits politiques",
       "sentiment": {
         "score": 0,
         "label": "neutral"
       },
-      "relevance": 0.543102,
-      "count": 1
+      "relevance": 0.559781,
+      "count": 3
     },
     {
-      "text": "etat de droit",
+      "text": "pouvoir absolu",
       "sentiment": {
         "score": 0,
         "label": "neutral"
       },
-      "relevance": 0.535118,
+      "relevance": 0.555269,
       "count": 1
     }
-]
+  ]

@@ -1,47 +1,47 @@
 [
     {
-      "text": "partie des devoirs de l'état",
+      "text": "dividende social",
       "sentiment": {
         "score": 0,
         "label": "neutral"
       },
-      "relevance": 0.584537,
+      "relevance": 0.581645,
       "count": 1
     },
     {
-      "text": "renforcement des droits",
+      "text": "droit des personnes handicapées",
       "sentiment": {
         "score": 0,
         "label": "neutral"
       },
-      "relevance": 0.565603,
+      "relevance": 0.559998,
       "count": 1
     },
     {
-      "text": "démographie du canton",
+      "text": "constitution fédérale",
       "sentiment": {
         "score": 0,
         "label": "neutral"
       },
-      "relevance": 0.550687,
+      "relevance": 0.549428,
       "count": 2
     },
     {
-      "text": "intérêt public",
+      "text": "droits des enfants",
       "sentiment": {
         "score": 0,
         "label": "neutral"
       },
-      "relevance": 0.543102,
+      "relevance": 0.547839,
       "count": 1
     },
     {
-      "text": "etat de droit",
+      "text": "intégration sociale",
       "sentiment": {
         "score": 0,
         "label": "neutral"
       },
-      "relevance": 0.535118,
-      "count": 1
+      "relevance": 0.541906,
+      "count": 2
     }
 ]

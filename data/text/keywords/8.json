@@ -1,47 +1,47 @@
 [
     {
-      "text": "partie des devoirs de l'état",
+      "text": "évolution du rôle des préfets",
       "sentiment": {
         "score": 0,
         "label": "neutral"
       },
-      "relevance": 0.584537,
+      "relevance": 0.650775,
       "count": 1
     },
     {
-      "text": "renforcement des droits",
+      "text": "budget de l'état",
       "sentiment": {
         "score": 0,
         "label": "neutral"
       },
-      "relevance": 0.565603,
-      "count": 1
-    },
-    {
-      "text": "démographie du canton",
-      "sentiment": {
-        "score": 0,
-        "label": "neutral"
-      },
-      "relevance": 0.550687,
+      "relevance": 0.588155,
       "count": 2
     },
     {
-      "text": "intérêt public",
+      "text": "système actuel",
       "sentiment": {
         "score": 0,
         "label": "neutral"
       },
-      "relevance": 0.543102,
+      "relevance": 0.586838,
+      "count": 4
+    },
+    {
+      "text": "sein d'un conseil de district",
+      "sentiment": {
+        "score": 0,
+        "label": "neutral"
+      },
+      "relevance": 0.582223,
       "count": 1
     },
     {
-      "text": "etat de droit",
+      "text": "gestion de l'immobilier de l'etat",
       "sentiment": {
         "score": 0,
         "label": "neutral"
       },
-      "relevance": 0.535118,
+      "relevance": 0.559309,
       "count": 1
     }
 ]

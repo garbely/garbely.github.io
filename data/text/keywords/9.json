@@ -1,47 +1,47 @@
 [
     {
-      "text": "partie des devoirs de l'état",
+      "text": "système des juges de commune",
       "sentiment": {
         "score": 0,
         "label": "neutral"
       },
-      "relevance": 0.584537,
+      "relevance": 0.608533,
       "count": 1
     },
     {
-      "text": "renforcement des droits",
+      "text": "principe de la séparation des pouvoirs",
       "sentiment": {
         "score": 0,
         "label": "neutral"
       },
-      "relevance": 0.565603,
-      "count": 1
-    },
-    {
-      "text": "démographie du canton",
-      "sentiment": {
-        "score": 0,
-        "label": "neutral"
-      },
-      "relevance": 0.550687,
+      "relevance": 0.607602,
       "count": 2
     },
     {
-      "text": "intérêt public",
+      "text": "travail de la justice traditionnelle",
       "sentiment": {
         "score": 0,
         "label": "neutral"
       },
-      "relevance": 0.543102,
+      "relevance": 0.593473,
       "count": 1
     },
     {
-      "text": "etat de droit",
+      "text": "devoirs de l'état",
       "sentiment": {
         "score": 0,
         "label": "neutral"
       },
-      "relevance": 0.535118,
+      "relevance": 0.581333,
+      "count": 1
+    },
+    {
+      "text": "pouvoirs indépendants",
+      "sentiment": {
+        "score": 0,
+        "label": "neutral"
+      },
+      "relevance": 0.556921,
       "count": 1
     }
 ]

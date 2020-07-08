@@ -1,47 +1,48 @@
 [
     {
-      "text": "partie des devoirs de l'état",
+      "text": "transport public",
+      "sentiment": {
+        "score": 0,
+        "mixed": "1",
+        "label": "neutral"
+      },
+      "relevance": 0.603145,
+      "count": 4
+    },
+    {
+      "text": "soutient de l'etat",
       "sentiment": {
         "score": 0,
         "label": "neutral"
       },
-      "relevance": 0.584537,
+      "relevance": 0.58598,
       "count": 1
     },
     {
-      "text": "renforcement des droits",
+      "text": "agriculture durable",
       "sentiment": {
         "score": 0,
         "label": "neutral"
       },
-      "relevance": 0.565603,
-      "count": 1
-    },
-    {
-      "text": "démographie du canton",
-      "sentiment": {
-        "score": 0,
-        "label": "neutral"
-      },
-      "relevance": 0.550687,
+      "relevance": 0.579101,
       "count": 2
     },
     {
-      "text": "intérêt public",
+      "text": "éclairage publique",
       "sentiment": {
-        "score": 0,
-        "label": "neutral"
+        "score": -0.95344,
+        "label": "negative"
       },
-      "relevance": 0.543102,
-      "count": 1
+      "relevance": 0.577749,
+      "count": 2
     },
     {
-      "text": "etat de droit",
+      "text": "transports publics gratuits",
       "sentiment": {
         "score": 0,
         "label": "neutral"
       },
-      "relevance": 0.535118,
+      "relevance": 0.551661,
       "count": 1
     }
 ]

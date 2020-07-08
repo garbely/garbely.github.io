@@ -1,47 +1,47 @@
 [
     {
-      "text": "partie des devoirs de l'état",
+      "text": "pouvoir politique",
       "sentiment": {
         "score": 0,
         "label": "neutral"
       },
-      "relevance": 0.584537,
+      "relevance": 0.612382,
       "count": 1
     },
     {
-      "text": "renforcement des droits",
+      "text": "différents cantons limitrophes",
       "sentiment": {
         "score": 0,
         "label": "neutral"
       },
-      "relevance": 0.565603,
+      "relevance": 0.59731,
       "count": 1
     },
     {
-      "text": "démographie du canton",
+      "text": "régions de montagne",
       "sentiment": {
         "score": 0,
         "label": "neutral"
       },
-      "relevance": 0.550687,
-      "count": 2
+      "relevance": 0.56264,
+      "count": 7
     },
     {
-      "text": "intérêt public",
+      "text": "participation de l'etat",
       "sentiment": {
         "score": 0,
         "label": "neutral"
       },
-      "relevance": 0.543102,
+      "relevance": 0.556938,
       "count": 1
     },
     {
-      "text": "etat de droit",
+      "text": "pouvoir religieux actuel",
       "sentiment": {
         "score": 0,
         "label": "neutral"
       },
-      "relevance": 0.535118,
+      "relevance": 0.554544,
       "count": 1
     }
-]
+ ]

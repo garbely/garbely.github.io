@@ -1,11 +1,13 @@
 <!--Creator: Patrick Garbely-->
 <!--Created at: 26/06/2020-->
-<!--Last Update: 04/07/2020-->
+<!--Last Update: 08/07/2020-->
 
 <!doctype html>
 <html lang="en">
 
 <head>
+    <title>Analyse - Walliser Verfassung</title>
+
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -19,7 +21,6 @@
     <script src="https://cdn.jsdelivr.net/npm/vega@5.12.1"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-lite@4.13.1"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.8.0"></script>
-    <title>Analyse - Walliser Verfassung</title>
 </head>
 
 <!--
@@ -46,22 +47,19 @@ W3 Schools: https://www.w3schools.com/bootstrap4/default.asp
 
         <ul class="navbar-nav mx-auto">
             <li class="nav-item mx-4">
-                <a class="nav-link" href="#project"><img src="img/project-nav.png" title="Kurzübersicht Projekt"></a>
+                <a class="nav-link" href="#project">Projekt</a>
             </li>
             <li class="nav-item mx-4">
-                <a class="nav-link" href="#language-analysis"><img src="img/languages-nav.png"
-                        title="Canton billingue"></a>
+                <a class="nav-link" href="#language-analysis">Sprachen</a>
             </li>
             <li class="nav-item mx-4">
-                <a class="nav-link" href="#topic-analysis"><img src="img/constitution-nav.png"
-                        title="Verfassungsthemen"></a>
+                <a class="nav-link" href="#topic-analysis">Themen</a>
             </li>
             <li class="nav-item mx-4">
-                <a class="nav-link" href="#text-analysis"><img src="img/keywords-nav.png" title="Schlüsselwörter"></a>
+                <a class="nav-link" href="#text-analysis">Text</a>
             </li>
             <li class="nav-item mx-4">
-                <a class="nav-link" href="#user-analysis"><img src="img/users-nav.png"
-                        title="Teilnehmer: Quantität & Qualität"></a>
+                <a class="nav-link" href="#user-analysis">Teilnehmer</a>
             </li>
         </ul>
     </nav>
@@ -76,8 +74,8 @@ W3 Schools: https://www.w3schools.com/bootstrap4/default.asp
                     <h1 class="my-5 pt-5"><img src="img/project.png"> Kurzübersicht Projekt</h1>
 
                     <p class="lead text-dark mb-5">Im Rahmen meiner Bachelorarbeit im Studiengang Wirtschaftsinformatik
-                        an der HES-SO
-                        Valais habe ich einige Daten für die neue Walliser Verfassung zusammengetragen und
+                        an der <a href="https://www.hevs.ch/de/" target="_blank">HES-SO Valais</a> habe ich einige Daten
+                        betreffend der neuen Walliser Verfassung zusammengetragen und
                         analysiert.<br><br>Alle Daten beruhen auf der Volksbefragung "Welche Verfassung für das Wallis
                         von morgen?". Diese Befragung wurde von der HES-SO Valais, im Auftrag des Verfassungsrats,
                         online durchgeführt. Vom 7. November 2019 bis zum 5. Januar 2020 war die gesamte Walliser
@@ -116,7 +114,6 @@ W3 Schools: https://www.w3schools.com/bootstrap4/default.asp
             <div class="row">
                 <div class="col-lg-8 mx-auto">
 
-
                     <h1 class="my-5 pt-5"><img src="img/languages.png"> Canton billingue</h1>
 
                     <p class="lead mb-5">Wie es sich für unseren zweisprachigen Kanton gehört, war die Umfrage in den
@@ -137,14 +134,15 @@ W3 Schools: https://www.w3schools.com/bootstrap4/default.asp
                     <div class="text-center mb-5" id="pieChart1"></div>
 
                     <p class="lead mb-5">In der deutschen Version gab es gerade mal 118 Beiträge (8,8 % aller Beiträge),
-                        während es die französische Gemeinschaft auf 1228 Beiträge gebracht hat.<br><br>Die geringe
-                        Anzahl an Beiträgen aus dem deutschsprachigen Kantonsteil ist einfach zu begründen. Auf der
-                        deutschen Plattform gab es nur zwei Dutzend aktive Benutzer, welche sich an der öffentlichen
-                        Diskussion beteiligten. </p>
+                        während es die französische Gemeinschaft auf 1228 Beiträge gebracht hat.</p>
 
                     <h5 class="my-3">Aktive Teilnehmer pro Sprache</h5>
 
-                    <p class="lead mb-5">In dieser Grafik sind die genauen Teilnehmerzahlen pro Sprache zu sehen.
+                    <p class="lead mb-5">Die geringe
+                        Anzahl an deutschsprachigen Beiträgen ist einfach zu begründen. Auf der
+                        deutschen Plattform gab es nur zwei Dutzend aktive Teilnehmer, welche sich an der öffentlichen
+                        Diskussion beteiligten.<br><br>In dieser Grafik sind die genauen Teilnehmerzahlen pro Sprache zu
+                        sehen.
                         Wichtig ist
                         dabei, dass es sich nur um Teilnehmer handelt, welche mindestens einen Beitrag oder ein Argument
                         verfasst haben. Angemeldete Benutzer ohne Beiträge wurden nicht berücksichtigt.</p>
@@ -156,7 +154,9 @@ W3 Schools: https://www.w3schools.com/bootstrap4/default.asp
                     <p class="lead mb-5">Die 24 Teilnehmer aus dem deutschen Sprachraum bilden etwa 16,4% der gesamten
                         Teilnehmerzahl. Damit ist der Anteil an deutschsprachigen Teilnehmern bei der Verfassungsumfrage
                         etwas geringer als der deutschsprachige Bevölkerungsanteil des Kantons Wallis, der laut
-                        Bundesamt für Statistik im Erhebungszeitraum 2016 bis 2018 bei etwa 24,3 % lag.<br><br>Dass die
+                        Bundesamt für Statistik im Erhebungszeitraum 2016 bis 2018 bei etwa <a
+                            href="https://www.bfs.admin.ch/bfs/de/home/statistiken/regionalstatistik/regionale-portraets-kennzahlen/kantone/wallis.html"
+                            target="_blank">24,3 %</a> lag.<br><br>Dass die
                         absoluten Zahlen der französischsprachigen Plattform höher sind, ist natürlich keine
                         Überraschung. Laut Bundesamt für Statistik sprechen gute zwei Drittel der Walliser Bevölkerung
                         Französisch in der Hauptsprache.<br><br>Die obenstehenden Visualisierungen zeigen jedoch, dass
@@ -167,36 +167,62 @@ W3 Schools: https://www.w3schools.com/bootstrap4/default.asp
 
                     <p class="lead mb-5">Bei der Gegenüberstellung der Anzahl Teilnehmer und Beiträge pro Sprache werden
                         die
-                        Verhältnisse nochmals klar aufgezeigt. In diesem Kreisdiagramm sieht man die durchschnittliche
-                        Anzahl Beiträge der Teilnehmer mit der jeweiligen Sprache.</p>
+                        Verhältnisse nochmals klar aufgezeigt. In der Abbildung unten sieht man die
+                        durchschnittliche
+                        Anzahl Beiträge der Teilnehmer auf der jeweiligen Sprachplattform.</p>
 
-                    <!-- Pie Chart visualization 3 - Average amount of contributions per user & language -->
+                    <!-- Little table to show the average amount of contributions per user & language -->
 
-                    <div class="text-center mb-5" id="pieChart3"></div>
+                    <div class="col-lg-8">
+                        <table class="table bg-white table-sm shadow-lg mb-4 my-5">
+                            <tbody>
+                                <tr class="border">
+                                    <td class="p-3"><img src="img/german.png"
+                                            title="Picture by Bilinguisme - https://www.bilinguisme.ch/files/96/drapeaux.png">
+                                    </td>
+                                    <td class="p-3 align-middle"><b>4.9</b> Beiträge pro Teilnehmer</td>
+                                </tr>
+                                <tr class="">
+                                    <td class="p-3"><img src="img/french.png"
+                                            title="Picture by Bilinguisme - https://www.bilinguisme.ch/files/96/drapeaux.png">
+                                    </td>
+                                    <td class="p-3 align-middle"><b>10.1</b> Beiträge pro Teilnehmer</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
 
-                    <p class="lead mb-5">Der französische Durchschnittsteilnehmer hat also doppelt so viele Beiträge
+                    <p class="lead mb-5">Der französisch sprechende Durchschnittsteilnehmer hat also doppelt so viele
+                        Beiträge
                         verfasst
-                        wie der deutschsprachige Teilnehmer.<br><br>Diese Statistik ist also unabhängig von der
-                        jeweiligen Anzahl Teilnehmer pro Sprache. Jedoch muss man dazu auch sagen, dass die grössere
-                        Anzahl an Beiträgen und Teilnehmern auch den möglichen Diskussionsstoff erhöht.</p>
+                        wie der deutschsprachige Teilnehmer.<br><br>Diese Statistik ist unabhängig von der
+                        jeweiligen Anzahl Teilnehmer pro Sprache, da sie den Durchschnitt berücksichtigt. Jedoch muss
+                        man dazu sagen, dass die grössere
+                        Anzahl an Beiträgen und Teilnehmern auch den möglichen Diskussionsstoff erhöht. Zudem gibt es
+                        ein paar wenige Teilnehmer, die den Durchschnitt massiv erhöhen. Mehr dazu im letzten Kapitel
+                        "Teilnehmer: Quantität & Qualität".</p>
 
                     <h5 class="my-3">Fazit</h5>
 
                     <p class="lead mb-5">Lange Rede, kurzer Sinn: Die Gegenüberstellung der beiden Sprachen zeigt eine
-                        deutliche Mehrheit an der Teilnehmeraktivität aus dem französischsprachigen Raum auf.<br><br>Der
+                        deutliche Mehrheit in Sachen Teilnehmeraktivität aus dem französischsprachigen Raum
+                        auf.<br><br>Der
                         Hauptgrund dafür ist sicherlich der grössere Bevölkerungsanteil. <br><br>Ein weiterer Grund kann
                         die geringfügige Werbung für die Umfrage sein. Denn die gesamte Teilnehmerzahl von 146 ist eine
-                        sehr niedrige Zahl, wenn man die Einwohnerzahl von ca. 344'000 bedenkt. Bei der nächsten Umfrage
+                        sehr niedrige Zahl, wenn man die Einwohnerzahl von ca. 344'000 (siehe Bundesamt für Statistik)
+                        bedenkt. Bei der nächsten Umfrage
                         gilt es also für den Verfassungsrat mehr Werbung zu machen und möglichst viele Menschen an der
                         Teilnahme zu animieren. Je mehr Teilnehmer an der Umfrage mitmachen, desto mehr Meinungen können
                         auf diesem Weg eingeholt werden. Davon kann der Verfassungsrat nur profitieren, da dieser
-                        schliesslich vom Volk gewählt wurde und nun auch deren Interessen für die Verfassung vertreten
-                        sollte.<br><br>Abschliessend muss man zur Sprachanalyse sagen, dass die Sprache einen Teilnehmer
+                        schliesslich vom Volk gewählt wurde und nun auch deren Interessen für die Verfassung
+                        vertritt.<br><br>Abschliessend muss man zur Sprachanalyse sagen, dass die Sprache einen
+                        Teilnehmer
                         nicht zwingend in ein geografisches Gebiet eingrenzen lässt. Diese Gegenüberstellung darf also
                         nicht als ein Vergleich zwischen Ober- und Unterwallis gewertet werden. Es gibt viele
                         zweisprachige Walliser/innen, welche sich tendenziell wohl eher auf der französischen Plattform
                         engagiert haben, da sich auf dieser schlicht mehr Diskussionsstoff angeboten hat. Leider musste
-                        bei der Registrierung der Wohnort nicht angeben werden. Auch dies wäre für die nächste Umfrage
+                        bei der Registrierung für die Umfrage der Wohnort nicht angeben werden. Auch dies wäre für die
+                        nächste Umfrage
                         wünschenswert, da man mit dieser zusätzlichen demografischen Information die Bedürfnisse genauer
                         auf bestimmte Regionen innerhalb des Wallis zuweisen könnte.</p>
                 </div>
@@ -228,6 +254,7 @@ W3 Schools: https://www.w3schools.com/bootstrap4/default.asp
                                 <th>#</th>
                                 <th>Thema</th>
                             </tr>
+
                         </thead>
                         <tbody>
                             <tr>
@@ -281,37 +308,49 @@ W3 Schools: https://www.w3schools.com/bootstrap4/default.asp
                         </tbody>
                     </table>
 
+                    <p class="lead mb-5">Einige Themen sind autonom und daher einfach voneinander abzutrennen. Jedoch
+                        enthalten die Themen 4 bis 6 (Aufgaben des Staates), sowie 7 bis 9 (Aufgaben der Behörden)
+                        thematische Ähnlichkeiten und stellen somit eine Art Themengruppe dar.</p>
+
                     <h5 class="my-3">Schriftliche Beiträge pro Thema / Subthema (ohne Stimmen)</h5>
 
                     <p class="lead mb-5">In einem ersten Schritt wollte ich wissen, welche dieser elf Bereiche die
                         Teilnehmer
-                        am meisten interessiert hat. Dafür habe ich alle Vorschläge und Argumente zusammengezählt und in
-                        einem Kacheldiagramm (Treemap) dargestellt. Die oben aufgelisteten Themen sind auf dieser Karte
-                        in deren Subthemen gegliedert. Je grösser ein Feld dargestellt wird, desto mehr Beiträge gibt es
+                        am meisten interessiert hat. Dafür habe ich alle schriftlichen Vorschläge und Argumente
+                        zusammengezählt und in
+                        einem Kacheldiagramm (engl. "Treemap") dargestellt.<br><br>Die oben aufgelisteten Themen sind
+                        auf dieser Karte
+                        in deren Subthemen gegliedert. Je grösser ein einzelnes Feld, desto mehr Beiträge gibt es
                         zu diesem Thema. Systematisch werden die Themen von links nach rechts in absteigender
                         Beitragszahl dargestellt. Bei einer Mausbewegung über die Felder können die Details zu dem
                         Subthemen und den Anzahl Beiträgen angeschaut werden.</p>
 
                     <!-- Treemap visualization 1 - Written contributions of all topics & subtopics -->
 
-                    <div class="text-center mb-5 shadow-lg" id="treemap"></div>
+                    <div class="text-center mb-5" id="treemap"></div>
 
                     <h5 class="my-3">Aktivitäten pro Thema / Subthema (inkl. Stimmen, Beiträge und Argumente)</h5>
 
                     <p class="lead mb-5">Auch die nächste Grafik zeigt die Relevanz der Themen für die Teilnehmer.
                         Hierbei
-                        wurden zusätzlich zu den schriftlichen Beiträgen auch die Stimmen dazugezählt. Die Grafik ist in
-                        einer kreisförmigen Treemap dargestellt. Weitere Informationen zu den einzelnen Bereichen können
+                        wurden zusätzlich zu den schriftlichen Beiträgen auch die Stimmen dazugezählt. Weitere
+                        Informationen zu den einzelnen Bereichen können
                         wiederum mit der Maus erkundet werden.</p>
 
                     <!-- Treemap visualization 2 - All activities of all topics & subtopics -->
 
-                    <div class="mb-5" id="circle_packing"></div>
+                    <div class="text-center mb-5" id="treemap2"></div>
 
-                    <p class="lead mb-5">Beide Treemaps zeigen ganz ähnliche Resultate. Somit können beide Grafiken
-                        gemeinsam
-                        interpretiert werden.<br><br>Auffallend ist erstmals sicherlich, dass die Kapitel 1, 2 und 3 an
-                        der Spitze liegen. Die hat zwei naheliegende Gründe. Erstens sind die diese Themen nicht aus
+                    <p class="lead">Im Vergleich zur vorherigen Visualisierung ergeben sich folgende Erkentnisse:</p>
+                    <ul>
+                        <li>Die Dominanz des Themenkapitel 1 "Allgemeine Elemente,..." ist noch grösser.</li>
+                        <li>Das Thema 11 "Weiteres" hat in Bezug auf die Stimmen etwas weniger Aufmerksamkeit erhalten.
+                        </li>
+                    </ul>
+                    <p class="lead">Ansonsten zeigen beide Treemaps hauptsächlich ähnliche Resultate. Somit folgt nun
+                        eine Interpretation der beiden Grafiken.<br><br>Auffallend ist erstmals sicherlich, dass die
+                        Kapitel 1, 2 und 3 an
+                        der Spitze liegen. Dies hat zwei naheliegende Gründe. Erstens sind die diese Themen nicht aus
                         Zufall die ersten drei Punkte in der Verfassung. Es sind politisch sehr relevante Themen. Gerade
                         die Kapitel 1 und 2 betreffen zudem praktisch jeden einzelnen Bürger, während in anderen
                         Themenbereichen jeweils nur bestimmte Interessengruppen betroffen sind. Der zweite Grund für die
@@ -319,15 +358,17 @@ W3 Schools: https://www.w3schools.com/bootstrap4/default.asp
                         Sicher gibt es Teilnehmer, welche sich von oben nach unten durch die Umfrage gelesen haben,
                         jedoch nicht überall mitmachen konnten.<br><br>Durch eine neue Darstellung der Startseite der
                         Umfrage könnte letzteres Verhaltensmuster vielleicht etwas gebrochen werden und allen Themen die
-                        gleiche Aufmerksamkeit geboten werden. Stand jetzt sieht die Umfrage so aus, dass die sie nach
-                        Themaziffer in aufsteigender Reihenfolge sortiert ist. Ein Lösungsansatz für eine Verbesserung
-                        wäre, nur die elf grossen Themen auf der Startseite anzuzeigen und mit einem Mausklick zu dem
-                        gewählten Thema zu landen.<br><br>Eine positive Erkenntnis ist, dass trotz der geringen
+                        gleiche Aufmerksamkeit geboten werden. Stand jetzt sieht die Umfrage so aus, dass die Themen von
+                        1 bis 11 in aufsteigender Reihenfolge untereinander sortiert sind. Ein Lösungsansatz für eine
+                        Verbesserung
+                        wäre, auf der Startseite nur die elf grossen Themen anzuzeigen und mit einem Mausklick bei dem
+                        gewählten Thema zu landen.<br><br>Die positive Erkenntnis ist, dass trotz der eher geringen
                         Teilnehmerzahlen zu allen Themen diskutiert wurde. Die meist besprochenen Themen sind die Punkte
-                        "1.1 Präambel" (123 Beiträge) und "11 Weiteres" (108 Beiträge). Dies ist darauf zurückzuführen,
-                        dass diese Themen sehr allgemein gehalten sind und einige inhaltliche verschiedene Inhalte in
-                        diesen Diskussionen zu finden sind. Von den spezifischeren Themen gehören folgende Bereiche zu
-                        den meist bzw. zu den am wenigsten besprochenen:</p>
+                        "1.1 Präambel" und "11 Weiteres". Dies ist darauf zurückzuführen,
+                        dass diese Themen sehr allgemein gehalten sind und einige verschiedene Inhalte in
+                        diesen Diskussionen zu finden sind. Zusammenfassend und als Ergänzung zu den Treemaps gehören
+                        folgende Bereiche zu den meist bzw.
+                        zu den am wenigsten besprochenen:</p>
 
                     <!-- Table to show a resumee of the most and least discussed subtopics-->
 
@@ -342,6 +383,18 @@ W3 Schools: https://www.w3schools.com/bootstrap4/default.asp
                             </tr>
                         </thead>
                         <tbody>
+                            <tr>
+                                <td class="font-weight-bold">1.1</td>
+                                <td>Präambel</td>
+                                <td>123</td>
+                                <td>1'566</td>
+                            </tr>
+                            <tr>
+                                <td class="font-weight-bold">11</td>
+                                <td>Weiteres</td>
+                                <td>108</td>
+                                <td>162</td>
+                            </tr>
                             <tr>
                                 <td class="font-weight-bold">3.4</td>
                                 <td>Repräsentativität der Gewählten</td>
@@ -359,24 +412,6 @@ W3 Schools: https://www.w3schools.com/bootstrap4/default.asp
                                 <td>Verhältnis Kirchen/Staat</td>
                                 <td>50</td>
                                 <td>405</td>
-                            </tr>
-                            <tr>
-                                <td class="font-weight-bold">8.1</td>
-                                <td>Staatsrat</td>
-                                <td>43</td>
-                                <td>182</td>
-                            </tr>
-                            <tr>
-                                <td class="font-weight-bold">2.1</td>
-                                <td>Rechte im Zusammenhang mit der Natur</td>
-                                <td>42</td>
-                                <td>228</td>
-                            </tr>
-                            <tr>
-                                <td class="font-weight-bold">2.3</td>
-                                <td>Rechte von den nicht Stimmberechtigten</td>
-                                <td>40</td>
-                                <td>225</td>
                             </tr>
                             <tr>
                                 <td>...</td>
@@ -425,37 +460,40 @@ W3 Schools: https://www.w3schools.com/bootstrap4/default.asp
                     <h1 class="my-5 pt-5"><img src="img/keywords.png"> Schlüsselwörter</h1>
 
                     <p class="lead mb-5">Im vorherigen Kapitel wurde analysiert, über welche Themen bei der Umfrage
-                        gesprochen wurde. Nun möchte ich noch etwas mehr ins Detail gehen. Mithilfe von Text Mining will
+                        gesprochen wurde. Nun möchte ich noch etwas mehr ins Detail gehen. Mithilfe von digitaler
+                        Textanalyse will
                         ich herausfinden, was die inhaltlichen Schlüsselwörter in den Diskussionen innerhalb dieser
                         Themen waren.</p>
 
                     <!-- First definition degression -> Definition of Text Mining -->
 
                     <h5 class="my-3 font-italic text-center">Exkurs</h5>
-                    <h5 class="my-3 font-italic text-center">Definition Text Mining</h5>
+                    <h5 class="my-3 font-italic text-center">Text Mining</h5>
 
                     <p class="pre-scrollable mb-5 border p-4 bg-white">
                         Bei Text Mining handelt es sich um einen generellen Vorgang innerhalb von digitalisierten
                         Textanalysen.
                         Mit bestimmten Methoden macht es Text Mining möglich, unstrukturierte Textdaten zu verarbeiten
-                        und in ein strukturiertes, interpretierbares Schema zu transformieren<br><br>In der deutschen
+                        und in ein strukturiertes, interpretierbares Schema zu transformieren.<br><br>In der deutschen
                         Fachsprache wird ebenfalls die englische Bezeichnung Text Mining gebraucht.
-                        „Mining“ bedeutet in der deutschen Übersetzung so etwas wie „graben“ oder „schürfen“.Der
+                        „Mining“ bedeutet in der deutschen Übersetzung so etwas wie „graben“ oder „schürfen“. Der
                         Ursprung des Wortes befindet sich im Bergbau, wo es darum geht, tief im Ursprung des Berges zu
                         graben und das Material am Ende des Vorgangs zu einem nützlichen Output zu verwerten. Dies ist
                         keine zufällige Zweideutigkeit, nämlich wird beim Text Mining im Grunde genommen ein konzeptuell
                         ähnlicher Prozess durchgeführt. Es wird im unstrukturierten Reintext „gegraben“ und die
-                        gefundenen Daten soll am Ende ein sinnvolles Resultat ergeben.<br><br>Die maschinelle
+                        gefundenen Daten sollen am Ende ein sinnvolles, zusammenfassendes Resultat ergeben.<br><br>Die
+                        maschinelle
                         Textverarbeitung bedient sich dabei an den von Menschen geschaffenen Sprachen. Grob unterteilt
                         wird von zwei verschiedenen Wissensarchiven Gebrauch gemacht. Einerseits anhand von
-                        lexikalischen Sprachdatenbanken, wie zum Beispiel „WordNet“. Auf der anderen Seite wird das Text
+                        lexikalischen Sprachdatenbanken, wie zum Beispiel „<a
+                            href="https://wordnet.princeton.edu/">WordNet</a>“. Auf der anderen Seite wird das Text
                         Mining anhand von maschinellem Lernen stets weiterentwickelt. Das bedeutet, je mehr die
                         Algorithmen dieser Maschinen trainieren bzw. lernen können, desto reicher werden deren Methoden
                         an Wissen und Präzision.<br><br>Natürlich bringt das Text Mining auch eine vergleichsweise
                         grosse Zahl an Verfehlungen mit sich. Doch bei uns Menschen ist dies genau dasselbe. Auch wir
                         verstehen nicht alle Sprachen und oftmals gibt es auch Missverständnisse beim Kommunizieren in
                         der Erstsprache.<br><br>Es gibt jede Menge verschiedene Algorithmen und Techniken zur
-                        Durchführung von Text Mining.
+                        Durchführung von Text Mining. Eine davon ist die "Keyword Extraction".
                     </p>
 
                     <h5 class="my-3">Keyword Extraction</h5>
@@ -463,10 +501,12 @@ W3 Schools: https://www.w3schools.com/bootstrap4/default.asp
                     <img src="img/wordcloud.PNG" class="img-fluid mx-auto d-block p-5"
                         title="Picture by Pixers - https://pixers.de/fototapeten/word-cloud-big-data-41468665">
 
-                    <p class="lead mb-5">Zum Herausfinden der wichtigsten Schlüsselwörter wurde die Text Mining Methode
-                        "Keyword Extraction" angewandt. Es geht also darum, Schlüsselwörter aus dem Text
+                    <p class="lead mb-5">Zum Herausfinden der wichtigsten Schlüsselwörter wird die in der digitalen
+                        Textanalyse bekannte Methode
+                        "Keyword Extraction" verwendet. Es geht also darum, Schlüsselwörter aus dem Text
                         herauszufiltern. Üblicherweise wird Text Mining vor allem für grosse Mengen von Textdaten
-                        benützt. Aus diesem Grund habe das Thema mit den meisten Beiträgen analysiert. Wie in der
+                        benützt. Aus diesem Grund habe ich das Thema mit den meisten Beiträgen im Detail analysiert. Wie
+                        in der
                         Themenanalyse eruiert, wurde "1.1 Präambel" am meisten besprochen. Dieser Punkt eignet sich sehr
                         gut für die Textanalyse, da es ein sehr allgemeines Thema mit vielfältigem Diskussionsstoff ist.
                         Zudem gab es auch auf der deutschsprachigen Umfrage einige Beiträge. Deshalb kann sogar ein
@@ -479,14 +519,16 @@ W3 Schools: https://www.w3schools.com/bootstrap4/default.asp
                         kleinere Datensätze wie in diesem Fall kann das Tool kostenlos benützt werden. Dies und die
                         Anwendung in mehreren Sprachen (inkl. Deutsch und Französisch) sind die grössten Stärken des IBM
                         Watson Tools.<br><br>Die wichtigste Kennzahl bei der Keyword Extraction ist die "Relevanz". Bei
-                        einer Mausbewegung über die jeweiligen Schlüsselwörter wird die mathematische Relevanz gemäss
-                        Berechnung des IBM Watson Tools angezeigt.<br><br>Bei der Evaluierung der Relevanz wird
+                        der nachfolgenden Visualisierung kann mit
+                        einer Mausbewegung über das jeweilige Keyword die mathematische Relevanz gemäss
+                        Berechnung des IBM Watson Tools angezeigt werden.<br><br>Bei der Evaluierung der Relevanz wird
                         zusätzlich zur Häufigkeit von Wörtern oder Wortkollokationen auch deren Wichtigkeit im Kontext
                         überprüft. Wörter, welche erfahrungsgemäss in jedem Text oft vorkommen werden dementsprechend
-                        als weniger relevant gewertet als jene, die selten in Texten zu lesen sind.<br><br>Zum Verstehen
-                        der nachfolgenden Schlüsselwörter Analyse werden Grundkenntnisse in Französisch vorausgesetzt.
+                        als weniger relevant gewertet als jene, die selten in Texten zu lesen sind.</p>
+                    <p class="mb-5">* Zum Verstehen der nachfolgenden Schlüsselwörter Analyse werden Grundkenntnisse in
+                        Französisch vorausgesetzt.
                         Aufgrund des Risikos zur Verfälschung der Resultate habe ich auf eine Übersetzung ins Deutsche
-                        verzichtet. Die folgende Auswertung entspricht exakt genau dem Resultat aus der IBM Technologie.
+                        verzichtet. Die folgende Auswertung entspricht exakt dem Resultat aus der IBM Technologie.
                         Es wurden keine Verschönerungen oder andere Mutationen an den Daten vorgenommen.</p>
                 </div>
 
@@ -494,16 +536,16 @@ W3 Schools: https://www.w3schools.com/bootstrap4/default.asp
 
                 <div>
                     <div class="text-center mb-5 shadow-lg">
-                        <h4 class="pt-5">KEYWORDS</h4>
+                        <h4 class="pt-5">Keywords - 1.1 Präambel</h4>
                         <div class="row">
                             <div class="pt-5">
                                 <h5>Französiche Umfrage</h5>
-                                <div class="p-5" id="keywords_bar1">
+                                <div class="p-5" id="keywords_fr">
                                 </div>
                             </div>
                             <div class="pt-5">
                                 <h5>Deutsche Umfrage</h5>
-                                <div class="p-5" id="keywords_bar2">
+                                <div class="p-5" id="keywords_de">
                                 </div>
                             </div>
                         </div>
@@ -511,18 +553,20 @@ W3 Schools: https://www.w3schools.com/bootstrap4/default.asp
                 </div>
 
                 <div class="col-lg-8 mx-auto">
-                    <p class="lead mb-5">Neben wenigen Ausnahmen hat die Extraktiontechnologie einige sehr relevante
-                        Schlüsselbegriffe hervorgebracht.<br><br>Angenommen, das Hauptthema wäre noch nicht bekannt,
-                        kann man durch diese Schlüsselwörter schon sehr gut erkennen, dass hier über eine Verfassung und
+                    <p class="lead mb-5">Neben wenigen Ausnahmen (z.B. sinngemässe Duplikate) hat die
+                        Extraktiontechnologie gute Arbeit geleistet und die relevantesten Schlüsselbegriffe
+                        hervorgebracht.<br><br>Angenommen, das Hauptthema wäre noch nicht bekannt,
+                        kann man durch diese Schlüsselwörter schon sehr gut erkennen, dass hier über eine Verfassung
+                        geredet wird und
                         dass in beiden Sprachen über dieselbe Grundproblematik diskutiert wird. Ein grosser Teil der
                         Begriffe sind ähnlich und kommen bei beiden Diskussionen vor.</p>
 
                     <h5 class="my-3">Text Classification</h5>
 
                     <p class="lead mb-5">Um, zumindest beim Beispiel der Präambel, noch tiefer ins Detail zu gehen, habe
-                        ich die obenstehenden Begrifflichkeiten nochmals in eigene "Klassen" zugeordnet und diese mit
+                        ich die obenstehenden Begrifflichkeiten nochmals in eigene "Klassen" gegliedert und diese mit
                         sogenannten Wordclouds zusammengefasst. Bei der Analyse der Schlüsselwörter Extraktion sind fünf
-                        grundlegende Themen herausgestochen:</p>
+                        grundlegende Themenklassen herausgestochen:</p>
                 </div>
 
                 <!-- Wordcloud clusters of extracted keywords (simple, selfmade visualization) -->
@@ -533,7 +577,7 @@ W3 Schools: https://www.w3schools.com/bootstrap4/default.asp
                 <div class="col-lg-8 mx-auto">
 
                     <p class="lead mb-5">Einige extrahierte Schlüsselwörter wurden bei der Klassifizierung bewusst
-                        weggelassen, da sie entweder mehrmals auftauchen, nicht in den Kontext passen oder keinem
+                        weggelassen, da sie entweder mehrmals auftauchen oder als eigenständige Begriffe keinem
                         entsprechenden Thema zugewiesen werden können.<br><br>Eine kurze Interpretation der fünf
                         eruierten Themenklassen:</p>
 
@@ -566,7 +610,7 @@ W3 Schools: https://www.w3schools.com/bootstrap4/default.asp
                                 <td class="p-3">Oft wird auf Verfassungen und Präambeln von anderen Kantonen und vom
                                     Bund verwiesen. Auf der deutschen Plattform wurden die Kantone Fribourg und
                                     Graubünden explizit genannt, während auf der französischen Plattform vor allem die
-                                    Schweizerische Verfassung eine Rolle spielte.</td>
+                                    Schweizerische Bundesverfassung eine Rolle spielte.</td>
                             </tr>
                             <tr>
                                 <td class="p-3 font-weight-bold">Werte</td>
@@ -577,29 +621,123 @@ W3 Schools: https://www.w3schools.com/bootstrap4/default.asp
                     </table>
 
                     <p class="lead mb-5">Die Klassifizierung in die gerade erklärten Themen wurde wurde manuell
-                        erstellt, da die Datenmengen überschaubar und der Kontext vertraut war. Bei diesem Vorgehen
+                        erstellt, da die Datenmengen überschaubar und der Kontext vertraut waren. Bei diesem Vorgehen
+                        (Klassifzierung)
                         handelt es sich um eine weitere typische Vorgehensweise beim Text Mining. Diese wird "Topic
                         Modeling" oder "Topic Classification" genannt.</p>
 
-                    <!-- Second definition digression
-Extraction vs. Classification vs. Modeling -->
+                    <!-- Second definition digression: Extraction vs. Classification vs. Modeling vs. Clustering -->
 
                     <h5 class="my-3 font-italic text-center">Exkurs</h5>
-                    <h5 class="my-3 font-italic text-center">Extraction vs. Classification vs. Modeling</h5>
+                    <h5 class="my-3 font-italic text-center">Extraction vs. Classification vs. Modeling vs. Clustering
+                    </h5>
 
 
                     <p class="pre-scrollable p-4 border bg-white mb-5">
                         Die Bezeichnung Extraktion kommt aus dem englischen Wort „extract“, was so viel heisst wie
-                        Auszug oder Ausschnitt. Bei diesem Vorgehen werden also Wörter bzw. Wortfrequenzen so
+                        Auszug oder Ausschnitt. Bei diesem Vorgehen werden also Wörter bzw. Wortfrequenzen genau so
                         herauskristallisiert, wie sie im Text stehen.<br><br>
                         Bei der Klassifizierung (engl. „Classification“) kommt ein anderes Konzept zur Anwendung. Hier
                         werden die Textteile in verschiedene vordefinierte Klassen oder Gruppen zugewiesen, welche nicht
-                        zwingend im Text vorkommen.<br><br>
+                        zwingend im Text vorkommen. Beim oben gesehenen Beispiel definiert man also die Themen
+                        "Religion", "Gemeinschaft", etc. vor der Textanalyse. Die Aufgabe des Algorithmus ist es dann,
+                        die gefundenen Textinhalte diesen Themen zuzuweisen.<br><br>
                         Das "Topic Modeling" oder "Clustering" ist eine alternative Variante für das Klassifizieren in
                         Gruppen. Der Unterschied zur gängigen Methode ist, dass die Gruppen nicht im Voraus definiert
-                        werden. Der Algorithmus zielt also darauf ab, die Themen kennen zu lernen.<br><br>Beim
-                        Modellieren steht somit das Bilden von Clustern, also Themen, im Vordergrund. Die
+                        werden. Der Algorithmus zielt also darauf ab, die Themen kennen zu lernen. Nehmen wir nochmals
+                        das Beispiel von oben, so werden beim Clustering zuerst die Textinhalte mit ähnlicher Bedeutung
+                        zusammengetragen. Die Themen ergeben sich dann sinngemäss und können vom Menschen interpretiert
+                        werden.<br><br>Beim
+                        Clustering steht somit das Bilden von Clustern, also Themen, im Vordergrund. Die
                         Klassifizierung verfolgt eher das Ziel, die Textteile den definierten Themen zuzuweisen.
+                    </p>
+
+                    <p class="lead mb-5">
+                        Um einen Einblick in alle thematischen Diskussionen aus der Umfrage zu liefern, wurde bei den
+                        restlichen Themen ebenfalls eine Keyword Extraction durchgeführt.<br><br>Hier sehen Sie die Top
+                        5 der Schlüsselwörter aus allen grossen Themen 1-11. Dieses Mal konnten nur die
+                        französischsprachigen Texte berücksichtigt werden, da es auf der deutschen Version, wie bereits
+                        erwähnt, schlicht zu wenig Textdaten für eine derartige Analyse gibt.
+                    </p>
+                </div>
+                <!-- Barchart visualizations (Keyword extraction) REST TOPICS -->
+                <div>
+                    <div class="text-center mb-5 shadow-lg">
+                        <div class="row">
+                            <div class="pt-4">
+                                <h5>1.2 - 1.5</h5>
+                                <p>Allgemeine Elemente (ohne "1.1 Präambel")</p>
+                                <div class="px-5" id="keywords1">
+                                </div>
+                            </div>
+                            <div class="pt-4">
+                                <h5>2</h5>
+                                <p>Grundrechte, Sozialrechte & Zivilgesellschaft</p>
+                                <div class="px-5" id="keywords2">
+                                </div>
+                            </div>
+                            <div class="pt-4">
+                                <h5>3</h5>
+                                <p>Politische Rechte & direkte Demokratie</p>
+                                <div class="px-5" id="keywords3">
+                                </div>
+                            </div>
+                            <div class="pt-4">
+                                <h5>4</h5>
+                                <p>Allgemeine Aufgaben des Staates</p>
+                                <div class="px-5" id="keywords4">
+                                </div>
+                            </div>
+                            <div class="pt-4">
+                                <h5>5</h5>
+                                <p>Raumentwicklung, Ressourcen, Klima, Mobilität, Landwirtschaft</p>
+                                <div class="px-5" id="keywords5">
+                                </div>
+                            </div>
+                            <div class="pt-4">
+                                <h5>6</h5>
+                                <p>Soziale Aufgaben des Staates</p>
+                                <div class="px-5" id="keywords6">
+                                </div>
+                            </div>
+                            <div class="pt-4">
+                                <h5>7</h5>
+                                <p>Kantonale Behörden</p>
+                                <div class="px-5" id="keywords7">
+                                </div>
+                            </div>
+                            <div class="pt-4">
+                                <h5>8</h5>
+                                <p>Staatsrat, Verwaltung & Präfekten</p>
+                                <div class="px-5" id="keywords8">
+                                </div>
+                            </div>
+                            <div class="pt-4">
+                                <h5>9</h5>
+                                <p>Gerichtsbehörden</p>
+                                <div class="px-5" id="keywords9">
+                                </div>
+                            </div>
+                            <div class="pt-4">
+                                <h5>10</h5>
+                                <p>Gemeinden & territoriale Organisation</p>
+                                <div class="px-5" id="keywords10">
+                                </div>
+                            </div>
+                            <div class="pt-4">
+                                <h5>11</h5>
+                                <p>Weiteres</p>
+                                <div class="px-5" id="keywords11">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8 mx-auto">
+                    <p class="lead mb-5">
+                        Um den Rahmen der Arbeit nicht zu sprengen, wurde auf eine Detailanalyse wie im Beispiel der
+                        Präambel verzichtet. Allerdings kann man auch hier, beim Betrachten der Schlüsselwörter, bereits
+                        diverse Schlüsse ziehen.
                     </p>
 
                     <h5 class="my-3">Fazit</h5>
@@ -607,34 +745,13 @@ Extraction vs. Classification vs. Modeling -->
                     <p class="lead mb-5">Aus den Erkenntnissen der bereits gesehenen Analysen kann man sich sehr gut
                         vorstellen, welche Themen den Umfrageteilnehmern bei der neuen Verfassung wichtig sind. Das
                         Herausfiltern von gewissen Schlüsselwörtern aus den Diskussionen hat weitere Aufschlüsse über
-                        die Wünsche und Bedürfnisse der Bevölkerung aufgezeigt.<br><br>Die Technologie des Text Minings
+                        die Wünsche und Bedürfnisse der Bevölkerung aufgezeigt.<br><br>Die digitale Textanalyse
                         ist bereits weit fortgeschritten, ist aber nicht perfekt. Das Resultat aus der Keyword
                         Extraction wurde bewusst nicht abgeändert, um neben den Vorteilen auch die mit sich bringenden
-                        Nachteile vorzuführen.<br><br>Abschliessend kann man sagen, dass die Technologie vor allem bei
+                        Fehlerchen vorzuführen.<br><br>Abschliessend kann man sagen, dass die Technologie vor allem bei
                         grossen Datenmengen einen wertvollen Nutzen darstellt. Beim Beispiel der Walliser
                         Verfassungsumfrage konnte eine sinnvolle Analyse durchgeführt werden.</p>
                 </div>
-
-                <!-- Unused keyword extracitons for topics 11 and 3.4
-Not used because of "Quality before Quantity" -->
-
-                <!--
-<div class="text-center mb-5 shadow-lg">
-<div class="row">
-<div class="pt-5">
-<h5 class="my-3">11 Weiteres</h5>
-<div class="p-5" id="keywords_bar3">
-</div>
-</div>
-<div class="pt-5">
-<h5 class="my-3">3.4 Repräsentativität der Gewählten</h5>
-<div class="p-5" id="keywords_bar4">
-</div>
-</div>
-</div>           
-</div>
--->
-
             </div>
         </div>
     </section>
@@ -658,134 +775,166 @@ Not used because of "Quality before Quantity" -->
 
                     <p class="lead mb-5">Bei der ersten Visualisierung geht es um die Aktivität der Teilnehmer. Dabei
                         wurden
-                        die Anzahl an schriftlichen Beiträgen, also ohne die Stimmen, zusammengerechnet.</p>
+                        die Anzahl an schriftlichen Beiträgen, also ohne die Stimmen, zusammengerechnet. Mit der Maus
+                        können Sie die absoluten Beitragszahlen pro Person betrachten.<br><br>Die skalierbaren blauen
+                        Balken unterhalb des Balkendiagramms erlauben es, die
+                        Range
+                        der Anzahl Beiträge zu verändern. Jedoch muss beachtet werden, dass die Namen auf der vertikalen
+                        Achse bei
+                        geringer Anzahl von Beiträgen aufgrund der Grösse kaum mehr lesbar sind.</p>
 
                     <!-- Barchart visualization -> amount of contributions per user -->
+                    <div>
+                        <p class="font-italic">* Namen aus Datenschutzgründen zufällig verteilt</p>
+                        <div class="text-center mb-5 p-2 shadow-lg" id="barChart1"></div>
+                    </div>
 
-                    <div class="text-center mb-5 p-2 shadow-lg" id="barChart1"></div>
-
-                    <p class="lead mb-5">Die skalierbaren blauen Balken unterhalb des Balkendiagramms erlauben es, die
-                        Range
-                        der Anzahl Beiträge zu verändern. Jedoch muss beachtet werden, dass das Balkendiagramm bei
-                        geringer Anzahl von Beiträgen aufgrund der Grösse kaum mehr lesbar ist. Aussagekräftiger wird
-                        das Ganze, wenn man die Range auf eine zweistellige minimale Beitragszahl eingrenzt.<br><br>Die
+                    <p class="lead mb-5">Die
                         auffallendste Erkenntnis auf den ersten Blick ist definitiv der deutliche "1. Rang", der vom
                         Teilnehmer mit dem Zufallsnamen Florian belegt wird. Er bildet somit auch die grosse Ausnahme
                         bei der Anzahl an Beiträgen. Mit seinen 256 Kommentaren kommt Florian fast auf die gleiche
                         Anzahl wie die die Teilnehmer der Ränge 2 bis 6 zusammen. Florian hat also gut ein Fünftel aller
-                        Beiträge der gesamten Umfrage verfasst. </p>
+                        Beiträge der gesamten Umfrage verfasst.<br><br> 55 Teilnehmer haben genau einen schriftlichen
+                        Beitrag verfasst. Dies stellt über einen Drittel der gesamten Teilnehmerzahl von 146 dar.</p>
 
                     <h5 class="my-3">Beliebtheit der aktivsten Teilnehmer</h5>
 
                     <p class="lead mb-5">Die Redewendung "Qualität vor Quantität" hat insbesondere bei politischen
                         Diskussionen ihre Berechtigung. Deshalb soll die Qualität der Beiträge auch einen wichtigen
                         Bestandteil dieser Auswertung bilden. Gemessen wurde diese Beliebtheit mit dem Zusammenfassen
-                        aller erhaltenen Feedbacks in Form von Stimmen und Argumenten (Pro oder Contra). Aufgrund der
-                        statistischen Relevanz werden ausschliesslich Teilnehmer mit mehr als 10 Beiträgen und mehr als
-                        20 Feedbacks aufgelistet.<br><br>Die "Donut Charts" sollen aufzeigen, wie gut die Beiträge
+                        aller erhaltenen Feedbacks in Form von Stimmen und Argumenten (Pro oder Contra).<br><br>Die
+                        "Donut Charts" sollen aufzeigen, wie gut die Beiträge
                         dieser Teilnehmer bei den Leuten ankamen. Alle positiven Feedbacks sind in Grün dargestellt, die
-                        negativen Feedbacks in Rot. Bei der grauen Fläche handelt es sich um die Anzahl gemischter
+                        negativen Feedbacks in Rot. Bei der grauen Fläche handelt es sich um die Anzahl neutraler bzw.
+                        gemischter
                         Feedbacks. Die Reihenfolge und die Grösse der Diagramme ist nach der Gesamtzahl der erhaltenen
-                        Feedbacks absteigend sortiert.</p>
+                        Feedbacks absteigend sortiert. Mit der Maus kann die absolute Feedbackzahl der jeweiligen
+                        Kategorie angesehen werden.</p>
+
+                    <p>* Aufgrund der
+                        statistischen Relevanz werden ausschliesslich Teilnehmer mit mehr als 10 verfassten Beiträgen
+                        und mehr als erhaltenen
+                        20 Feedbacks aufgelistet.</p>
 
                     <!-- Donut charts visualization -> Popularity of the most active users -->
 
                     <div class="text-center my-5 p-3 shadow-lg">
                         <div class="row mb-5">
                             <div class="col">
-                                <p class="text-center">Florian</p>
+                                <p class="font-weight-bold text-center">Florian</p>
+                                <p class="text-center">Feedbacks gesamt: 429</p>
                                 <div id="donut1"></div>
                             </div>
                             <div class="col">
-                                <p class="text-center">Jennifer</p>
+                                <p class="font-weight-bold text-center">Jennifer</p>
+                                <p class="text-center">409</p>
                                 <div id="donut2"></div>
                             </div>
                             <div class="col">
-                                <p class="text-center">Patricia</p>
+                                <p class="font-weight-bold text-center">Patricia</p>
+                                <p class="text-center">395</p>
                                 <div id="donut3"></div>
                             </div>
                         </div>
 
                         <div class="row mb-5">
                             <div class="col">
-                                <p class="text-center">Quentin</p>
+                                <p class="font-weight-bold text-center">Quentin</p>
+                                <p class="text-center">330</p>
                                 <div id="donut4"></div>
                             </div>
                             <div class="col">
-                                <p class="text-center">Valentine</p>
+                                <p class="font-weight-bold text-center">Valentine</p>
+                                <p class="text-center">293</p>
                                 <div id="donut5"></div>
                             </div>
                             <div class="col">
-                                <p class="text-center">Sara</p>
+                                <p class="font-weight-bold text-center">Sara</p>
+                                <p class="text-center">185</p>
                                 <div id="donut6"></div>
                             </div>
                         </div>
 
                         <div class="row mb-5">
                             <div class="col">
-                                <p class="text-center">Luc</p>
+                                <p class="font-weight-bold text-center">Luc</p>
+                                <p class="text-center">163</p>
                                 <div id="donut7"></div>
                             </div>
                             <div class="col">
-                                <p class="text-center">Estelle</p>
+                                <p class="font-weight-bold text-center">Estelle</p>
+                                <p class="text-center">152</p>
                                 <div id="donut8"></div>
                             </div>
                             <div class="col">
-                                <p class="text-center">Sacha</p>
+                                <p class="font-weight-bold text-center">Sacha</p>
+                                <p class="text-center">139</p>
                                 <div id="donut9"></div>
                             </div>
                             <div class="col">
-                                <p class="text-center">Baptiste</p>
+                                <p class="font-weight-bold text-center">Baptiste</p>
+                                <p class="text-center">131</p>
                                 <div id="donut10"></div>
                             </div>
                         </div>
 
                         <div class="row mb-5">
                             <div class="col">
-                                <p class="text-center">Ana</p>
+                                <p class="font-weight-bold text-center">Ana</p>
+                                <p class="text-center">131</p>
                                 <div id="donut11"></div>
                             </div>
                             <div class="col">
-                                <p class="text-center">Paul</p>
+                                <p class="font-weight-bold text-center">Paul</p>
+                                <p class="text-center">102</p>
                                 <div id="donut12"></div>
                             </div>
                             <div class="col">
-                                <p class="text-center">Marion</p>
+                                <p class="font-weight-bold text-center">Marion</p>
+                                <p class="text-center">102</p>
                                 <div id="donut13"></div>
                             </div>
                             <div class="col">
-                                <p class="text-center">Elodie</p>
+                                <p class="font-weight-bold text-center">Elodie</p>
+                                <p class="text-center">93</p>
                                 <div id="donut14"></div>
                             </div>
                             <div class="col">
-                                <p class="text-center">Marine</p>
+                                <p class="font-weight-bold text-center">Marine</p>
+                                <p class="text-center">77</p>
                                 <div id="donut15"></div>
                             </div>
                         </div>
 
                         <div class="row mb-5">
                             <div class="col">
-                                <p class="text-center">Filipe</p>
+                                <p class="font-weight-bold text-center">Filipe</p>
+                                <p class="text-center">75</p>
                                 <div id="donut16"></div>
                             </div>
                             <div class="col">
-                                <p class="text-center">Jimmy</p>
+                                <p class="font-weight-bold text-center">Jimmy</p>
+                                <p class="text-center">73</p>
                                 <div id="donut17"></div>
                             </div>
                             <div class="col">
-                                <p class="text-center">Maeva</p>
+                                <p class="font-weight-bold text-center">Maeva</p>
+                                <p class="text-center">44</p>
                                 <div id="donut18"></div>
                             </div>
                             <div class="col">
-                                <p class="text-center">Nathalie</p>
+                                <p class="font-weight-bold text-center">Nathalie</p>
+                                <p class="text-center">39</p>
                                 <div id="donut19"></div>
                             </div>
                             <div class="col">
-                                <p class="text-center">Finn</p>
+                                <p class="font-weight-bold text-center">Finn</p>
+                                <p class="text-center">37</p>
                                 <div id="donut20"></div>
                             </div>
                             <div class="col">
-                                <p class="text-center">Romain</p>
+                                <p class="font-weight-bold text-center">Romain</p>
+                                <p class="text-center">36</p>
                                 <div id="donut21"></div>
                             </div>
                         </div>
@@ -796,11 +945,13 @@ Not used because of "Quality before Quantity" -->
                             <div class="col">
                             </div>
                             <div class="col">
-                                <p class="text-center">Fiona</p>
+                                <p class="font-weight-bold text-center">Fiona</p>
+                                <p class="text-center">32</p>
                                 <div id="donut22"></div>
                             </div>
                             <div class="col">
-                                <p class="text-center">Alex</p>
+                                <p class="font-weight-bold text-center">Alex</p>
+                                <p class="text-center">22</p>
                                 <div id="donut23"></div>
                             </div>
                             <div class="col">
@@ -816,7 +967,10 @@ Not used because of "Quality before Quantity" -->
                         nicht. Bei einigen ist der Unterschied von Negativ und Positiv eher gering (z.B. Jennifer oder
                         Luc). Gemessen an den positiven Feedbacks in Prozent aller erhaltenen Feedbacks schneiden Fiona,
                         Nathalie und Florian am besten ab. Die beiden erstgenannten haben jedoch eher weniger
-                        Aussagekraft, da die absoluten Zahlen geringer sind.<br><br></p>
+                        Aussagekraft, da die absoluten Zahlen geringer sind. Anders ist dies bei Florian, der bei der
+                        Anzahl der Beiträge auch schon "die Nase vorn" hatte. Er / Sie hat also sowohl quantitativ als
+                        auch qualitativ einen grossen Beitrag zu den Diskussionen für die neue Walliser Verfassung
+                        geleistet.</p>
                 </div>
             </div>
         </div>
@@ -834,20 +988,20 @@ Not used because of "Quality before Quantity" -->
             <a href="https://github.com/garbely" target="_blank">
                 <img title="XXX" src="img/github.png">
             </a><br><br>
-            <p>Navbar icons by <a href="https://www.flaticon.com/">flaticon</a></p>
+            <p>Icons by <a href="https://www.flaticon.com/">flaticon</a></p>
         </div>
     </footer>
 
     <script>
 
         /*
-            All Vega and Vega-lite charts made with the help of the 
-            official documentary and examples pages:
-            - https://vega.github.io/vega/docs/
-            - https://vega.github.io/vega/examples/
-            - https://vega.github.io/vega-lite/docs/
-            - https://vega.github.io/vega-lite/examples/           
-        */
+All Vega and Vega-lite charts made with the help of the 
+official documentary and examples pages:
+- https://vega.github.io/vega/docs/
+- https://vega.github.io/vega/examples/
+- https://vega.github.io/vega-lite/docs/
+- https://vega.github.io/vega-lite/examples/           
+*/
 
         var pieChart1 = {
             "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
@@ -861,7 +1015,7 @@ Not used because of "Quality before Quantity" -->
             "encoding": {
                 "theta": { "field": "Beiträge", "type": "quantitative" },
                 "color": { "field": "Sprache", "type": "nominal" },
-                "tooltip": { "field": "Beiträge" }
+                "tooltip": { "field": "Beiträge", "type": "nominal" }
             },
             "view": { "stroke": null }
         };
@@ -882,7 +1036,7 @@ Not used because of "Quality before Quantity" -->
             "encoding": {
                 "theta": { "field": "Teilnehmer", "type": "quantitative" },
                 "color": { "field": "Sprache", "type": "nominal" },
-                "tooltip": { "field": "Teilnehmer" }
+                "tooltip": { "field": "Teilnehmer", "type": "nominal" }
             },
             "view": { "stroke": null }
         };
@@ -890,30 +1044,9 @@ Not used because of "Quality before Quantity" -->
         vegaEmbed('#pieChart2', pieChart2, { "actions": false });
 
 
-        var pieChart3 = {
-            "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-            "background": "#f8f9fa",
-            "data": {
-                "url": "data/language/postsPerUserLanguage.csv"
-            },
-            "mark": {
-                "type": "arc"
-            },
-            "encoding": {
-                "theta": { "field": "avg_beiträge", "type": "quantitative" },
-                "color": { "field": "Sprache", "type": "nominal" },
-                "tooltip": { "field": "avg_beiträge" }
-            },
-            "view": { "stroke": null }
-        };
-
-
-        vegaEmbed('#pieChart3', pieChart3, { "actions": false });
-
-
         var barChart1 = {
             "$schema": "https://vega.github.io/schema/vega/v5.json",
-            "width": 630,
+            "width": 650,
             "height": 530,
 
             "signals": [
@@ -997,7 +1130,7 @@ Not used because of "Quality before Quantity" -->
                 {
                     "scale": "y",
                     "orient": "left",
-                    "labelFontSize": 20
+                    "labelFontSize": 15
                 }
             ]
         };
@@ -1009,125 +1142,12 @@ Not used because of "Quality before Quantity" -->
         // Create sentiment color scheme
         vega.scheme('sentimentColors', ['#ff726f', '#D3D3D3', '#0f0']);
 
-        var barchart2 = {
-            "$schema": "https://vega.github.io/schema/vega/v5.json",
-            "width": 1000,
-            "height": 2000,
-
-            "data": [
-                {
-                    "name": "table",
-                    "url": "data/user/MostPopular.json"
-                }
-            ],
-
-            "scales": [
-                {
-                    "name": "yscale",
-                    "type": "band",
-                    "domain": { "data": "table", "field": "user" },
-                    "range": "height",
-                    "padding": 0.39
-                },
-                {
-                    "name": "xscale",
-                    "type": "linear",
-                    "domain": { "data": "table", "field": "value" }, "range": "width",
-                    "round": true,
-                    "zero": true,
-                    "nice": true
-                },
-                {
-                    "name": "color",
-                    "type": "ordinal",
-                    "domain": { "data": "table", "field": "sentiment" },
-                    "range": { "scheme": "sentimentColors" }
-                }
-            ],
-
-            "axes": [
-                { "orient": "left", "scale": "yscale", "tickSize": 0, "labelPadding": 60, "zindex": 1, "labelFontSize": 25 }
-            ],
-
-            "marks": [
-                {
-                    "type": "group",
-
-                    "from": {
-                        "facet": {
-                            "data": "table",
-                            "name": "facet",
-                            "groupby": "user"
-                        }
-                    },
-
-                    "encode": {
-                        "enter": {
-                            "y": { "scale": "yscale", "field": "user" }
-                        }
-                    },
-
-                    "signals": [
-                        { "name": "height", "update": "bandwidth('yscale')" }
-                    ],
-
-                    "scales": [
-                        {
-                            "name": "pos",
-                            "type": "band",
-                            "range": "height",
-                            "domain": { "data": "facet", "field": "sentiment" }
-                        }
-                    ],
-
-                    "marks": [
-                        {
-                            "name": "bars",
-                            "from": { "data": "facet" },
-                            "type": "rect",
-                            "encode": {
-                                "enter": {
-                                    "y": { "scale": "pos", "field": "sentiment" },
-                                    "height": { "scale": "pos", "band": 1 },
-                                    "x": { "scale": "xscale", "field": "value" },
-                                    "x2": { "scale": "xscale", "value": 0 },
-                                    "fill": { "scale": "color", "field": "sentiment" },
-                                    "stroke": { "value": "black" },
-                                    "strokeWidth": { "value": 0.5 },
-
-                                }
-                            }
-                        },
-                        {
-                            "type": "text",
-                            "from": { "data": "bars" },
-                            "encode": {
-                                "enter": {
-                                    "x": { "field": "x", "offset": -5 },
-                                    "y": { "field": "y", "offset": { "field": "height", "mult": 0.5 } },
-                                    "fill": [
-                                        { "value": "black" }
-                                    ],
-                                    "align": { "value": "right" },
-                                    "baseline": { "value": "middle" },
-                                    "text": { "field": "datum.value" }
-                                }
-                            }
-                        }
-                    ]
-                }
-            ]
-        };
-
-
-        vegaEmbed('#barchart2', barchart2, { "actions": false });
-
-
         var donut_1_florian = {
             "$schema": "https://vega.github.io/schema/vega/v5.json",
             "width": 163.5,
             "height": 163.5,
-            "autosize": "none", "padding": 10,
+            "autosize": "none",
+            "padding": 10,
 
             "data": [
                 {
@@ -2525,10 +2545,13 @@ Not used because of "Quality before Quantity" -->
                     "type": "ordinal",
                     "domain": { "data": "nodes", "field": "name" },
                     "range": [
-                        "#3182bd", "#6baed6", "#9ecae1", "#c6dbef", "#e6550d",
-                        "#fd8d3c", "#fdae6b", "#fdd0a2", "#31a354", "#74c476",
-                        "#a1d99b", "#c7e9c0", "#756bb1", "#9e9ac8", "#bcbddc",
-                        "#dadaeb", "#636363", "#969696", "#bdbdbd", "#d9d9d9"
+                        "#ff7f0e",
+                        "#e7298a",
+                        "#999999",
+                        "#3182bd", "#6baed6", "#9ecae1",
+                        "#a1d99b", "#74c476", "#31a354",
+                        "#9e765f",
+                        "#ffed6f"
                     ]
                 },
                 {
@@ -2610,28 +2633,42 @@ Not used because of "Quality before Quantity" -->
         vegaEmbed('#treemap', treemap, { "actions": false });
 
 
-        var circle_packing = {
+        var treemap2 = {
             "$schema": "https://vega.github.io/schema/vega/v5.json",
-            "width": 600,
-            "height": 600,
+            "width": 700,
+            "height": 500,
+            "padding": 2.5,
             "autosize": "none",
 
             "data": [
                 {
                     "name": "tree",
-                    "url": "data/topic/postsAndVotes.json", "transform": [
+                    "url": "data/topic/postsAndVotes.json",
+                    "transform": [
                         {
                             "type": "stratify",
                             "key": "id",
                             "parentKey": "parent"
                         },
                         {
-                            "type": "pack",
+                            "type": "treemap",
                             "field": "size",
-                            "sort": { "field": "size", "order": "descending" },
+                            "sort": { "field": "value", "order": "descending" },
+                            "round": true,
+                            "method": "binary",
                             "size": [{ "signal": "width" }, { "signal": "height" }]
                         }
                     ]
+                },
+                {
+                    "name": "nodes",
+                    "source": "tree",
+                    "transform": [{ "type": "filter", "expr": "datum.children&&datum.parent!=null" }]
+                },
+                {
+                    "name": "leaves",
+                    "source": "tree",
+                    "transform": [{ "type": "filter", "expr": "!datum.children" }]
                 }
             ],
 
@@ -2639,32 +2676,85 @@ Not used because of "Quality before Quantity" -->
                 {
                     "name": "color",
                     "type": "ordinal",
-                    "domain": { "data": "tree", "field": "depth" },
-                    "range": { "scheme": "category20" }
+                    "domain": { "data": "nodes", "field": "name" },
+                    "range": [
+                        "#ff7f0e",
+                        "#e7298a",
+                        "#999999",
+                        "#3182bd", "#6baed6", "#9ecae1",
+                        "#a1d99b", "#74c476", "#31a354",
+                        "#9e765f",
+                        "#ffed6f"
+                    ]
+                },
+                {
+                    "name": "size",
+                    "type": "ordinal",
+                    "domain": [0, 1, 2, 3],
+                    "range": [256, 28, 20, 14]
+                },
+                {
+                    "name": "opacity",
+                    "type": "ordinal",
+                    "domain": [0, 1, 2, 3],
+                    "range": [0.15, 0.5, 0.8, 1.0]
                 }
             ],
 
             "marks": [
                 {
-                    "type": "symbol",
-                    "name": "circles",
-                    "from": { "data": "tree" },
+                    "type": "rect",
+                    "from": { "data": "nodes" },
+                    "interactive": false,
                     "encode": {
                         "enter": {
-                            "shape": { "value": "circle" },
-                            "fill": { "scale": "color", "field": "depth" }
+                            "fill": { "scale": "color", "field": "name" }
                         },
                         "update": {
-                            "x": { "field": "x" },
-                            "y": { "field": "y" },
-                            "size": { "signal": "4 * datum.r * datum.r" },
-                            "stroke": { "value": "white" },
-                            "strokeWidth": { "value": 0.5 }
+                            "x": { "field": "x0" },
+                            "y": { "field": "y0" },
+                            "x2": { "field": "x1" },
+                            "y2": { "field": "y1" }
+                        }
+                    }
+                },
+                {
+                    "type": "rect",
+                    "from": { "data": "leaves" },
+                    "encode": {
+                        "enter": {
+                            "stroke": { "value": "#fff" }
+                        },
+                        "update": {
+                            "x": { "field": "x0" },
+                            "y": { "field": "y0" },
+                            "x2": { "field": "x1" },
+                            "y2": { "field": "y1" },
+                            "fill": { "value": "transparent" }
                         },
                         "hover": {
-                            "stroke": { "value": "red" },
-                            "strokeWidth": { "value": 2 },
-                            "tooltip": { "signal": "datum.name + (datum.size ? ', ' + datum.size + ' Beiträge & Stimmen' : '')" }
+                            "fill": { "value": "red" },
+                            "tooltip": { "signal": "datum.name+ ': ' + datum.size + ' Beiträge & Stimmen'" }
+                        }
+                    }
+                },
+                {
+                    "type": "text",
+                    "from": { "data": "nodes" },
+                    "interactive": false,
+                    "encode": {
+                        "enter": {
+                            "font": { "value": "Helvetica Neue, Arial" },
+                            "align": { "value": "center" },
+                            "baseline": { "value": "middle" },
+                            "fill": { "value": "#000" },
+                            "text": { "field": "id" },
+                            "fontSize": { "value": 50 },
+                            "fillOpacity": { "scale": "opacity", "field": "depth" }
+                        },
+                        "update": {
+                            "x": { "signal": "0.5 * (datum.x0 + datum.x1)" },
+                            "y": { "signal": "0.5 * (datum.y0 + datum.y1)" }
                         }
                     }
                 }
@@ -2672,10 +2762,10 @@ Not used because of "Quality before Quantity" -->
         }
             ;
 
-        vegaEmbed('#circle_packing', circle_packing, { "actions": false });
+        vegaEmbed('#treemap2', treemap2, { "actions": false });
 
 
-        var keywords_bar1 = {
+        var keywords_fr = {
             "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
             "height": { "step": 30 },
             "width": 440,
@@ -2697,7 +2787,8 @@ Not used because of "Quality before Quantity" -->
                 {
                     "mark": {
                         "type": "bar",
-                        "color": "#ffb3b3"
+                        "color": "#ff7f0e",
+                        "opacity": "0.8"
                     },
                     "encoding": {
                         "x": {
@@ -2733,10 +2824,10 @@ Not used because of "Quality before Quantity" -->
             ;
 
 
-        vegaEmbed('#keywords_bar1', keywords_bar1, { "actions": false });
+        vegaEmbed('#keywords_fr', keywords_fr, { "actions": false });
 
 
-        var keywords_bar2 = {
+        var keywords_de = {
             "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
             "height": { "step": 30 },
             "width": 440,
@@ -2758,7 +2849,8 @@ Not used because of "Quality before Quantity" -->
                 {
                     "mark": {
                         "type": "bar",
-                        "color": "#ffb3b3"
+                        "color": "#ff7f0e",
+                        "opacity": "0.8"
                     },
                     "encoding": {
                         "x": {
@@ -2794,36 +2886,652 @@ Not used because of "Quality before Quantity" -->
         };
 
 
-        vegaEmbed('#keywords_bar2', keywords_bar2, { "actions": false });
+        vegaEmbed('#keywords_de', keywords_de, { "actions": false });
 
-        /*
-            Unused Keyword extraction barcharts for suptoics 3.4 & 11
-        */
-
-        /*
-        var keywords_bar3 ={
+        var keywords1 = {
             "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-            "height": {"step": 30},
-            "width": 440,
+            "height": { "step": 30 },
+            "width": 400,
+            "data": {
+                "url": "data/text/keywords/1.2_1.5.json"
+            },
+            "transform": [
+                { "calculate": "datum.relevance*100", "as": "x2" }
+            ],
+            "encoding": {
+                "y": {
+                    "field": "text",
+                    "type": "nominal",
+                    "axis": null,
+                    "sort": { "field": "relevance", "order": "descending" }
+                }
+            },
+            "layer": [
+                {
+                    "mark": {
+                        "type": "bar",
+                        "color": "#ff7f0e",
+                        "opacity": "0.8"
+                    },
+                    "encoding": {
+                        "x": {
+                            "field": "relevance",
+                            "type": "quantitative",
+                            "scale": {
+                                "domain": [
+                                    0,
+                                    0.75
+                                ]
+                            },
+                            "axis": null
+                        },
+                        "tooltip": { "field": "x2", "type": "quantitative" }
+
+                    }
+                },
+                {
+                    "mark": {
+                        "type": "text",
+                        "align": "left",
+                        "x": 5,
+                        "fontSize": 15
+                    },
+                    "encoding": {
+                        "text": {
+                            "field": "text",
+                            "type": "nominal"
+                        }
+                    }
+                }
+            ]
+        };
+
+
+        vegaEmbed('#keywords1', keywords1, { "actions": false });
+
+
+        var keywords2 = {
+            "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+            "height": { "step": 30 },
+            "width": 400,
+            "data": {
+                "url": "data/text/keywords/2.json"
+            },
+            "transform": [
+                { "calculate": "datum.relevance*100", "as": "x2" }
+            ],
+            "encoding": {
+                "y": {
+                    "field": "text",
+                    "type": "nominal",
+                    "axis": null,
+                    "sort": { "field": "relevance", "order": "descending" }
+                }
+            },
+            "layer": [
+                {
+                    "mark": {
+                        "type": "bar",
+                        "color": "#e7298a",
+                        "opacity": "0.8"
+                    },
+                    "encoding": {
+                        "x": {
+                            "field": "relevance",
+                            "type": "quantitative",
+                            "scale": {
+                                "domain": [
+                                    0,
+                                    0.75
+                                ]
+                            },
+                            "axis": null
+                        },
+                        "tooltip": { "field": "x2", "type": "quantitative" }
+
+                    }
+                },
+                {
+                    "mark": {
+                        "type": "text",
+                        "align": "left",
+                        "x": 5,
+                        "fontSize": 15
+                    },
+                    "encoding": {
+                        "text": {
+                            "field": "text",
+                            "type": "nominal"
+                        }
+                    }
+                }
+            ]
+        };
+
+
+        vegaEmbed('#keywords2', keywords2, { "actions": false });
+
+
+        var keywords3 = {
+            "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+            "height": { "step": 30 },
+            "width": 400,
+            "data": {
+                "url": "data/text/keywords/3.json"
+            },
+            "transform": [
+                { "calculate": "datum.relevance*100", "as": "x2" }
+            ],
+            "encoding": {
+                "y": {
+                    "field": "text",
+                    "type": "nominal",
+                    "axis": null,
+                    "sort": { "field": "relevance", "order": "descending" }
+                }
+            },
+            "layer": [
+                {
+                    "mark": {
+                        "type": "bar",
+                        "color": "#999999",
+                        "opacity": "0.8"
+                    },
+                    "encoding": {
+                        "x": {
+                            "field": "relevance",
+                            "type": "quantitative",
+                            "scale": {
+                                "domain": [
+                                    0,
+                                    0.75
+                                ]
+                            },
+                            "axis": null
+                        },
+                        "tooltip": { "field": "x2", "type": "quantitative" }
+
+                    }
+                },
+                {
+                    "mark": {
+                        "type": "text",
+                        "align": "left",
+                        "x": 5,
+                        "fontSize": 15
+                    },
+                    "encoding": {
+                        "text": {
+                            "field": "text",
+                            "type": "nominal"
+                        }
+                    }
+                }
+            ]
+        };
+
+
+        vegaEmbed('#keywords3', keywords3, { "actions": false });
+
+
+        var keywords4 = {
+            "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+            "height": { "step": 30 },
+            "width": 400,
+            "data": {
+                "url": "data/text/keywords/4.json"
+            },
+            "transform": [
+                { "calculate": "datum.relevance*100", "as": "x2" }
+            ],
+            "encoding": {
+                "y": {
+                    "field": "text",
+                    "type": "nominal",
+                    "axis": null,
+                    "sort": { "field": "relevance", "order": "descending" }
+                }
+            },
+            "layer": [
+                {
+                    "mark": {
+                        "type": "bar",
+                        "color": "#3182bd",
+                        "opacity": "0.8"
+                    },
+                    "encoding": {
+                        "x": {
+                            "field": "relevance",
+                            "type": "quantitative",
+                            "scale": {
+                                "domain": [
+                                    0,
+                                    0.75
+                                ]
+                            },
+                            "axis": null
+                        },
+                        "tooltip": { "field": "x2", "type": "quantitative" }
+
+                    }
+                },
+                {
+                    "mark": {
+                        "type": "text",
+                        "align": "left",
+                        "x": 5,
+                        "fontSize": 15
+                    },
+                    "encoding": {
+                        "text": {
+                            "field": "text",
+                            "type": "nominal"
+                        }
+                    }
+                }
+            ]
+        };
+
+
+        vegaEmbed('#keywords4', keywords4, { "actions": false });
+
+
+        var keywords5 = {
+            "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+            "height": { "step": 30 },
+            "width": 400,
+            "data": {
+                "url": "data/text/keywords/5.json"
+            },
+            "transform": [
+                { "calculate": "datum.relevance*100", "as": "x2" }
+            ],
+            "encoding": {
+                "y": {
+                    "field": "text",
+                    "type": "nominal",
+                    "axis": null,
+                    "sort": { "field": "relevance", "order": "descending" }
+                }
+            },
+            "layer": [
+                {
+                    "mark": {
+                        "type": "bar",
+                        "color": "#6baed6",
+                        "opacity": "0.8"
+                    },
+                    "encoding": {
+                        "x": {
+                            "field": "relevance",
+                            "type": "quantitative",
+                            "scale": {
+                                "domain": [
+                                    0,
+                                    0.75
+                                ]
+                            },
+                            "axis": null
+                        },
+                        "tooltip": { "field": "x2", "type": "quantitative" }
+
+                    }
+                },
+                {
+                    "mark": {
+                        "type": "text",
+                        "align": "left",
+                        "x": 5,
+                        "fontSize": 15
+                    },
+                    "encoding": {
+                        "text": {
+                            "field": "text",
+                            "type": "nominal"
+                        }
+                    }
+                }
+            ]
+        };
+
+
+        vegaEmbed('#keywords5', keywords5, { "actions": false });
+
+
+        var keywords6 = {
+            "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+            "height": { "step": 30 },
+            "width": 400,
+            "data": {
+                "url": "data/text/keywords/6.json"
+            },
+            "transform": [
+                { "calculate": "datum.relevance*100", "as": "x2" }
+            ],
+            "encoding": {
+                "y": {
+                    "field": "text",
+                    "type": "nominal",
+                    "axis": null,
+                    "sort": { "field": "relevance", "order": "descending" }
+                }
+            },
+            "layer": [
+                {
+                    "mark": {
+                        "type": "bar",
+                        "color": "#9ecae1",
+                        "opacity": "0.8"
+                    },
+                    "encoding": {
+                        "x": {
+                            "field": "relevance",
+                            "type": "quantitative",
+                            "scale": {
+                                "domain": [
+                                    0,
+                                    0.75
+                                ]
+                            },
+                            "axis": null
+                        },
+                        "tooltip": { "field": "x2", "type": "quantitative" }
+
+                    }
+                },
+                {
+                    "mark": {
+                        "type": "text",
+                        "align": "left",
+                        "x": 5,
+                        "fontSize": 15
+                    },
+                    "encoding": {
+                        "text": {
+                            "field": "text",
+                            "type": "nominal"
+                        }
+                    }
+                }
+            ]
+        };
+
+
+        vegaEmbed('#keywords6', keywords6, { "actions": false });
+
+
+        var keywords7 = {
+            "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+            "height": { "step": 30 },
+            "width": 400,
+            "data": {
+                "url": "data/text/keywords/7.json"
+            },
+            "transform": [
+                { "calculate": "datum.relevance*100", "as": "x2" }
+            ],
+            "encoding": {
+                "y": {
+                    "field": "text",
+                    "type": "nominal",
+                    "axis": null,
+                    "sort": { "field": "relevance", "order": "descending" }
+                }
+            },
+            "layer": [
+                {
+                    "mark": {
+                        "type": "bar",
+                        "color": "#a1d99b",
+                        "opacity": "0.8"
+                    },
+                    "encoding": {
+                        "x": {
+                            "field": "relevance",
+                            "type": "quantitative",
+                            "scale": {
+                                "domain": [
+                                    0,
+                                    0.75
+                                ]
+                            },
+                            "axis": null
+                        },
+                        "tooltip": { "field": "x2", "type": "quantitative" }
+
+                    }
+                },
+                {
+                    "mark": {
+                        "type": "text",
+                        "align": "left",
+                        "x": 5,
+                        "fontSize": 15
+                    },
+                    "encoding": {
+                        "text": {
+                            "field": "text",
+                            "type": "nominal"
+                        }
+                    }
+                }
+            ]
+        };
+
+
+        vegaEmbed('#keywords7', keywords7, { "actions": false });
+
+
+        var keywords8 = {
+            "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+            "height": { "step": 30 },
+            "width": 400,
+            "data": {
+                "url": "data/text/keywords/8.json"
+            },
+            "transform": [
+                { "calculate": "datum.relevance*100", "as": "x2" }
+            ],
+            "encoding": {
+                "y": {
+                    "field": "text",
+                    "type": "nominal",
+                    "axis": null,
+                    "sort": { "field": "relevance", "order": "descending" }
+                }
+            },
+            "layer": [
+                {
+                    "mark": {
+                        "type": "bar",
+                        "color": "#74c476",
+                        "opacity": "0.8"
+                    },
+                    "encoding": {
+                        "x": {
+                            "field": "relevance",
+                            "type": "quantitative",
+                            "scale": {
+                                "domain": [
+                                    0,
+                                    0.75
+                                ]
+                            },
+                            "axis": null
+                        },
+                        "tooltip": { "field": "x2", "type": "quantitative" }
+
+                    }
+                },
+                {
+                    "mark": {
+                        "type": "text",
+                        "align": "left",
+                        "x": 5,
+                        "fontSize": 15
+                    },
+                    "encoding": {
+                        "text": {
+                            "field": "text",
+                            "type": "nominal"
+                        }
+                    }
+                }
+            ]
+        };
+
+
+        vegaEmbed('#keywords8', keywords8, { "actions": false });
+
+
+        var keywords9 = {
+            "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+            "height": { "step": 30 },
+            "width": 400,
+            "data": {
+                "url": "data/text/keywords/9.json"
+            },
+            "transform": [
+                { "calculate": "datum.relevance*100", "as": "x2" }
+            ],
+            "encoding": {
+                "y": {
+                    "field": "text",
+                    "type": "nominal",
+                    "axis": null,
+                    "sort": { "field": "relevance", "order": "descending" }
+                }
+            },
+            "layer": [
+                {
+                    "mark": {
+                        "type": "bar",
+                        "color": "#31a354",
+                        "opacity": "0.8"
+                    },
+                    "encoding": {
+                        "x": {
+                            "field": "relevance",
+                            "type": "quantitative",
+                            "scale": {
+                                "domain": [
+                                    0,
+                                    0.75
+                                ]
+                            },
+                            "axis": null
+                        },
+                        "tooltip": { "field": "x2", "type": "quantitative" }
+
+                    }
+                },
+                {
+                    "mark": {
+                        "type": "text",
+                        "align": "left",
+                        "x": 5,
+                        "fontSize": 15
+                    },
+                    "encoding": {
+                        "text": {
+                            "field": "text",
+                            "type": "nominal"
+                        }
+                    }
+                }
+            ]
+        };
+
+
+        vegaEmbed('#keywords9', keywords9, { "actions": false });
+
+
+        var keywords10 = {
+            "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+            "height": { "step": 30 },
+            "width": 400,
+            "data": {
+                "url": "data/text/keywords/10.json"
+            },
+            "transform": [
+                { "calculate": "datum.relevance*100", "as": "x2" }
+            ],
+            "encoding": {
+                "y": {
+                    "field": "text",
+                    "type": "nominal",
+                    "axis": null,
+                    "sort": { "field": "relevance", "order": "descending" }
+                }
+            },
+            "layer": [
+                {
+                    "mark": {
+                        "type": "bar",
+                        "color": "#9e765f",
+                        "opacity": "0.8"
+                    },
+                    "encoding": {
+                        "x": {
+                            "field": "relevance",
+                            "type": "quantitative",
+                            "scale": {
+                                "domain": [
+                                    0,
+                                    0.75
+                                ]
+                            },
+                            "axis": null
+                        },
+                        "tooltip": { "field": "x2", "type": "quantitative" }
+
+                    }
+                },
+                {
+                    "mark": {
+                        "type": "text",
+                        "align": "left",
+                        "x": 5,
+                        "fontSize": 15
+                    },
+                    "encoding": {
+                        "text": {
+                            "field": "text",
+                            "type": "nominal"
+                        }
+                    }
+                }
+            ]
+        };
+
+
+        vegaEmbed('#keywords10', keywords10, { "actions": false });
+
+
+        var keywords11 = {
+            "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+            "height": { "step": 30 },
+            "width": 400,
             "data": {
                 "url": "data/text/keywords/11.json"
             },
             "transform": [
-                {"calculate": "datum.relevance*100", "as": "x2"}
+                { "calculate": "datum.relevance*100", "as": "x2" }
             ],
             "encoding": {
                 "y": {
                     "field": "text",
                     "type": "nominal",
                     "axis": null,
-                    "sort": {"field": "relevance", "order":"descending"}
+                    "sort": { "field": "relevance", "order": "descending" }
                 }
             },
             "layer": [
                 {
                     "mark": {
                         "type": "bar",
-                        "color": "#ffb3b3"
+                        "color": "#ffed6f",
+                        "opacity": "0.8"
                     },
                     "encoding": {
                         "x": {
@@ -2835,9 +3543,10 @@ Not used because of "Quality before Quantity" -->
                                     0.75
                                 ]
                             },
-                            "axis":null
+                            "axis": null
                         },
-                        "tooltip": {"field": "x2", "type": "quantitative"}
+                        "tooltip": { "field": "x2", "type": "quantitative" }
+
                     }
                 },
                 {
@@ -2845,7 +3554,7 @@ Not used because of "Quality before Quantity" -->
                         "type": "text",
                         "align": "left",
                         "x": 5,
-                        "fontSize": 17
+                        "fontSize": 15
                     },
                     "encoding": {
                         "text": {
@@ -2858,69 +3567,8 @@ Not used because of "Quality before Quantity" -->
         };
 
 
-        vegaEmbed('#keywords_bar3', keywords_bar3, { "actions": false });
+        vegaEmbed('#keywords11', keywords11, { "actions": false });
 
-
-        var keywords_bar4 ={
-            "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-            "height": {"step": 30},
-            "width": 440,
-            "data": {
-                "url": "data/text/keywords/3.4.json"
-            },
-            "transform": [
-                {"calculate": "datum.relevance*100", "as": "x2"}
-            ],
-            "encoding": {
-                "y": {
-                    "field": "text",
-                    "type": "nominal",
-                    "axis": null,
-                    "sort": {"field": "relevance", "order":"descending"}
-                }
-            },
-            "layer": [
-                {
-                    "mark": {
-                        "type": "bar",
-                        "color": "#ffb3b3"
-                    },
-                    "encoding": {
-                        "x": {
-                            "field": "relevance",
-                            "type": "quantitative",
-                            "scale": {
-                                "domain": [
-                                    0,
-                                    0.75
-                                ]
-                            },
-                            "axis":null
-                        },
-                        "tooltip": {"field": "x2", "type": "quantitative"}
-                    }
-                },
-                {
-                    "mark": {
-                        "type": "text",
-                        "align": "left",
-                        "x": 5,
-                        "fontSize": 17
-                    },
-                    "encoding": {
-                        "text": {
-                            "field": "text",
-                            "type": "nominal"
-                        }
-                    }
-                }
-            ]
-        };
-
-
-        vegaEmbed('#keywords_bar4', keywords_bar4, { "actions": false });
-
-        */
     </script>
 </body>
 

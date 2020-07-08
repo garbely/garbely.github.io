@@ -1,0 +1,47 @@
+[
+    {
+      "text": "devoirs d'information",
+      "sentiment": {
+        "score": -0.947229,
+        "label": "negative"
+      },
+      "relevance": 0.611196,
+      "count": 1
+    },
+    {
+      "text": "principes de devoirs d'information",
+      "sentiment": {
+        "score": 0,
+        "label": "neutral"
+      },
+      "relevance": 0.553578,
+      "count": 1
+    },
+    {
+      "text": "droit de vote",
+      "sentiment": {
+        "score": 0,
+        "label": "neutral"
+      },
+      "relevance": 0.552199,
+      "count": 8
+    },
+    {
+      "text": "droits fondamentaux de notre canton",
+      "sentiment": {
+        "score": 0,
+        "label": "neutral"
+      },
+      "relevance": 0.549303,
+      "count": 1
+    },
+    {
+      "text": "personnes de nationalité étrangère",
+      "sentiment": {
+        "score": 0,
+        "label": "neutral"
+      },
+      "relevance": 0.546982,
+      "count": 2
+    }
+  ]
